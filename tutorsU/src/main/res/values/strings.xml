@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="add_wallpaper">add wallpaper</string>
+    <string name="app_name">TutorsU</string>
+    <string name="action_settings">Settings</string>
+    <string name="please_reqiured_fields">Please enter the reqiured fields</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="invalid_username_pwd">Invalid user name and password</string>
+    <string name="login_phone_number">Login with Phote No.</string>
+    <string name="login_fb">Login with with FB</string>
+    <string name="app_id">890661184338374</string>
+    <string name="title_activity_activity__splash">Activity_Splash</string>
+    <string name="instant_connect">INSTANT CONNECT</string>
+    <string name="insert_cell_no">INSERT CELL NO</string>
+    <string name="title_activity_activity__mobile_varifecation">Activity_MobileVarifecation</string>
+    <string name="enter_phone_number">Mobile No.</string>
+    <string name="send_code">Send Code</string>
+    <string name="veiy_code">Verify Code</string>
+    <string name="verifecation">verifecation</string>
+    <string name="sweet">Sweet</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="skip">Skip</string>
+    <string name="please_enter_phone">Please enter phone number</string>
+    <string name="re_enter_code">Re-enter code</string>
+    <string name="you_are_verified">You\'re verified, now finish setting up your profile</string>
+    <string name="re_enter_or_request_new_code">Uh-oh, there seems to be an error, \n please re-enter the code \n or request new code</string>
+    <string name="verif_code_has_been_sent">Verifecation code has been sent to your given number, please check your inbox</string>
+    <string name="now_you_have_setup">Now you have setup your profile, \n add your payment info \n or save it for later</string>
+    <string name="title_activity_activity__verify_code">Activity_VerifyCode</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOG IN</string>
+    <string name="login_to_meet_tutor">Log in to meet your tutor</string>
+    <string name="first_last_name">First Name/Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="forgot_your_pwd">Forgot your password</string>
+    <string name="done">Done</string>
+    <string name="trusted_tab_my_trusted">My Trusted</string>
+    <string name="recommended_tab_my_trusted">Recommended</string>
+    <string name="bookmark_tab_my_trusted">BookMark</string>
+
+    <string-array name="nav_options">
+        <item>Home</item>
+        <item>Trusted Tutors</item>
+        <item>My Family</item>
+        <item>Favorite Locations</item>
+        <item>Turions</item>
+        <item>Profile</item>
+        <item>Payments</item>
+        <item>Share</item>
+        <item>Promotions</item>
+        <item>About</item>
+        <item>Become a Tutor</item>
+    </string-array>
+    <!-- Lista de iconos de navegacion -->
+    <array name="navigation_iconos">
+        <item>@drawable/ic_action_user</item>
+        <item>@drawable/ic_action_star</item>
+        <item>@drawable/ic_action_event</item>
+        <item>@drawable/ic_action_place</item>
+        <item>@drawable/ic_action_labels</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_share</item>
+        <item>@drawable/ic_action_share</item>
+        <item>@drawable/ic_action_share</item>
+        <item>@drawable/ic_action_share</item>
+        <item>@drawable/ic_action_share</item>
+    </array>
+
+    <string name="title_activity_activity__verified">Activity_Verified</string>
+
+</resources>

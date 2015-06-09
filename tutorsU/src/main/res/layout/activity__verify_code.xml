@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_MobileVarifecation" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" 
+        >
+
+        <TextView
+            style="@style/header_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verifecation" />
+
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimension_20dp"
+            android:text="@string/verif_code_has_been_sent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        >
+
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/veiy_code"
+            android:inputType="numberSigned" 
+            android:onClick="onClickEtCode"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" 
+        >
+
+        <Button
+            android:id="@+id/btnVerifyCode"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_ok"
+            android:onClick="onClickVerifyCode"
+            android:tag="ic_proceed"
+             />
+
+        <Button
+            android:id="@+id/btnResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:onClick="onClickResendCode"
+            android:text="@string/resend_code"
+            android:textColor="@color/light_green" />
+
+        <TextView
+            android:id="@+id/tvVerified"
+            style="@style/normal_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnResendCode"
+            android:layout_below="@+id/btnVerifyCode"
+			            />
+
+    </RelativeLayout>
+
+</LinearLayout>

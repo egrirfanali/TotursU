@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_signup_enabled" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_signup_enabled" android:state_selected="true"/>
+    <item android:state_checked="true" android:drawable="@drawable/ic_signup_enabled" />
+    <item android:drawable="@drawable/ic_signup_disabled"  />
+
+</selector><!-- From: file:/C:/Projects/TutorsU/tutorsU/src/main/res/drawable/selector_sign_up.xml -->
