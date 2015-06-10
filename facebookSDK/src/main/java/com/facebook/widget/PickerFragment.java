@@ -958,7 +958,7 @@ public abstract class PickerFragment<T extends GraphObject> extends Fragment {
         private String selectedId;
 
         public Collection<String> getSelectedIds() {
-            return Arrays.asList(new String[]{selectedId});
+            return Arrays.asList(selectedId);
         }
 
         @Override

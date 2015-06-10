@@ -32,7 +32,7 @@ import java.lang.ref.WeakReference;
 
 public class ToolTipPopup {
     
-    public static enum Style {
+    public enum Style {
         /**
          * The tool tip will be shown with a blue style; including a blue background and blue
          * arrows.

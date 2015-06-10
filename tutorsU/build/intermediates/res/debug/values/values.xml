@@ -340,6 +340,7 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
+    <string name="add_payment_info">Add Payment Info</string>
     <string name="add_wallpaper">add wallpaper</string>
     <string name="address">Address</string>
     <string name="app_id">890661184338374</string>
@@ -436,7 +437,6 @@
     <string name="insert_cell_no">INSERT CELL NO</string>
     <string name="instant_connect">INSTANT CONNECT</string>
     <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="invalid_username_pwd">Invalid user name and password</string>
     <string name="log_in">LOG IN</string>
     <string name="login_fb">Login with with FB</string>
@@ -466,6 +466,7 @@
     <string name="re_enter_or_request_new_code">Uh-oh, there seems to be an error, \n please re-enter the code \n or request new code</string>
     <string name="recommended_tab_my_trusted">Recommended</string>
     <string name="resend_code">Resend Code</string>
+    <string name="select_payment_method">Select the payment method \n best suited for you</string>
     <string name="send_code">Send Code</string>
     <string name="sign_up">SIGN UP</string>
     <string name="skip">Skip</string>

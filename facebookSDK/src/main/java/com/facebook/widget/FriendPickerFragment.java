@@ -234,7 +234,7 @@ public class FriendPickerFragment extends PickerFragment<GraphUser> {
         };
         adapter.setShowCheckbox(true);
         adapter.setShowPicture(getShowPictures());
-        adapter.setSortFields(Arrays.asList(new String[]{NAME}));
+        adapter.setSortFields(Arrays.asList(NAME));
         adapter.setGroupByField(NAME);
 
         return adapter;

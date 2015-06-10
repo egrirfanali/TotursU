@@ -41,6 +41,7 @@
     <string name="trusted_tab_my_trusted">My Trusted</string>
     <string name="recommended_tab_my_trusted">Recommended</string>
     <string name="bookmark_tab_my_trusted">BookMark</string>
+    <string name="add_payment_info">Add Payment Info</string>
 
     <string-array name="nav_options">
         <item>Home</item>
@@ -76,11 +77,7 @@
     <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
     <string name="start_level">Level 1</string>
     <string name="next_level">Next Level</string>
-    <!-- -
-        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
-        For more information, see https://support.google.com/admob/answer/3052638
-    <!- -->
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="title_activity_activity__payment_option">Activity_PaymentOption</string>
+
+    <string name="select_payment_method">Select the payment method \n best suited for you</string>
 
 </resources>

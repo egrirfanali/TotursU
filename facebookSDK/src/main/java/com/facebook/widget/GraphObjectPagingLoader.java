@@ -36,7 +36,7 @@ class GraphObjectPagingLoader<T extends GraphObject> extends Loader<SimpleGraphO
     private boolean loading = false;
 
     public interface OnErrorListener {
-        public void onError(FacebookException error, GraphObjectPagingLoader<?> loader);
+        void onError(FacebookException error, GraphObjectPagingLoader<?> loader);
     }
 
     public GraphObjectPagingLoader(Context context, Class<T> graphObjectClass) {

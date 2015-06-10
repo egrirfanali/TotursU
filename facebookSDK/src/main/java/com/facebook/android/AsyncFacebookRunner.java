@@ -295,21 +295,21 @@ public class AsyncFacebookRunner {
      * This interface is deprecated.  See {@link Facebook} and {@link com.facebook.Request} for more info.
      */
     @Deprecated
-    public static interface RequestListener {
+    public interface RequestListener {
 
         /**
          * Called when a request completes with the given response.
          *
          * Executed by a background thread: do not update the UI in this method.
          */
-        public void onComplete(String response, Object state);
+        void onComplete(String response, Object state);
 
         /**
          * Called when a request has a network or request error.
          *
          * Executed by a background thread: do not update the UI in this method.
          */
-        public void onIOException(IOException e, Object state);
+        void onIOException(IOException e, Object state);
 
         /**
          * Called when a request fails because the requested resource is
@@ -317,8 +317,8 @@ public class AsyncFacebookRunner {
          *
          * Executed by a background thread: do not update the UI in this method.
          */
-        public void onFileNotFoundException(FileNotFoundException e,
-                                            Object state);
+        void onFileNotFoundException(FileNotFoundException e,
+                                     Object state);
 
         /**
          * Called if an invalid graph path is provided (which may result in a
@@ -326,15 +326,15 @@ public class AsyncFacebookRunner {
          *
          * Executed by a background thread: do not update the UI in this method.
          */
-        public void onMalformedURLException(MalformedURLException e,
-                                            Object state);
+        void onMalformedURLException(MalformedURLException e,
+                                     Object state);
 
         /**
          * Called when the server-side Facebook method fails.
          *
          * Executed by a background thread: do not update the UI in this method.
          */
-        public void onFacebookError(FacebookError e, Object state);
+        void onFacebookError(FacebookError e, Object state);
 
     }
 

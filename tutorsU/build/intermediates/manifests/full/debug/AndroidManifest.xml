@@ -132,6 +132,14 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <activity
+            android:name="com.strendent.tutorsu.Activities.Activity_PaymentOption"
+            android:label="@string/add_payment_info"
+            android:parentActivityName="com.strendent.tutorsu.Activities.Activity_Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.strendent.tutorsu.Activities.Activity_Home" />
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

@@ -27,7 +27,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimension_20dp"
-            android:text="@string/now_you_have_setup" />
+            android:text="@string/now_you_have_setup"
+            />
     </LinearLayout>
 
     <RelativeLayout
@@ -47,11 +48,10 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/ic_log_proceed"
-            android:enabled="false"
             android:onClick="onClickProceed" />
 
         <Button
-            android:id="@+id/btnResendCode"
+            android:id="@+id/btnSkip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

@@ -66,7 +66,7 @@ class GraphObjectAdapter<T extends GraphObject> extends BaseAdapter implements S
     private OnErrorListener onErrorListener;
 
     public interface DataNeededListener {
-        public void onDataNeeded();
+        void onDataNeeded();
     }
 
     public interface OnErrorListener {

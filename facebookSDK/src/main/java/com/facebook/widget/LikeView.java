@@ -81,7 +81,7 @@ public class LikeView extends FrameLayout {
 
         private String stringValue;
         private int intValue;
-        private Style(String stringValue, int value) {
+        Style(String stringValue, int value) {
             this.stringValue = stringValue;
             this.intValue = value;
         }
@@ -133,7 +133,7 @@ public class LikeView extends FrameLayout {
 
         private String stringValue;
         private int intValue;
-        private HorizontalAlignment(String stringValue, int value) {
+        HorizontalAlignment(String stringValue, int value) {
             this.stringValue = stringValue;
             this.intValue = value;
         }
@@ -188,7 +188,7 @@ public class LikeView extends FrameLayout {
 
         private String stringValue;
         private int intValue;
-        private AuxiliaryViewPosition(String stringValue, int value) {
+        AuxiliaryViewPosition(String stringValue, int value) {
             this.stringValue = stringValue;
             this.intValue = value;
         }

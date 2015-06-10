@@ -57,7 +57,8 @@
             android:layout_marginLeft="@dimen/dimension_10dp"
             android:background="@drawable/selector_sign_up"
             android:button="@null"
-            android:onClick="onSignUpClick" />
+            android:onClick="onSignUpClick"
+            android:checked="false" />
 
         <RadioButton
             android:id="@+id/btnLogin"

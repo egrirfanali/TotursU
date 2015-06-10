@@ -93,25 +93,25 @@ public interface OpenGraphAction extends GraphObject {
      * Gets the time the action was created.
      * @return the creation time
      */
-    public Date getCreatedTime();
+    Date getCreatedTime();
 
     /**
      * Sets the time the action was created.
      * @param createdTime the creation time
      */
-    public void setCreatedTime(Date createdTime);
+    void setCreatedTime(Date createdTime);
 
     /**
      * Gets the time the action expires at.
      * @return the expiration time
      */
-    public Date getExpiresTime();
+    Date getExpiresTime();
 
     /**
      * Sets the time the action expires at.
      * @param expiresTime the expiration time
      */
-    public void setExpiresTime(Date expiresTime);
+    void setExpiresTime(Date expiresTime);
 
     /**
      * Gets the unique string which will be passed to the OG Action owner's website
@@ -200,13 +200,13 @@ public interface OpenGraphAction extends GraphObject {
      * Gets the 'likes' that have been performed on this action.
      * @return the likes
      */
-    public JSONObject getLikes();
+    JSONObject getLikes();
 
     /**
      * Sets the 'likes' that have been performed on this action.
      * @param likes the likes
      */
-    public void setLikes(JSONObject likes);
+    void setLikes(JSONObject likes);
 
     /**
      * Gets the application that created this action.
@@ -224,7 +224,7 @@ public interface OpenGraphAction extends GraphObject {
      * Gets the comments that have been made on this action.
      * @return the comments
      */
-    public JSONObject getComments();
+    JSONObject getComments();
 
     /**
      * Sets the comments that have been made on this action.

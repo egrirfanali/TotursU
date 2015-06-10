@@ -115,12 +115,12 @@ public class Activity_VerifyCode extends Activity {
 				public void done(Object object, ParseException e) {
 
 					if(e==null){
-						btnVerifyCode.setBackground(getResources().getDrawable(R.drawable.ic_log_confirm));
+						btnVerifyCode.setBackgroundResource(R.drawable.ic_log_confirm);
 						btnVerifyCode.setTag("ic_log_confirm");
 						tvVerified.setVisibility(View.VISIBLE);
 						tvVerified.setText(getResources().getString(R.string.you_are_verified));
 					}else{
-						btnVerifyCode.setBackground(getResources().getDrawable(R.drawable.ic_error));
+						btnVerifyCode.setBackgroundResource(R.drawable.ic_error);
 						btnVerifyCode.setTag("ic_error");
 						tvVerified.setVisibility(View.VISIBLE);
 						tvVerified.setText(getResources().getString(R.string.re_enter_or_request_new_code));

@@ -1018,7 +1018,7 @@ public class LikeActionController {
      * Used by the call to getControllerForObjectId()
      */
     public interface CreationCallback {
-        public void onComplete(LikeActionController likeActionController);
+        void onComplete(LikeActionController likeActionController);
     }
 
     /**
@@ -1290,7 +1290,7 @@ public class LikeActionController {
 
         private int minVersion;
 
-        private LikeDialogFeature(int minVersion) {
+        LikeDialogFeature(int minVersion) {
             this.minVersion = minVersion;
         }
 

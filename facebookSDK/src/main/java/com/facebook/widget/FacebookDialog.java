@@ -127,7 +127,7 @@ public class FacebookDialog {
 
         private int minVersion;
 
-        private ShareDialogFeature(int minVersion) {
+        ShareDialogFeature(int minVersion) {
             this.minVersion = minVersion;
         }
 
@@ -169,7 +169,7 @@ public class FacebookDialog {
 
         private int minVersion;
 
-        private MessageDialogFeature(int minVersion) {
+        MessageDialogFeature(int minVersion) {
             this.minVersion = minVersion;
         }
 
@@ -207,7 +207,7 @@ public class FacebookDialog {
 
         private int minVersion;
 
-        private OpenGraphActionDialogFeature(int minVersion) {
+        OpenGraphActionDialogFeature(int minVersion) {
             this.minVersion = minVersion;
         }
 
@@ -244,7 +244,7 @@ public class FacebookDialog {
 
         private int minVersion;
 
-        private OpenGraphMessageDialogFeature(int minVersion) {
+        OpenGraphMessageDialogFeature(int minVersion) {
             this.minVersion = minVersion;
         }
 

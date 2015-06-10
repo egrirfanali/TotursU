@@ -1416,10 +1416,7 @@ public class Session implements Serializable {
 
     private boolean resolveIntent(Intent intent) {
         ResolveInfo resolveInfo = getStaticContext().getPackageManager().resolveActivity(intent, 0);
-        if (resolveInfo == null) {
-            return false;
-        }
-        return true;
+        return resolveInfo != null;
     }
 
     private Intent getLoginActivityIntent(AuthorizationRequest request) {
@@ -1741,7 +1738,7 @@ public class Session implements Serializable {
      * @see Session#open open
      */
     public interface StatusCallback {
-        public void call(Session session, SessionState state, Exception exception);
+        void call(Session session, SessionState state, Exception exception);
     }
 
     @Override
@@ -1820,9 +1817,9 @@ public class Session implements Serializable {
     }
 
     interface StartActivityDelegate {
-        public void startActivityForResult(Intent intent, int requestCode);
+        void startActivityForResult(Intent intent, int requestCode);
 
-        public Activity getActivityContext();
+        Activity getActivityContext();
     }
 
     @SuppressWarnings("deprecation")

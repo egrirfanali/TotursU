@@ -62,7 +62,7 @@ public class Fragment_SignUp extends Fragment {
 		            
 		        	if(edtEmail.getText().toString().length()>0 && edtPassword.getText().toString().length()>0){
 		        		
-		        		imageViewProceed.setImageDrawable(getResources().getDrawable(R.drawable.ic_next_enabled));
+		        		imageViewProceed.setImageResource(R.drawable.ic_next_enabled);
 		        		
 		        	}
 		        	

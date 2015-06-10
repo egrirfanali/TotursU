@@ -59,7 +59,7 @@ import java.util.List;
  */
 public class LoginButton extends Button {
     
-    public static enum ToolTipMode {
+    public enum ToolTipMode {
         /**
          * Default display mode. A server query will determine if the tool tip should be displayed
          * and, if so, what the string shown to the user should be.
@@ -99,7 +99,7 @@ public class LoginButton extends Button {
 
     static class LoginButtonProperties {
         private SessionDefaultAudience defaultAudience = SessionDefaultAudience.FRIENDS;
-        private List<String> permissions = Collections.<String>emptyList();
+        private List<String> permissions = Collections.emptyList();
         private SessionAuthorizationType authorizationType = null;
         private OnErrorListener onErrorListener;
         private SessionLoginBehavior loginBehavior = SessionLoginBehavior.SSO_WITH_FALLBACK;
@@ -887,7 +887,7 @@ public class LoginButton extends Button {
                 handleError(exception);
             }
         }
-    };
+    }
 
     void handleError(Exception exception) {
         if (properties.onErrorListener != null) {

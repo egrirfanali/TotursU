@@ -28,5 +28,5 @@ public interface GraphMultiResult extends GraphObject {
      * Provides access to the GraphObjects that make up the result set.
      * @return a list of GraphObjects
      */
-    public GraphObjectList<GraphObject> getData();
+    GraphObjectList<GraphObject> getData();
 }

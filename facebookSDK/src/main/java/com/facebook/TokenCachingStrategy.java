@@ -136,11 +136,8 @@ public abstract class TokenCachingStrategy {
         }
 
         long expiresMilliseconds = bundle.getLong(EXPIRATION_DATE_KEY, 0L);
-        if (expiresMilliseconds == 0L) {
-            return false;
-        }
+        return expiresMilliseconds != 0L;
 
-        return true;
     }
 
     /**

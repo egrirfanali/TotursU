@@ -1,8 +1,16 @@
 package com.strendent.tutorsu.Activities;
 
-import java.util.ArrayList;
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Resources.NotFoundException;
+import android.content.res.TypedArray;
+import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
 
-import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.Adapters.Adpater_DrawerAdapter;
 import com.strendent.tutorsu.FragmentMian.Fragment_About;
 import com.strendent.tutorsu.FragmentMian.Fragment_Become_A_Tutor;
@@ -15,18 +23,9 @@ import com.strendent.tutorsu.FragmentMian.Fragment_Share;
 import com.strendent.tutorsu.FragmentMian.Fragment_TrustedTutors;
 import com.strendent.tutorsu.FragmentMian.Fragment_Tutions;
 import com.strendent.tutorsu.Models.Model_Drawer_Items;
+import com.strendent.tutorsu.R;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.res.TypedArray;
-import android.content.res.Resources.NotFoundException;
-import android.os.Bundle;
-import android.support.v4.widget.DrawerLayout;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.Toast;
+import java.util.ArrayList;
 
 public class Activity_Home extends Activity {
 	private String[] titles;

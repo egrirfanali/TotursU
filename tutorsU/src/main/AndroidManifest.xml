@@ -12,12 +12,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+
 
     <application
         android:name=".TutorsUApplication"
@@ -128,7 +123,7 @@
 
         <activity
             android:name=".Activities.Activity_PaymentOption"
-            android:label="@string/title_activity_activity__payment_option"
+            android:label="@string/add_payment_info"
             android:parentActivityName=".Activities.Activity_Home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -65,7 +65,7 @@ public final class Util {
             }
 
             sb.append("Content-Disposition: form-data; name=\"" + key +
-                    "\"\r\n\r\n" + (String)parameter);
+                    "\"\r\n\r\n" + parameter);
             sb.append("\r\n" + "--" + boundary + "\r\n");
         }
 
@@ -152,7 +152,7 @@ public final class Util {
      */
     @Deprecated
     public static String openUrl(String url, String method, Bundle params)
-          throws MalformedURLException, IOException {
+          throws IOException {
         // random string as boundary for multi-part http post
         String strBoundary = "3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f";
         String endLine = "\r\n";

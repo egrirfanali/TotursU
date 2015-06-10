@@ -215,7 +215,7 @@ public class SharedPreferencesTokenCachingStrategy extends TokenCachingStrategy 
             json.put(JSON_VALUE, value.toString());
         } else if (value instanceof String) {
             supportedType = TYPE_STRING;
-            json.put(JSON_VALUE, (String)value);
+            json.put(JSON_VALUE, value);
         } else if (value instanceof Enum<?>) {
             supportedType = TYPE_ENUM;
             json.put(JSON_VALUE, value.toString());

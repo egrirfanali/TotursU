@@ -638,11 +638,11 @@ public class Facebook {
      *         ("true" if successful)
      */
     @Deprecated
-    public String logout(Context context) throws MalformedURLException, IOException {
+    public String logout(Context context) throws IOException {
         return logoutImpl(context);
     }
 
-    String logoutImpl(Context context) throws MalformedURLException, IOException  {
+    String logoutImpl(Context context) throws IOException  {
         checkUserSession("logout");
         Bundle b = new Bundle();
         b.putString("method", "auth.expireSession");
@@ -698,7 +698,7 @@ public class Facebook {
      * @return JSON string representation of the response
      */
     @Deprecated
-    public String request(Bundle parameters) throws MalformedURLException, IOException {
+    public String request(Bundle parameters) throws IOException {
         if (!parameters.containsKey("method")) {
             throw new IllegalArgumentException("API method must be specified. "
                     + "(parameters must contain key \"method\" and value). See"
@@ -726,7 +726,7 @@ public class Facebook {
      * @return JSON string representation of the response
      */
     @Deprecated
-    public String request(String graphPath) throws MalformedURLException, IOException {
+    public String request(String graphPath) throws IOException {
         return requestImpl(graphPath, new Bundle(), "GET");
     }
 
@@ -755,7 +755,7 @@ public class Facebook {
      * @return JSON string representation of the response
      */
     @Deprecated
-    public String request(String graphPath, Bundle parameters) throws MalformedURLException, IOException {
+    public String request(String graphPath, Bundle parameters) throws IOException {
         return requestImpl(graphPath, parameters, "GET");
     }
 
@@ -787,15 +787,15 @@ public class Facebook {
      * @return JSON string representation of the response
      */
     @Deprecated
-    public String request(String graphPath, Bundle params, String httpMethod) throws FileNotFoundException,
-            MalformedURLException, IOException {
+    public String request(String graphPath, Bundle params, String httpMethod) throws
+            IOException {
         return requestImpl(graphPath, params, httpMethod);
     }
 
     // Internal call to avoid deprecated warnings.
     @SuppressWarnings("deprecation")
-    String requestImpl(String graphPath, Bundle params, String httpMethod) throws FileNotFoundException,
-            MalformedURLException, IOException {
+    String requestImpl(String graphPath, Bundle params, String httpMethod) throws
+            IOException {
         params.putString("format", "json");
         if (isSessionValid()) {
             params.putString(TOKEN, getAccessToken());
@@ -941,7 +941,7 @@ public class Facebook {
             } else if (pendingAuthorizationPermissions != null) {
                 permissions = Arrays.asList(pendingAuthorizationPermissions);
             } else {
-                permissions = Collections.<String>emptyList();
+                permissions = Collections.emptyList();
             }
 
             Session newSession = new Session.Builder(pendingAuthorizationActivity).
@@ -1238,7 +1238,7 @@ public class Facebook {
      *
      * @devDocDeprecated
      */
-    public static interface DialogListener {
+    public interface DialogListener {
 
         /**
          * Called when a dialog completes.
@@ -1248,7 +1248,7 @@ public class Facebook {
          * @param values
          *            Key-value string pairs extracted from the response.
          */
-        public void onComplete(Bundle values);
+        void onComplete(Bundle values);
 
         /**
          * Called when a Facebook responds to a dialog with an error.
@@ -1256,7 +1256,7 @@ public class Facebook {
          * Executed by the thread that initiated the dialog.
          * 
          */
-        public void onFacebookError(FacebookError e);
+        void onFacebookError(FacebookError e);
 
         /**
          * Called when a dialog has an error.
@@ -1264,7 +1264,7 @@ public class Facebook {
          * Executed by the thread that initiated the dialog.
          * 
          */
-        public void onError(DialogError e);
+        void onError(DialogError e);
 
         /**
          * Called when a dialog is canceled by the user.
@@ -1272,7 +1272,7 @@ public class Facebook {
          * Executed by the thread that initiated the dialog.
          * 
          */
-        public void onCancel();
+        void onCancel();
 
     }
 
@@ -1291,7 +1291,7 @@ public class Facebook {
      *
      * @devDocDeprecated
      */
-    public static interface ServiceListener {
+    public interface ServiceListener {
 
         /**
          * Called when a service request completes.
@@ -1299,17 +1299,17 @@ public class Facebook {
          * @param values
          *            Key-value string pairs extracted from the response.
          */
-        public void onComplete(Bundle values);
+        void onComplete(Bundle values);
 
         /**
          * Called when a Facebook server responds to the request with an error.
          */
-        public void onFacebookError(FacebookError e);
+        void onFacebookError(FacebookError e);
 
         /**
          * Called when a Facebook Service responds to the request with an error.
          */
-        public void onError(Error e);
+        void onError(Error e);
 
     }
 
