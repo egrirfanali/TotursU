@@ -1,13 +1,20 @@
+import com.android.build.gradle.internal.dsl.ProductFlavor
+
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
 
+    final def config = defaultConfig {
+        applicationId "com.strendent.tutorsu"
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
     defaultConfig {
         applicationId "com.strendent.tutorsu"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 22
     }
 
     buildTypes {
@@ -20,7 +27,8 @@ android {
 
 dependencies {
     compile project(':facebookSDK')
-    compile 'com.google.android.gms:play-services:+'
     compile files('libs/android-smart-image-view-1.0.0.jar')
     compile files('libs/Parse-1.7.1.jar')
+    compile 'com.google.android.gms:play-services:7.5.0'
+
 }

@@ -6,4 +6,4 @@
     <!-- When not selected, use white-->
     <item android:drawable="@drawable/songs_white" />
 </selector>
-<!-- From: file:/C:/Projects/TutorsU/tutorsU/src/main/res/drawable/selector_recommended_tab_icon.xml -->
+<!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/drawable/selector_recommended_tab_icon.xml -->

@@ -6,4 +6,4 @@
         <item android:state_checked="true" android:drawable="@drawable/ic_login_enbled" />
     <item android:drawable="@drawable/ic_login_disabled"/>
 
-</selector><!-- From: file:/C:/Projects/TutorsU/tutorsU/src/main/res/drawable/selector_login.xml -->
+</selector><!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/drawable/selector_login.xml -->
