@@ -352,6 +352,7 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="bookmark_tab_my_trusted">BookMark</string>
+    <string name="card_no">Card No.</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
@@ -1821,6 +1822,13 @@
     </style>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
+    <style name="common_layout">
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginLeft">@dimen/dimension_05dp</item>
+    <item name="android:layout_marginRight">@dimen/dimension_05dp</item>
+    <item name="android:layout_marginTop">@dimen/dimension_15dp</item>
+
+</style>
     <style name="header_text">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textStyle">bold</item>

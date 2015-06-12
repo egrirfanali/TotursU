@@ -46,7 +46,8 @@
             android:background="@drawable/selector_card"
             android:layout_gravity="center_horizontal"
             android:clickable="true"
-            android:checked="false" />
+            android:checked="false"
+            android:onClick="onClickCard"/>
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -57,7 +58,8 @@
             android:background="@drawable/selector_paypal"
             android:button="@null"
             android:layout_marginTop="@dimen/dimension_20dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickPayPal"/>
     </RadioGroup>
 
     <Button

@@ -1,8 +1,5 @@
 package com.strendent.tutorsu.Activities;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -22,6 +19,9 @@ import com.parse.FunctionCallback;
 import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.strendent.tutorsu.R;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Activity_VerifyCode extends Activity {
 

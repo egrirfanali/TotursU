@@ -1,6 +1,5 @@
 package com.strendent.tutorsu.Utilities;
 
-import android.content.Context;
 import android.view.View;
 import android.widget.EditText;
 
@@ -19,5 +18,4 @@ public class Validator {
 		return false;
 
 	}
-
 }

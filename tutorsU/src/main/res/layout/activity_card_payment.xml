@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/dimension_10dp"
+     >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_visa_page" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/ic_card_text"
+        style="@style/common_layout"
+        >
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageViewCardType"
+        android:src="@drawable/ic_placeholder" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_marginLeft="@dimen/dimension_05dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCardCredent"
+        android:inputType="phone"
+        android:maxLength="19"
+
+        android:textStyle="bold"
+
+        android:hint="@string/card_no" />
+        </LinearLayout>
+</LinearLayout>

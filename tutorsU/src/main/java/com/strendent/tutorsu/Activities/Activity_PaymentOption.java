@@ -2,7 +2,6 @@ package com.strendent.tutorsu.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +21,17 @@ public class Activity_PaymentOption extends Activity {
         Intent intent=new Intent(getApplicationContext(), Activity_Home.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    public void onClickCard(View view){
+        Intent intent=new Intent(getApplicationContext(), Activity_CardPayment.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+    public void onClickPayPal(View view){
+//        Intent intent=new Intent(getApplicationContext(), Activity_Home.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        startActivity(intent);
     }
 
     @Override
