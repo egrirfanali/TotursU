@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_marginTop="@dimen/dimension_10dp"
-     >
+    android:gravity="center"
+    android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
         android:src="@drawable/ic_visa_page" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:orientation="horizontal"
         android:background="@drawable/ic_card_text"
-        style="@style/common_layout"
+        android:layout_margin="@dimen/dimension_10dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutPaymentDet"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimension_05dp"
+        android:paddingRight="@dimen/dimension_05dp"
         >
-    <ImageView
-        android:layout_width="64dp"
-        android:layout_height="40dp"
-        android:id="@+id/imageViewCardType"
-        android:src="@drawable/ic_placeholder" />
 
-    <EditText
-        android:layout_width="0dp"
-        android:layout_weight="6"
-        android:layout_marginLeft="@dimen/dimension_05dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/edtCardCredent"
-        android:inputType="phone"
-        android:maxLength="19"
+        <ImageView
+            android:id="@+id/imageViewCardType"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:gravity="left"
+            android:src="@drawable/ic_placeholder"
+             />
 
-        android:textStyle="bold"
 
-        android:hint="@string/card_no" />
-        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edtCardCredent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimension_05dp"
+            android:layout_weight="6"
+            android:hint="@string/card_no"
+            android:inputType="phone"
+            android:maxLength="19"
+            android:background="@null"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
 </LinearLayout>

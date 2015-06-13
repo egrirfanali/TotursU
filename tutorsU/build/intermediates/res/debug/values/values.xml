@@ -352,6 +352,7 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="bookmark_tab_my_trusted">BookMark</string>
+    <string name="cardNumber">Card Number</string>
     <string name="card_no">Card No.</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_strings.xml -->
     <eat-comment/>
@@ -426,6 +427,11 @@
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="cvc">CVC</string>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <eat-comment/>
     <string name="decline">Decline</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
@@ -443,6 +449,7 @@
     <string name="login_fb">Login with with FB</string>
     <string name="login_phone_number">Login with Phote No.</string>
     <string name="login_to_meet_tutor">Log in to meet your tutor</string>
+    <string name="month_year">MM/YY</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="mr_media_route_button_content_description">Cast</string>
@@ -463,10 +470,12 @@
     <string name="phone">Phone</string>
     <string name="please_enter_phone">Please enter phone number</string>
     <string name="please_reqiured_fields">Please enter the reqiured fields</string>
+    <string name="progressMessage">Creating Token…</string>
     <string name="re_enter_code">Re-enter code</string>
     <string name="re_enter_or_request_new_code">Uh-oh, there seems to be an error, \n please re-enter the code \n or request new code</string>
     <string name="recommended_tab_my_trusted">Recommended</string>
     <string name="resend_code">Resend Code</string>
+    <string name="save">Save</string>
     <string name="select_payment_method">Select the payment method \n best suited for you</string>
     <string name="send_code">Send Code</string>
     <string name="sign_up">SIGN UP</string>
@@ -485,6 +494,7 @@
     <string name="title_activity_activity__verify_code">Activity_VerifyCode</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="trusted_tab_my_trusted">My Trusted</string>
+    <string name="validationErrors">Validation Errors</string>
     <string name="veiy_code">Verify Code</string>
     <string name="verif_code_has_been_sent">Verifecation code has been sent to your given number, please check your inbox</string>
     <string name="verifecation">verifecation</string>

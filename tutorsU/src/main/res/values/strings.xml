@@ -42,6 +42,14 @@
     <string name="recommended_tab_my_trusted">Recommended</string>
     <string name="bookmark_tab_my_trusted">BookMark</string>
     <string name="add_payment_info">Add Payment Info</string>
+    <string name="month_year">MM/YY</string>
+    <string name="cvc">CVC</string>
+
+    <string name="progressMessage">Creating Token&#8230;</string>
+    <string name="validationErrors">Validation Errors</string>
+
+    <string name="cardNumber">Card Number</string>
+    <string name="save">Save</string>
 
     <string-array name="nav_options">
         <item>Home</item>
