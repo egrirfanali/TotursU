@@ -1,26 +1,21 @@
 package com.strendent.tutorsu.Activities;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.app.Activity;
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -40,7 +35,13 @@ import com.parse.ParseUser;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.TutorsUApplication;
 
-public class Activity_SignUp extends Activity {
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Activity_SignUp extends ActionBarActivity {
 
 	private static final int RESULT_LOAD_IMAGE = 1;
 	private static final int RESULT_WALLPAPER_IMAGE=2;
@@ -59,6 +60,7 @@ public class Activity_SignUp extends Activity {
 	private EditText edtPhoneNo;
 	private EditText edtAddress;
 	private ImageButton imageButtonAddress;
+	private Toolbar mToolbar;
 
 
 	@Override
@@ -67,6 +69,11 @@ public class Activity_SignUp extends Activity {
 
 		
 		setContentView(R.layout.activity_profile);
+
+		mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
+		setSupportActionBar(mToolbar);
+
 		initViews();
 
 		Intent intent=getIntent();
@@ -178,22 +185,6 @@ public class Activity_SignUp extends Activity {
 		request.executeAsync();
 	}
 
-	
-//	@Override
-//	public void onResume() {
-//		super.onResume();
-//
-//		ParseUser currentUser = ParseUser.getCurrentUser();
-//		if (currentUser != null) {
-//			// Check if the user is currently logged
-//			// and show any cached content
-//			updateViewsWithProfileInfo();
-//		} else {
-//			// If the user is not logged in, go to the
-//			// activity showing the login view.
-//			startLoginActivity();
-//		}
-//	}
 	private void logout() {
 		// Log the user out
 		ParseUser.logOut();
@@ -276,11 +267,30 @@ public class Activity_SignUp extends Activity {
 				imageViewProfile.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 			}else if(requestCode == RESULT_WALLPAPER_IMAGE){
 				tvAddWallpaper.setVisibility(View.INVISIBLE);
-				relLayoutWallpaper.setBackground(new BitmapDrawable(getResources(),BitmapFactory.decodeFile(picturePath)));
+				Bitmap bitmap=new BitmapDrawable(getResources(), BitmapFactory.decodeFile(picturePath)).getBitmap();
+				if (android.os.Build.VERSION.SDK_INT >= 16){
+
+					setBackgroundV16Plus(relLayoutWallpaper, bitmap);
+				}
+				else{
+					setBackgroundV16Minus(relLayoutWallpaper, bitmap);
+				}
+
 			}
 		}
 	}
 
+
+	//Used for deppricated method
+	@TargetApi(16)
+	private void setBackgroundV16Plus(View view, Bitmap bitmap) {
+		view.setBackground(new BitmapDrawable(getResources(), bitmap));
+
+	}
+	@SuppressWarnings("deprecation")
+	private void setBackgroundV16Minus(View view, Bitmap bitmap) {
+		view.setBackgroundDrawable(new BitmapDrawable(bitmap));
+	}
 
 	private void updateViewsWithProfileInfo() {
 		ParseUser currentUser = ParseUser.getCurrentUser();

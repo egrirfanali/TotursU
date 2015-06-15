@@ -26,7 +26,8 @@ public class FragmentInner_Tutions_History extends Fragment {
 			textview.setText("BookMark");
 
 		} else {
-			((ViewGroup) mView.getParent()).removeView(mView);
+			mView=null;
+		//	((ViewGroup) mView.getParent()).removeView(mView);
 		}
 
 		return mView;

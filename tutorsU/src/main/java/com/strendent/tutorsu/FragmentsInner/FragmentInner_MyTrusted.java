@@ -22,12 +22,13 @@ public class FragmentInner_MyTrusted extends Fragment {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 			if(mView == null){
-				mView = inflater.inflate(R.layout.fragment_demo, container, false);
-				TextView textview=(TextView) mView.findViewById(R.id.name);
+				mView = inflater.inflate(R.layout.fragment_inner_my_trusted_row_item, container, false);
+				/*TextView textview=(TextView) mView.findViewById(R.id.name);
 				textview.setText("My Trusted");
-
+*/
 			}else{
-				((ViewGroup) mView.getParent()).removeView(mView);
+				mView=null;
+			//	((ViewGroup) mView.getParent()).removeView(mView);
 			}
 
 			return mView;

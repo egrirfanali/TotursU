@@ -2,12 +2,17 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
     <string-array name="nav_options">
         <item>Home</item>
         <item>Trusted Tutors</item>
         <item>My Family</item>
         <item>Favorite Locations</item>
-        <item>Turions</item>
+        <item>Tutions</item>
         <item>Profile</item>
         <item>Payments</item>
         <item>Share</item>
@@ -69,6 +74,11 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="colorAccent">#FF80AB</color>
+    <color name="colorPrimary">#F50057</color>
+    <color name="colorPrimaryDark">#61F71B</color>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="com_facebook_blue">#3B5998</color>
@@ -100,6 +110,12 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="drawerOptionColor">#272626</color>
+    <color name="headerColor">#272626</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -116,6 +132,11 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="navigationBarColor">#000000</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
     <color name="primary_material_dark">#ff212121</color>
@@ -132,6 +153,10 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="textColorPrimary">#272626</color>
+    <color name="topMenuIconColor">#37AF4A</color>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_colors.xml -->
     <eat-comment/>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
@@ -147,6 +172,9 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="windowBackground">#FFFFFF</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
@@ -273,7 +301,9 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="dimension_05dp">05dp</dimen>
+    <dimen name="dimension_0dp">0dp</dimen>
     <dimen name="dimension_10dp">10dp</dimen>
+    <dimen name="dimension_12dp">12dp</dimen>
     <dimen name="dimension_15dp">15dp</dimen>
     <dimen name="dimension_20dp">20dp</dimen>
     <dimen name="dimension_25dp">25dp</dimen>
@@ -281,6 +311,7 @@
     <dimen name="dimension_35dp">35dp</dimen>
     <dimen name="dimension_40dp">40dp</dimen>
     <dimen name="dimension_45dp">45dp</dimen>
+    <dimen name="dimension_48dp">48dp</dimen>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
@@ -291,6 +322,9 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="nav_drawer_width">260dp</dimen>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <drawable name="com_facebook_picker_default_separator_color">#33464c59</drawable>
@@ -334,11 +368,15 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="about_title">About Application</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="accessibility_overflow">describtion</string>
     <string name="action_settings">Settings</string>
     <string name="add_payment_info">Add Payment Info</string>
     <string name="add_wallpaper">add wallpaper</string>
@@ -351,6 +389,7 @@
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="become_a_tutor_title">Become A Tutor</string>
     <string name="bookmark_tab_my_trusted">BookMark</string>
     <string name="cardNumber">Card Number</string>
     <string name="card_no">Card No.</string>
@@ -436,8 +475,11 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="done">Done</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
     <string name="email">Email</string>
     <string name="enter_phone_number">Mobile No.</string>
+    <string name="favorite_locations_title">Favorite Locations</string>
     <string name="first_last_name">First Name/Last Name</string>
     <string name="forgot_your_pwd">Forgot your password</string>
     <string name="hello_world">Hello world!</string>
@@ -464,13 +506,20 @@
     <string name="mr_user_route_category_name">Devices</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="my_family_title">My Family</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_notifications">Messages</string>
     <string name="next_level">Next Level</string>
     <string name="now_you_have_setup">Now you have setup your profile, \n add your payment info \n or save it for later</string>
     <string name="password">Password</string>
+    <string name="payments_title">Payments History</string>
     <string name="phone">Phone</string>
     <string name="please_enter_phone">Please enter phone number</string>
     <string name="please_reqiured_fields">Please enter the reqiured fields</string>
+    <string name="profile_title">Create Profile</string>
     <string name="progressMessage">Creating Token…</string>
+    <string name="promotions_title">Promotions</string>
     <string name="re_enter_code">Re-enter code</string>
     <string name="re_enter_or_request_new_code">Uh-oh, there seems to be an error, \n please re-enter the code \n or request new code</string>
     <string name="recommended_tab_my_trusted">Recommended</string>
@@ -478,6 +527,7 @@
     <string name="save">Save</string>
     <string name="select_payment_method">Select the payment method \n best suited for you</string>
     <string name="send_code">Send Code</string>
+    <string name="share_title">Share</string>
     <string name="sign_up">SIGN UP</string>
     <string name="skip">Skip</string>
     <string name="start_level">Level 1</string>
@@ -493,7 +543,9 @@
     <string name="title_activity_activity__verified">Activity_Verified</string>
     <string name="title_activity_activity__verify_code">Activity_VerifyCode</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="trested_tutors_title">Tutors</string>
     <string name="trusted_tab_my_trusted">My Trusted</string>
+    <string name="tutions_title">Tutions</string>
     <string name="validationErrors">Validation Errors</string>
     <string name="veiy_code">Verify Code</string>
     <string name="verif_code_has_been_sent">Verifecation code has been sent to your given number, please check your inbox</string>
@@ -1375,6 +1427,27 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="GalaxyZooThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="actionMenuTextColor">@color/headerColor</item>
+        <item name="android:textColorSecondary">@color/topMenuIconColor</item>
+    </style>
+    <style name="MyApplicationTheme" parent="MyMaterialTheme.Base"/>
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 
@@ -1705,6 +1778,12 @@
         <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:contentDescription">@string/accessibility_overflow</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
     </style>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>

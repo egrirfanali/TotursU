@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/drawerOptionColor">
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@color/headerColor">
+
+        <ImageView
+            android:id="@+id/imageView_profile_pic"
+            android:layout_width="@dimen/dimension_45dp"
+            android:layout_height="@dimen/dimension_45dp"
+            android:layout_margin="@dimen/dimension_05dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimension_10dp"
+            android:layout_toRightOf="@+id/imageView_profile_pic"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimension_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_menu_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/imageView_profile_pic"
+            android:background="@color/navigationBarColor"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimension_15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimension_45dp"/>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>
+

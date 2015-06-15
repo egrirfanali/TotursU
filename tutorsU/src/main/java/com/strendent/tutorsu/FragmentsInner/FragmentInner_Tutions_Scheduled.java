@@ -27,7 +27,7 @@ public class FragmentInner_Tutions_Scheduled extends Fragment {
 			textview.setText("Scheduled Tutions");
 
 		}else{
-			((ViewGroup) mView.getParent()).removeView(mView);
+			mView=null;
 		}
 
 		return mView;

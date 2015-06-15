@@ -21,12 +21,12 @@ public class FragmentInner_Recommended extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 		if (mView == null) {
-			mView = inflater.inflate(R.layout.fragment_demo, container, false);
+			mView = inflater.inflate(R.layout.fragment_demo_three, container, false);
 			TextView textview=(TextView) mView.findViewById(R.id.name);
 			textview.setText("Recommended");
 
 		} else {
-			((ViewGroup) mView.getParent()).removeView(mView);
+			mView=null;
 		}
 
 		return mView;

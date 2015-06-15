@@ -4,17 +4,29 @@ package com.strendent.tutorsu.FragmentMian;
 import com.strendent.tutorsu.R;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class Fragment_Profile extends FragmentActivity {
-	
+public class Fragment_Profile extends Fragment {
 
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.fragment_demo);
 
-	//	setContentView(R.layout.);
-	//	mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator("Tab1").setIndicator("My Trusted", R.drawable.btn_default), FragmentInner_MyTrusted.class, null);
+	public Fragment_Profile() {
+		// Required empty public constructor
 	}
 
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+							 Bundle savedInstanceState) {
+		// Inflate the layout for this fragment
+		return inflater.inflate(R.layout.fragment_demo, container, false);
+	}
 }

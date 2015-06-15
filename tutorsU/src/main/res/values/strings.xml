@@ -51,12 +51,44 @@
     <string name="cardNumber">Card Number</string>
     <string name="save">Save</string>
 
+    <string name="title_activity_activity__verified">Activity_Verified</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+
+    <string name="select_payment_method">Select the payment method \n best suited for you</string>
+    <string name="card_no">Card No.</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="accessibility_overflow">describtion</string>
+    <string name="drawer_close">Close</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+    <string name="trested_tutors_title">Tutors</string>
+    <string name="my_family_title">My Family</string>
+    <string name="favorite_locations_title">Favorite Locations</string>
+    <string name="tutions_title">Tutions</string>
+    <string name="profile_title">Create Profile</string>
+    <string name="payments_title">Payments History</string>
+    <string name="share_title">Share</string>
+    <string name="promotions_title">Promotions</string>
+    <string name="about_title">About Application</string>
+    <string name="become_a_tutor_title">Become A Tutor</string>
     <string-array name="nav_options">
         <item>Home</item>
         <item>Trusted Tutors</item>
         <item>My Family</item>
         <item>Favorite Locations</item>
-        <item>Turions</item>
+        <item>Tutions</item>
         <item>Profile</item>
         <item>Payments</item>
         <item>Share</item>
@@ -78,15 +110,7 @@
         <item>@drawable/ic_action_share</item>
         <item>@drawable/ic_action_share</item>
     </array>
+    <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
 
-    <string name="title_activity_activity__verified">Activity_Verified</string>
-    <string name="title_activity_main">MainActivity</string>
-
-    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
-    <string name="start_level">Level 1</string>
-    <string name="next_level">Next Level</string>
-
-    <string name="select_payment_method">Select the payment method \n best suited for you</string>
-    <string name="card_no">Card No.</string>
 
 </resources>
