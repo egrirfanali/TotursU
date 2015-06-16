@@ -112,6 +112,7 @@
         <item>@drawable/ic_action_share</item>
     </array>
     <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
+    <string name="title_activity_activity__add__information">Activity_Add_Information</string>
 
 
 </resources>
