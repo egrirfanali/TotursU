@@ -68,6 +68,7 @@ public class Fragment_FavouriteLocations extends Fragment {
         //noinspection SimplifiableIfStatement
         if (id == R.id.edit_button) {
             Toast.makeText(getActivity(), "Button clicked", Toast.LENGTH_LONG).show();
+
             return true;
         }
 //
