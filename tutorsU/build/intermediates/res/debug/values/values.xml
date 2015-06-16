@@ -475,6 +475,7 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="done">Done</string>
+    <string name="dotted_card_numbr">•••• •••• •••• </string>
     <string name="drawer_close">Close</string>
     <string name="drawer_open">Open</string>
     <string name="email">Email</string>
@@ -517,6 +518,7 @@
     <string name="phone">Phone</string>
     <string name="please_enter_phone">Please enter phone number</string>
     <string name="please_reqiured_fields">Please enter the reqiured fields</string>
+    <string name="primary_card">Primary Card</string>
     <string name="profile_title">Create Profile</string>
     <string name="progressMessage">Creating Token…</string>
     <string name="promotions_title">Promotions</string>
@@ -539,6 +541,7 @@
     <eat-comment/>
     <string name="sweet">Sweet</string>
     <string name="title_activity_activity__mobile_varifecation">Activity_MobileVarifecation</string>
+    <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
     <string name="title_activity_activity__splash">Activity_Splash</string>
     <string name="title_activity_activity__verified">Activity_Verified</string>
     <string name="title_activity_activity__verify_code">Activity_VerifyCode</string>

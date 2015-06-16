@@ -60,7 +60,8 @@
 
     <string name="select_payment_method">Select the payment method \n best suited for you</string>
     <string name="card_no">Card No.</string>
-
+    <string name="dotted_card_numbr">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; </string>
+    <string name="primary_card">Primary Card</string>
     <string name="drawer_open">Open</string>
     <string name="accessibility_overflow">describtion</string>
     <string name="drawer_close">Close</string>

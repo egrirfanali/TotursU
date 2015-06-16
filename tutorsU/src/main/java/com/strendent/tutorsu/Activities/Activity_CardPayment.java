@@ -1,7 +1,11 @@
 package com.strendent.tutorsu.Activities;
 
 import android.animation.LayoutTransition;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.text.Editable;
@@ -207,10 +211,10 @@ public class Activity_CardPayment extends FragmentActivity {
 
     }
 
-
+    Card card;
     public void saveCreditCard(String cardNo,String expMonth,String expYear,String cvc) {
 
-        Card card = new Card(cardNo,Integer.parseInt(expMonth),Integer.parseInt(expYear),cvc);
+        card = new Card(cardNo,Integer.parseInt(expMonth),Integer.parseInt(expYear),cvc);
 
         boolean validation = card.validateCard();
         if (validation) {
@@ -223,6 +227,35 @@ public class Activity_CardPayment extends FragmentActivity {
 //                            getTokenList().addToList(token);
                             Toast.makeText(getApplicationContext(),token.getId(),Toast.LENGTH_LONG).show();
                             finishProgress();
+//                            ParseObject paymentParseObject=new ParseObject("PAYMENT_CARD");
+//                            paymentParseObject.add("TOKEN_ID",token.getId());
+//                            paymentParseObject.add("CARD",token.getCard());
+//                            paymentParseObject.add("CREATED_DATED",token.getCreated());
+//                            paymentParseObject.add("CARD_NUMBER", card.getNumber());
+//                            paymentParseObject.add("ASSOCIATED_USER", ParseUser.getCurrentUser());
+//                            paymentParseObject.add("CARD_TYPE","");
+//                            paymentParseObject.saveEventually();
+
+//                            PaymentItem
+
+                            Drawable drawable = imageViewCardType.getDrawable();
+                            Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+
+                            Bundle newBundle = new Bundle();
+                            newBundle.putString("CARD_NUMNER", edtCardCredent.getText().toString());
+                            newBundle.putBoolean("IS_PRIMARY", true);
+                            //Trying to pass a drawable from one activity to another
+                            newBundle.putParcelable("BITMAP", bitmap);
+
+
+
+//                            PaymentItem paymentItem = new PaymentItem(imageViewCardType.get, edtCardCredent.getText().toString(),true);
+
+                            Intent intentActivityPaymentLi=new Intent(getApplicationContext(),Activity_PaymentCardList.class);
+                            intentActivityPaymentLi.putExtras(newBundle);
+                            startActivity(intentActivityPaymentLi);
+
+
                         }
                         public void onError(Exception error) {
                             handleError(error.getLocalizedMessage());
