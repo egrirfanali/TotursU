@@ -4,7 +4,7 @@
     <item
         android:id="@+id/edit_button"
         android:icon="@android:drawable/ic_menu_edit"
-        android:title="Edit"
+        android:title="Add"
         android:left="@dimen/dimension_15dp"
         android:visible="false"
         TutorsUApplication:showAsAction="ifRoom|withText"  />
