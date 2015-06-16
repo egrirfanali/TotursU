@@ -1,8 +1,5 @@
 package com.strendent.tutorsu.Activities;
 
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -32,16 +29,17 @@ public class Activity_PaymentCardList extends ActionBarActivity {
 
         listViewPaymentCard=(ListView)findViewById(R.id.listViewPaymentCard);
 
-        Bundle bundle=getIntent().getExtras();
+        /*Bundle bundle=getIntent().getExtras();
         Bitmap bitmap=bundle.getParcelable("BITMAP");
         Drawable drawable = new BitmapDrawable(getResources(), bitmap);
 
         PaymentItem paymentItem = new PaymentItem(drawable, bundle.getString("CARD_NUMNER"),bundle.getBoolean("IS_PRIMARY"));
 
-        Constants.paymentItemsList.add(paymentItem);
+        Constants.paymentItemsList.add(paymentItem);*/
 
-        listViewPaymentCard.setAdapter(new AdaptorPaymentList(Activity_PaymentCardList.this,R.layout.payment_card_list_items,Constants.paymentItemsList));
-
+        if(Constants.paymentItemsList!=null && Constants.paymentItemsList.size()>0) {
+            listViewPaymentCard.setAdapter(new AdaptorPaymentList(Activity_PaymentCardList.this, R.layout.payment_card_list_items, Constants.paymentItemsList));
+        }
 //        ParseQuery<ParseObject> query= ParseQuery.getQuery("PaymentCards");
 //        query.findInBackground(new FindCallback<ParseObject>() {
 //            public void done(List<ParseObject> payments, ParseException e) {

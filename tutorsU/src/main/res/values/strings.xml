@@ -38,6 +38,7 @@
     <string name="address">Address</string>
     <string name="forgot_your_pwd">Forgot your password</string>
     <string name="done">Done</string>
+    <string name="add_another">ADD ANOTHER</string>
     <string name="trusted_tab_my_trusted">My Trusted</string>
     <string name="recommended_tab_my_trusted">Recommended</string>
     <string name="bookmark_tab_my_trusted">BookMark</string>
@@ -51,6 +52,15 @@
     <string name="cardNumber">Card Number</string>
     <string name="save">Save</string>
 
+    <string name="expiry_date">Expiration Date</string>
+    <string name="security_code">Security Code</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="you_made_this_card_your_primary_card">You made this cad your primary card</string>
+    <string name="do_you_want_to_make_this_your_primary_card">Do you want to make this your primary card?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--&#160;&#160;-->
     <string name="title_activity_activity__verified">Activity_Verified</string>
     <string name="title_activity_main">MainActivity</string>
 

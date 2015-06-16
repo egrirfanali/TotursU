@@ -58,11 +58,7 @@
             android:configChanges="orientation"
             android:label="@string/title_activity_activity__splash"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activities.Activity_Verified"
@@ -93,6 +89,13 @@
         <activity
             android:name=".Activities.Activity_CardPayment"
             android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".Activities.Activity_PaymentCardList"

@@ -1,7 +1,7 @@
 package com.strendent.tutorsu.Activities;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -21,6 +21,7 @@ public class Activity_Add_Information extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_activity__add__information, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

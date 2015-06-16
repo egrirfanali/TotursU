@@ -67,11 +67,6 @@
             android:configChanges="orientation"
             android:label="@string/title_activity_activity__splash"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.strendent.tutorsu.Activities.Activity_Verified"
@@ -102,10 +97,19 @@
         <activity
             android:name="com.strendent.tutorsu.Activities.Activity_CardPayment"
             android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.strendent.tutorsu.Activities.Activity_PaymentCardList"
             android:label="@string/title_activity_activity__payment_card_list" >
+        </activity>
+        <activity
+            android:name="com.strendent.tutorsu.Activities.Activity_Add_Information"
+            android:label="@string/title_activity_activity__add__information" >
         </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
