@@ -1,6 +1,9 @@
 package com.strendent.tutorsu.Adapters;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +13,7 @@ import android.widget.TextView;
 
 import com.strendent.tutorsu.Models.PaymentItem;
 import com.strendent.tutorsu.R;
+import com.strendent.tutorsu.Utilities.Utility;
 
 import java.util.List;
 
@@ -44,7 +48,9 @@ public class AdaptorPaymentList extends ArrayAdapter<PaymentItem>{
             ImageView imageViewArrowProceeder = (ImageView) v.findViewById(R.id.imageViewArrowProceeder);
 
             if (imageViewCardType != null) {
-                imageViewCardType.setImageDrawable(paymentItem.getCardImageDrawable());
+                Bitmap bitmap= Utility.convertByteArrayToBitmap(paymentItem.getByteArray());
+                Drawable drawable = new BitmapDrawable(getContext().getResources(), bitmap);
+                imageViewCardType.setImageDrawable(drawable);
             }
             if (tvCardNumber != null) {
                 tvCardNumber.setText(getContext().getResources().getString(R.string.dotted_card_numbr)+paymentItem.getCardNumber().toString().substring(14));

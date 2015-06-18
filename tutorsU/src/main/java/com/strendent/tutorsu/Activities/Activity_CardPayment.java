@@ -1,6 +1,5 @@
 package com.strendent.tutorsu.Activities;
 
-import android.animation.LayoutTransition;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -12,19 +11,22 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.strendent.tutorsu.Models.PaymentItem;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.Utilities.CardValidator;
 import com.strendent.tutorsu.Utilities.Constants;
+import com.strendent.tutorsu.Utilities.Utility;
+import com.strendent.tutorsu.Utilities.Validator;
 import com.strendent.tutorsu.dialog.ErrorDialogFragment;
 import com.strendent.tutorsu.dialog.ProgressDialogFragment;
 import com.stripe.android.Stripe;
@@ -40,6 +42,10 @@ public class Activity_CardPayment extends FragmentActivity {
     private EditText edtCardLastPart;
     private EditText edtExpiry;
     private EditText edtCvc;
+    private  RadioButton radioButtonYes;
+
+    private int ADD_ANOTHER=2;
+    private int DONE=1;
 
     private ProgressDialogFragment progressFragment;
 
@@ -60,6 +66,7 @@ public class Activity_CardPayment extends FragmentActivity {
 
 
 //        progressFragment = ProgressDialogFragment.newInstance(R.string.progressMessage);
+        radioButtonYes=(RadioButton)findViewById(R.id.radioButtonYes);
         edtCardCredent= (EditText)  findViewById(R.id.edtCardCredent);
         imageViewCardType=(ImageView) findViewById(R.id.imageViewCardType);
         linearLayoutPaymentDet=(LinearLayout) findViewById(R.id.linearLayoutPaymentDet);
@@ -107,6 +114,7 @@ public class Activity_CardPayment extends FragmentActivity {
                         edtCardCredent.setTextColor(Color.BLACK);
 
                         addViewsToPaymentLayout();
+
 
 
                         edtExpiry.addTextChangedListener(new TextWatcher() {
@@ -207,12 +215,30 @@ public class Activity_CardPayment extends FragmentActivity {
 
         });
 
-
-
     }
 
+
+    // Done Button OnClick
+    public void onDone(View view){
+
+        if(Validator.etReqiurd(edtExpiry) && Validator.etReqiurd(edtCardCredent)) {
+            String[] str = edtExpiry.getText().toString().split("/");
+            saveCreditCard(edtCardCredent.getText().toString(), str[0], str[1], edtCvc.getText().toString(), DONE);
+        }else{
+            handleError(R.string.validationErrors, "Enter required fields");
+        }
+    }
+
+    // AddAnother Button OnClick
+    public void addAnother(View view){
+
+        String[] str = edtExpiry.getText().toString().split("/");
+        saveCreditCard(edtCardCredent.getText().toString(), str[0], str[1], edtCvc.getText().toString(),ADD_ANOTHER);
+    }
+
+
     Card card;
-    public void saveCreditCard(String cardNo,String expMonth,String expYear,String cvc) {
+    public void saveCreditCard(String cardNo,String expMonth,String expYear,String cvc, final int addOrDoneOption) {
 
         card = new Card(cardNo,Integer.parseInt(expMonth),Integer.parseInt(expYear),cvc);
 
@@ -227,55 +253,54 @@ public class Activity_CardPayment extends FragmentActivity {
 //                            getTokenList().addToList(token);
                             Toast.makeText(getApplicationContext(),token.getId(),Toast.LENGTH_LONG).show();
                             finishProgress();
-//                            ParseObject paymentParseObject=new ParseObject("PAYMENT_CARD");
-//                            paymentParseObject.add("TOKEN_ID",token.getId());
-//                            paymentParseObject.add("CARD",token.getCard());
-//                            paymentParseObject.add("CREATED_DATED",token.getCreated());
-//                            paymentParseObject.add("CARD_NUMBER", card.getNumber());
-//                            paymentParseObject.add("ASSOCIATED_USER", ParseUser.getCurrentUser());
-//                            paymentParseObject.add("CARD_TYPE","");
-//                            paymentParseObject.saveEventually();
 
-//                            PaymentItem
-
-                            Drawable drawable = imageViewCardType.getDrawable();
+                           /* Drawable drawable = imageViewCardType.getDrawable();
                             Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
 
                             Bundle newBundle = new Bundle();
                             newBundle.putString("CARD_NUMNER", edtCardCredent.getText().toString());
                             newBundle.putBoolean("IS_PRIMARY", true);
                             //Trying to pass a drawable from one activity to another
-                            newBundle.putParcelable("BITMAP", bitmap);
+                            newBundle.putParcelable("BITMAP", bitmap);*/
+
+                            // Getting card type image and create PaymentItem object. Saving PaymentItem in Constants.paymentItemsList
+                            // which is later on will be used in Paymentcardlis
+
+                            Drawable drawable = imageViewCardType.getDrawable();
+                            Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+
+                            byte[] byteArray=Utility.convertBitmapToByteArray(bitmap);
 
 
+                            PaymentItem paymentItem = new PaymentItem(edtCardCredent.getText().toString(),radioButtonYes.isChecked(),
+                                    edtCvc.getText().toString(),edtExpiry.getText().toString(),byteArray);
+                            Constants.paymentItemsList.add(paymentItem);
 
-//                            PaymentItem paymentItem = new PaymentItem(imageViewCardType.get, edtCardCredent.getText().toString(),true);
-
-                            Intent intentActivityPaymentLi=new Intent(getApplicationContext(),Activity_PaymentCardList.class);
-                            intentActivityPaymentLi.putExtras(newBundle);
-                            startActivity(intentActivityPaymentLi);
-
+                            //Check whether it's Add Another card option or Done option
+                            if(addOrDoneOption==DONE) {
+                                Intent intentActivityPaymentLi = new Intent(getApplicationContext(), Activity_PaymentCardList.class);
+                                // intentActivityPaymentLi.putExtras(newBundle);
+                                startActivity(intentActivityPaymentLi);
+                            }else{
+                                removeViewsFromPaymentLayout();
+                            }
 
                         }
                         public void onError(Exception error) {
-                            handleError(error.getLocalizedMessage());
+                            handleError(R.string.validationErrors,error.getLocalizedMessage());
                             finishProgress();
                         }
                     });
         } else if (!card.validateNumber()) {
-            handleError("The card number that you entered is invalid");
+            handleError(R.string.validationErrors,"The card number that you entered is invalid");
         } else if (!card.validateExpiryDate()) {
-            handleError("The expiration date that you entered is invalid");
+            handleError(R.string.validationErrors,"The expiration date that you entered is invalid");
         } else if (!card.validateCVC()) {
-            handleError("The CVC code that you entered is invalid");
+            handleError(R.string.validationErrors,"The CVC code that you entered is invalid");
         } else {
-            handleError("The card details that you entered are invalid");
+            handleError(R.string.validationErrors,"The card details that you entered are invalid");
         }
     }
-
-//    private TokenList getTokenList() {
-//        return (TokenList)(getSupportFragmentManager().findFragmentById(R.id.token_list));
-//    }
 
     private void startProgress() {
 //        progressFragment.show(getSupportFragmentManager(), "progress");
@@ -285,18 +310,12 @@ public class Activity_CardPayment extends FragmentActivity {
 //        progressFragment.dismiss();
     }
 
-    private void handleError(String error) {
-        android.support.v4.app.DialogFragment fragment = ErrorDialogFragment.newInstance(R.string.validationErrors, error);
+    private void handleError(int titleId,String error) {
+        android.support.v4.app.DialogFragment fragment = ErrorDialogFragment.newInstance(titleId, error);
         fragment.show(getSupportFragmentManager(), "error");
     }
 
-    //    private TokenList getTokenList() {
-//        return (TokenList)(getSupportFragmentManager().findFragmentById(R.id.token_list));
-//    }
     private void addViewsToPaymentLayout(){
-
-        LayoutTransition transition = new LayoutTransition();
-
 
         View view= getLayoutInflater().inflate(R.layout.payment_placeholder,null);
         edtCardLastPart=(EditText)view.findViewById(R.id.edtCardLastPart);
@@ -305,67 +324,55 @@ public class Activity_CardPayment extends FragmentActivity {
 
         edtCardLastPart.setText(edtCardCredent.getText().toString().substring(15));
 
-        edtCardCredent.setVisibility(View.GONE);
+//        edtCardCredent.setVisibility(View.GONE);
 
-
-        Animation previousAnim = AnimationUtils.loadAnimation(
-                Activity_CardPayment.this, R.anim.previous);
         Animation nextAnim = AnimationUtils.loadAnimation(
                 Activity_CardPayment.this, R.anim.next);
-        //        transition.set
         // Start the animation
 //        linearLayoutPaymentDet.setAnimation(nextAnim);
+
+        linearLayoutPaymentDet.removeView(edtCardCredent);
         view.setAnimation(nextAnim);
-//        linearLayoutPaymentDet.animate()
-//                .translationX(view.getWidth())
-//                .alpha(1.0f);
-
-//        linearLayoutPaymentDet.setLayoutTransition(transition);
-
         linearLayoutPaymentDet.addView(view);
+    }
+
+    private void removeViewsFromPaymentLayout(){
+
+        View view= getLayoutInflater().inflate(R.layout.payment_placeholder,null);
+
+        edtCardLastPart=(EditText)view.findViewById(R.id.edtCardLastPart);
+        edtExpiry=(EditText)view.findViewById(R.id.edtExpiry);
+        edtCvc=(EditText)view.findViewById(R.id.edtCvc);
+        edtCardLastPart.setText("");
+        edtExpiry.setText("");
+        edtCvc.setText("");
+
+//        view.setVisibility(View.GONE);
+        linearLayoutPaymentDet.removeAllViews();
+        edtCardCredent.setText("");
+
+        edtCardCredent.setVisibility(View.VISIBLE);
 
 
-        edtCvc.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-
-                if (keyCode == KeyEvent.KEYCODE_ENTER) {
-
-                    String[] str = edtExpiry.getText().toString().split("/");
-                    saveCreditCard(edtCardCredent.getText().toString(), str[0], str[1], edtCvc.getText().toString());
-                }
-                return false;
-            }
-        });
 
 
+        Animation nextAnim = AnimationUtils.loadAnimation(
+                Activity_CardPayment.this, R.anim.next);
+        Animation previousAnim = AnimationUtils.loadAnimation(
+                Activity_CardPayment.this, R.anim.previous);
+
+//        view.setAnimation(previousAnim);
+
+//        linearLayoutPaymentDet.removeView(view);
+
+        // Start the animation
+        edtCardCredent.setAnimation(nextAnim);
+
+        linearLayoutPaymentDet.addView(imageViewCardType);
+        linearLayoutPaymentDet.addView(edtCardCredent);
     }
 
 
-
-//    @Override
-//    public String getCardNumber() {
-//        return this.cardNumber.getText().toString();
-//    }
-//
-//    @Override
-//    public String getCvc() {
-//        return this.cvc.getText().toString();
-//    }
-//
-//    @Override
-//    public Integer getExpMonth() {
-//        return getInteger(this.monthSpinner);
-//    }
-//
-//    @Override
-//    public Integer getExpYear() {
-//        return getInteger(this.yearSpinner);
-//    }
-//
-//    public void saveForm(View button) {
-//        ((PaymentActivity)getActivity()).saveCreditCard(this);
-//    }
 
     private Integer getInteger(Spinner spinner) {
         try {
