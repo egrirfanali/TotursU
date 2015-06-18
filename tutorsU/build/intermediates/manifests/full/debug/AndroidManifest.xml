@@ -108,7 +108,7 @@
             android:label="@string/title_activity_activity__payment_card_list" >
         </activity>
         <activity
-            android:name="com.strendent.tutorsu.Activities.Activity_Add_Information"
+            android:name="com.strendent.tutorsu.Activities.Activity_Payment_Add_Information"
             android:label="@string/title_activity_activity__add__information" >
         </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->

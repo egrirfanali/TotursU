@@ -3,7 +3,9 @@ package com.stripe.android.model;
 import com.stripe.android.util.DateUtils;
 import com.stripe.android.util.TextUtils;
 
-public class Card extends com.stripe.model.StripeObject {
+import java.io.Serializable;
+
+public class Card extends com.stripe.model.StripeObject implements Serializable {
     public static final String AMERICAN_EXPRESS = "American Express";
     public static final String DISCOVER = "Discover";
     public static final String JCB = "JCB";

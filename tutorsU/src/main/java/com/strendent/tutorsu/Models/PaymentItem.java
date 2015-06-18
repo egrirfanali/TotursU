@@ -1,9 +1,5 @@
 package com.strendent.tutorsu.Models;
 
-import android.graphics.drawable.Drawable;
-
-import com.stripe.android.model.Token;
-
 import java.io.Serializable;
 
 /**
@@ -12,31 +8,58 @@ import java.io.Serializable;
 public class PaymentItem implements Serializable {
 
 
-    private Drawable cardImageDrawable;
+//    private Drawable cardImageDrawable;
     private String cardNumber;
     private boolean isPrimaryCard;
-    private Token token;
+    private String securityCode;
+    private String expDateString;
+    byte[] byteArray;
 
-    public PaymentItem(Drawable cardImageDrawable, String cardNumber, boolean isPrimaryCard) {
-        this.cardImageDrawable = cardImageDrawable;
+    /* Drawable drawable = imageViewCardType.getDrawable();
+                            Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();*/
+
+
+    public PaymentItem(String cardNumber, boolean isPrimaryCard, String securityCode, String expDateString,byte[] byteArray) {
+//        this.cardImageDrawable = cardImageDrawable;
         this.cardNumber = cardNumber;
         this.isPrimaryCard = isPrimaryCard;
+        this.securityCode=securityCode;
+        this.expDateString=expDateString;
+        this.byteArray=byteArray;
     }
 
-    public PaymentItem(Drawable cardImageDrawable, String cardNumber, boolean isPrimaryCard, Token token) {
-        this.cardImageDrawable = cardImageDrawable;
-        this.cardNumber = cardNumber;
-        this.isPrimaryCard = isPrimaryCard;
-        this.token=token;
+
+    public byte[] getByteArray() {
+        return byteArray;
     }
 
-    public Drawable getCardImageDrawable() {
-        return cardImageDrawable;
+    public void setByteArray(byte[] byteArray) {
+        this.byteArray = byteArray;
     }
 
-    public void setCardImageDrawable(Drawable cardImageDrawable) {
-        this.cardImageDrawable = cardImageDrawable;
+    public String getSecurityCode() {
+        return securityCode;
     }
+
+    public void setSecurityCode(String securityCode) {
+        this.securityCode = securityCode;
+    }
+
+    public String getExpDateString() {
+        return expDateString;
+    }
+
+    public void setExpDateString(String expDateString) {
+        this.expDateString = expDateString;
+    }
+
+//    public Drawable getCardImageDrawable() {
+//        return cardImageDrawable;
+//    }
+//
+//    public void setCardImageDrawable(Drawable cardImageDrawable) {
+//        this.cardImageDrawable = cardImageDrawable;
+//    }
 
     public String getCardNumber() {
         return cardNumber;

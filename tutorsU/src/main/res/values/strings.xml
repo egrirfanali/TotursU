@@ -48,6 +48,7 @@
 
     <string name="progressMessage">Creating Token&#8230;</string>
     <string name="validationErrors">Validation Errors</string>
+    <string name="required">Required</string>
 
     <string name="cardNumber">Card Number</string>
     <string name="save">Save</string>
@@ -123,6 +124,7 @@
     </array>
     <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
     <string name="title_activity_activity__add__information">Activity_Add_Information</string>
+    <string name="ok">OK</string>
 
 
 </resources>

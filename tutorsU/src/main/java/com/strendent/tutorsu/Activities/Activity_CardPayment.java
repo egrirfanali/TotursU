@@ -1,7 +1,9 @@
 package com.strendent.tutorsu.Activities;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -23,6 +25,8 @@ import com.strendent.tutorsu.Models.PaymentItem;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.Utilities.CardValidator;
 import com.strendent.tutorsu.Utilities.Constants;
+import com.strendent.tutorsu.Utilities.Utility;
+import com.strendent.tutorsu.Utilities.Validator;
 import com.strendent.tutorsu.dialog.ErrorDialogFragment;
 import com.strendent.tutorsu.dialog.ProgressDialogFragment;
 import com.stripe.android.Stripe;
@@ -217,8 +221,12 @@ public class Activity_CardPayment extends FragmentActivity {
     // Done Button OnClick
     public void onDone(View view){
 
-        String[] str = edtExpiry.getText().toString().split("/");
-        saveCreditCard(edtCardCredent.getText().toString(), str[0], str[1], edtCvc.getText().toString(),DONE);
+        if(Validator.etReqiurd(edtExpiry) && Validator.etReqiurd(edtCardCredent)) {
+            String[] str = edtExpiry.getText().toString().split("/");
+            saveCreditCard(edtCardCredent.getText().toString(), str[0], str[1], edtCvc.getText().toString(), DONE);
+        }else{
+            handleError(R.string.validationErrors, "Enter required fields");
+        }
     }
 
     // AddAnother Button OnClick
@@ -259,7 +267,13 @@ public class Activity_CardPayment extends FragmentActivity {
                             // which is later on will be used in Paymentcardlis
 
                             Drawable drawable = imageViewCardType.getDrawable();
-                            PaymentItem paymentItem = new PaymentItem(drawable,edtCardCredent.getText().toString(),radioButtonYes.isChecked());
+                            Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+
+                            byte[] byteArray=Utility.convertBitmapToByteArray(bitmap);
+
+
+                            PaymentItem paymentItem = new PaymentItem(edtCardCredent.getText().toString(),radioButtonYes.isChecked(),
+                                    edtCvc.getText().toString(),edtExpiry.getText().toString(),byteArray);
                             Constants.paymentItemsList.add(paymentItem);
 
                             //Check whether it's Add Another card option or Done option
@@ -273,18 +287,18 @@ public class Activity_CardPayment extends FragmentActivity {
 
                         }
                         public void onError(Exception error) {
-                            handleError(error.getLocalizedMessage());
+                            handleError(R.string.validationErrors,error.getLocalizedMessage());
                             finishProgress();
                         }
                     });
         } else if (!card.validateNumber()) {
-            handleError("The card number that you entered is invalid");
+            handleError(R.string.validationErrors,"The card number that you entered is invalid");
         } else if (!card.validateExpiryDate()) {
-            handleError("The expiration date that you entered is invalid");
+            handleError(R.string.validationErrors,"The expiration date that you entered is invalid");
         } else if (!card.validateCVC()) {
-            handleError("The CVC code that you entered is invalid");
+            handleError(R.string.validationErrors,"The CVC code that you entered is invalid");
         } else {
-            handleError("The card details that you entered are invalid");
+            handleError(R.string.validationErrors,"The card details that you entered are invalid");
         }
     }
 
@@ -296,8 +310,8 @@ public class Activity_CardPayment extends FragmentActivity {
 //        progressFragment.dismiss();
     }
 
-    private void handleError(String error) {
-        android.support.v4.app.DialogFragment fragment = ErrorDialogFragment.newInstance(R.string.validationErrors, error);
+    private void handleError(int titleId,String error) {
+        android.support.v4.app.DialogFragment fragment = ErrorDialogFragment.newInstance(titleId, error);
         fragment.show(getSupportFragmentManager(), "error");
     }
 

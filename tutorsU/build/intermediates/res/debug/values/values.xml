@@ -518,6 +518,7 @@
     <string name="nick_name">Nick Name</string>
     <string name="no">No</string>
     <string name="now_you_have_setup">Now you have setup your profile, \n add your payment info \n or save it for later</string>
+    <string name="ok">OK</string>
     <string name="password">Password</string>
     <string name="payments_title">Payments History</string>
     <string name="phone">Phone</string>
@@ -530,6 +531,7 @@
     <string name="re_enter_code">Re-enter code</string>
     <string name="re_enter_or_request_new_code">Uh-oh, there seems to be an error, \n please re-enter the code \n or request new code</string>
     <string name="recommended_tab_my_trusted">Recommended</string>
+    <string name="required">Required</string>
     <string name="resend_code">Resend Code</string>
     <string name="save">Save</string>
     <string name="security_code">Security Code</string>
