@@ -31,8 +31,8 @@ public class Fragment_Tutions extends Fragment {
 
 			mTabHost = (FragmentTabHost) mView.findViewById(android.R.id.tabhost);
 			mTabHost.setup(getActivity(), getChildFragmentManager(), android.R.id.tabcontent);
-			View scheduledTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.my_trusted_tab_style_layout, null);
-			View historyTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.my_recommended_tab_style_layout, null);
+			View scheduledTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.schedule_tab_style_layout, null);
+			View historyTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.history_tab_style_layout, null);
 
 			mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator(scheduledTabStyle), FragmentInner_Tutions_Scheduled.class, null);
 			mTabHost.addTab(mTabHost.newTabSpec("tab2").setIndicator(historyTabStyle), FragmentInner_Tutions_History.class, null);
