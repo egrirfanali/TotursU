@@ -164,7 +164,7 @@ public class Activity_Home extends ActionBarActivity implements  FragmentDrawer.
 
         if (fragment != null) {
 
-            mMapFragment.getView().setVisibility(View.INVISIBLE);
+            mMapFragment.getView().setVisibility(View.GONE);
 
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
