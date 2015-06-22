@@ -9,7 +9,7 @@
     <string name="invalid_username_pwd">Invalid user name and password</string>
     <string name="login_phone_number">Login with Phote No.</string>
     <string name="login_fb">Login with with FB</string>
-    <string name="app_id">890661184338374</string>
+    <string name="app_id">900009210070238</string>
     <string name="title_activity_activity__splash">Activity_Splash</string>
     <string name="instant_connect">INSTANT CONNECT</string>
     <string name="insert_cell_no">INSERT CELL NO</string>
@@ -86,6 +86,7 @@
     <string name="nav_item_friends">Friends</string>
     <string name="nav_item_notifications">Messages</string>
     <string name="trested_tutors_title">Tutors</string>
+    <string name="trested_tutors_home">Home</string>
     <string name="my_family_title">My Family</string>
     <string name="favorite_locations_title">Favorite Locations</string>
     <string name="tutions_title">Tutions</string>
@@ -125,6 +126,9 @@
     <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
     <string name="title_activity_activity__add__information">Activity_Add_Information</string>
     <string name="ok">OK</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

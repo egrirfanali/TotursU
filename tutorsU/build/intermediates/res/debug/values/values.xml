@@ -79,7 +79,7 @@
     <color name="colorAccent">#FF80AB</color>
     <color name="colorPrimary">#F50057</color>
     <color name="colorPrimaryDark">#61F71B</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <color name="com_facebook_blue">#3B5998</color>
     <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
@@ -262,7 +262,7 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
     <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
@@ -325,7 +325,7 @@
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="nav_drawer_width">260dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <drawable name="com_facebook_picker_default_separator_color">#33464c59</drawable>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
@@ -343,6 +343,11 @@
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
+    <eat-comment/>
+    <item name="text" type="id"/>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -382,7 +387,7 @@
     <string name="add_payment_info">Add Payment Info</string>
     <string name="add_wallpaper">add wallpaper</string>
     <string name="address">Address</string>
-    <string name="app_id">890661184338374</string>
+    <string name="app_id">900009210070238</string>
     <string name="app_name">TutorsU</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/auth_strings.xml -->
     <eat-comment/>
@@ -399,7 +404,7 @@
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_disconnect">Disconnect</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <string name="com_facebook_choose_friends">Choose Friends</string>
     <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
@@ -486,6 +491,7 @@
     <string name="favorite_locations_title">Favorite Locations</string>
     <string name="first_last_name">First Name/Last Name</string>
     <string name="forgot_your_pwd">Forgot your password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="insert_cell_no">INSERT CELL NO</string>
     <string name="instant_connect">INSTANT CONNECT</string>
@@ -555,6 +561,7 @@
     <string name="title_activity_activity__verified">Activity_Verified</string>
     <string name="title_activity_activity__verify_code">Activity_VerifyCode</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="trested_tutors_home">Home</string>
     <string name="trested_tutors_title">Tutors</string>
     <string name="trusted_tab_my_trusted">My Trusted</string>
     <string name="tutions_title">Tutions</string>
@@ -1441,6 +1448,20 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="GalaxyZooThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
@@ -1902,7 +1923,7 @@
         <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
         <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
         <item name="android:layout_width">wrap_content</item>
@@ -1946,7 +1967,7 @@
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <style name="tooltip_bubble_text">
 	    <item name="android:textColor">@android:color/white</item>

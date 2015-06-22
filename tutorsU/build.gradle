@@ -31,4 +31,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.0.+'
     compile files('libs/android-smart-image-view-1.0.0.jar')
     compile files('libs/Parse-1.7.1.jar')
+    compile project(':library')
 }

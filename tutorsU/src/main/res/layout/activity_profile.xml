@@ -48,7 +48,7 @@
             android:layout_margin="8dp"
             android:clickable="true"
             android:onClick="addPhoto"
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/ic_dp_ring"
             android:tag="ic_launcher"
             app:border="true"
             app:border_color="#FFFFFFFF"

@@ -7,10 +7,15 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.Toast;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.clustering.ClusterManager;
 import com.strendent.tutorsu.Fragment.FragmentDrawer;
 import com.strendent.tutorsu.FragmentMian.Fragment_About;
 import com.strendent.tutorsu.FragmentMian.Fragment_Become_A_Tutor;
@@ -22,26 +27,45 @@ import com.strendent.tutorsu.FragmentMian.Fragment_Promotions;
 import com.strendent.tutorsu.FragmentMian.Fragment_Share;
 import com.strendent.tutorsu.FragmentMian.Fragment_TrustedTutors;
 import com.strendent.tutorsu.FragmentMian.Fragment_Tutions;
+import com.strendent.tutorsu.Models.MyItem;
 import com.strendent.tutorsu.R;
+import com.strendent.tutorsu.Utilities.MyItemReader;
 
-public class Activity_Home extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
+import org.json.JSONException;
+
+import java.io.InputStream;
+import java.util.List;
+
+/**
+ * Simple activity demonstrating ClusterManager.
+ */
+public class Activity_Home extends ActionBarActivity implements  FragmentDrawer.FragmentDrawerListener{
+
+    private ClusterManager<MyItem> mClusterManager;
+    private GoogleMap mMap;
 
     private static String TAG = Activity_Home.class.getSimpleName();
 
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
+    FrameLayout container_body;
+
+    private SupportMapFragment mMapFragment;
+
+
+    protected int getLayoutId() {
+        return R.layout.map;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_drawer);
-      /*  FragmentManager fm = getSupportFragmentManager();
-        fm.addOnBackStackChangedListener(new android.support.v4.app.FragmentManager.OnBackStackChangedListener() {
-            @Override
-            public void onBackStackChanged() {
-                if(getFragmentManager().getBackStackEntryCount() == 0) finish();
-            }
-        });*/
+        setContentView(getLayoutId());
+
+        container_body=(FrameLayout)findViewById(R.id.container_body);
+        mMapFragment = ((SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map));
+
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(mToolbar);
@@ -53,37 +77,12 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
         drawerFragment.setDrawerListener(this);
 
         // display the first navigation drawer view on app launch
-        displayView(0);
+//        displayView(0);
 
+        mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
+        showCluster();
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.fav_location_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_settings) {
-			return true;
-		}*/
-//
-//		if(id == R.id.action_search){
-//			Toast.makeText(getApplicationContext(), "Search action is selected!", Toast.LENGTH_SHORT).show();
-//			return true;
-//		}
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public void onDrawerItemSelected(View view, int position) {
@@ -95,11 +94,15 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
-               // Toast.makeText(Activity_Home.this, "1 Options Clicked", Toast.LENGTH_SHORT).show();
-                drawerFragment.isHidden();
+
+                // set the toolbar title
+                getSupportActionBar().setTitle(getString(R.string.nav_item_home));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 10));
+                mMapFragment.getView().setVisibility(View.VISIBLE);
                 break;
 
             case 1:
+
                 fragment = new Fragment_TrustedTutors();
                 title = getString(R.string.trested_tutors_title);
 
@@ -160,13 +163,38 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
 
 
         if (fragment != null) {
+
+            mMapFragment.getView().setVisibility(View.INVISIBLE);
+
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            container_body.setVisibility(View.VISIBLE);
             fragmentTransaction.replace(R.id.container_body, fragment);
             fragmentTransaction.commit();
 
             // set the toolbar title
             getSupportActionBar().setTitle(title);
         }
+    }
+
+    protected void showCluster() {
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 10));
+
+        mClusterManager = new ClusterManager<MyItem>(this,mMap);
+        mMap.setOnCameraChangeListener(mClusterManager);
+
+        try {
+            readItems();
+        } catch (JSONException e) {
+            Toast.makeText(this, "Problem reading list of markers.", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void readItems() throws JSONException {
+        InputStream inputStream = getResources().openRawResource(R.raw.radar_search);
+        List<MyItem> items = new MyItemReader().read(inputStream);
+        mClusterManager.addItems(items);
     }
 }

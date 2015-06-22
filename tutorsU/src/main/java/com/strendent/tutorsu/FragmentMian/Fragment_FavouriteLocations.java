@@ -1,14 +1,8 @@
 package com.strendent.tutorsu.FragmentMian;
 
-import com.strendent.tutorsu.Activities.Activity_Home;
-import com.strendent.tutorsu.R;
-
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import static android.support.v4.app.ActivityCompat.invalidateOptionsMenu;
+import com.strendent.tutorsu.R;
 
 public class Fragment_FavouriteLocations extends Fragment {
     Toolbar mToolbar;
@@ -49,6 +43,8 @@ public class Fragment_FavouriteLocations extends Fragment {
     @Override
     public void onCreateOptionsMenu(
             Menu menu, MenuInflater inflater) {
+
+        inflater.inflate(R.menu.fav_location_menu,menu);
         MenuItem item = menu.findItem(R.id.edit_button);
         item.setVisible(true);
         getActivity().supportInvalidateOptionsMenu();

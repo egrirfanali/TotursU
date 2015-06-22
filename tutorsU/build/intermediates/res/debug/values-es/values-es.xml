@@ -18,7 +18,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/unspecified/res/values-es/values-es.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values-es/values-es.xml -->
     <eat-comment/>
     <string name="com_facebook_choose_friends">Elige Amigos</string>
     <string name="com_facebook_dialogloginactivity_ok_button">Aceptar</string>
