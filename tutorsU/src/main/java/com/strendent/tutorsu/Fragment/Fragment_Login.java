@@ -1,5 +1,8 @@
 package com.strendent.tutorsu.Fragment;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +21,9 @@ import android.widget.Toast;
 import com.parse.FunctionCallback;
 import com.parse.ParseCloud;
 import com.parse.ParseException;
-import com.strendent.tutorsu.Activities.Activity_Home;
 import com.strendent.tutorsu.R;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.strendent.tutorsu.Activities.Activity_Home;
+import com.strendent.tutorsu.Activities.Activity_SignUp;
 
 public class Fragment_Login extends Fragment {
 
@@ -82,7 +83,7 @@ public class Fragment_Login extends Fragment {
 				        if (actionId == EditorInfo.IME_ACTION_DONE) {
 				            
 				        	if(edtEmail.getText().toString().length()>0 && edtPassword.getText().toString().length()>0){
-				        		imageViewProceed.setImageResource(R.drawable.ic_next_enabled);
+				        		imageViewProceed.setImageDrawable(getResources().getDrawable(R.drawable.ic_next_enabled));
 				        	}
 				        	
 				        }

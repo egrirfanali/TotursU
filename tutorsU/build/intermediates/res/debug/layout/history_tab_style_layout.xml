@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/dimension_20dp"
+
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        android:src="@drawable/selector_my_trusted_tab_icon" />
+
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:layout_gravity="center"
+        android:text="@string/history_tab_my_tutions"
+        android:textColor="@drawable/seletor_tab_title_color"
+        />
+
+</LinearLayout><!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/layout/history_tab_style_layout.xml -->

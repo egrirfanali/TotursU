@@ -18,8 +18,6 @@ ADDED from AndroidManifest.xml:7:5
 MERGED from android:stripe:0.4-SNAPSHOT:7:5
 MERGED from android:facebookSDK:0.4-SNAPSHOT:20:5
 MERGED from com.android.support:support-v4:22.0.0:20:5
-MERGED from android:facebookSDK:0.4-SNAPSHOT:20:5
-MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from com.google.android.gms:play-services:7.5.0:18:5
 MERGED from com.google.android.gms:play-services-ads:7.5.0:23:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
@@ -108,10 +106,6 @@ MERGED from com.android.support:appcompat-v7:22.0.0:20:5
 MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from com.android.support:recyclerview-v7:21.0.3:15:5
 MERGED from com.android.support:support-v4:22.0.0:20:5
-MERGED from com.google.maps.android:library:0.4-SNAPSHOT:5:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
-MERGED from com.android.support:support-v4:22.0.0:20:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -131,7 +125,6 @@ MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
 MERGED from com.google.android.gms:play-services-wallet:7.5.0:20:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
 	android:name
 		ADDED from AndroidManifest.xml:11:22
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -144,30 +137,26 @@ MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
 MERGED from com.google.android.gms:play-services-nearby:7.5.0:19:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
 	android:name
 		ADDED from AndroidManifest.xml:12:22
 uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:13:5
 	android:name
 		ADDED from AndroidManifest.xml:13:22
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:15:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
 	android:name
-		ADDED from AndroidManifest.xml:15:22
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
+		ADDED from AndroidManifest.xml:15:30
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:16:5
 	android:name
-		ADDED from AndroidManifest.xml:16:22
+		ADDED from AndroidManifest.xml:16:30
 application
 ADDED from AndroidManifest.xml:18:5
-MERGED from android:facebookSDK:0.4-SNAPSHOT:24:5
-MERGED from com.android.support:support-v4:22.0.0:22:5
 MERGED from android:facebookSDK:0.4-SNAPSHOT:24:5
 MERGED from com.android.support:support-v4:22.0.0:22:5
 MERGED from com.google.android.gms:play-services:7.5.0:19:5
@@ -258,10 +247,6 @@ MERGED from com.android.support:appcompat-v7:22.0.0:22:5
 MERGED from com.android.support:support-v4:22.0.0:22:5
 MERGED from com.android.support:recyclerview-v7:21.0.3:17:5
 MERGED from com.android.support:support-v4:22.0.0:22:5
-MERGED from com.google.maps.android:library:0.4-SNAPSHOT:7:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
-MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
-MERGED from com.android.support:support-v4:22.0.0:22:5
 	android:label
 		ADDED from AndroidManifest.xml:22:9
 	android:allowBackup
@@ -272,53 +257,33 @@ MERGED from com.android.support:support-v4:22.0.0:22:5
 		ADDED from AndroidManifest.xml:23:9
 	android:name
 		ADDED from AndroidManifest.xml:19:9
-meta-data#com.google.android.gms.version
-ADDED from AndroidManifest.xml:25:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-	android:value
-		ADDED from AndroidManifest.xml:27:13
-	android:name
-		ADDED from AndroidManifest.xml:26:13
-meta-data#com.google.android.maps.v2.API_KEY
-ADDED from AndroidManifest.xml:29:9
-	android:value
-		ADDED from AndroidManifest.xml:31:13
-	android:name
-		ADDED from AndroidManifest.xml:30:13
 activity#com.strendent.tutorsu.Activities.Activity_Home
-ADDED from AndroidManifest.xml:33:9
+ADDED from AndroidManifest.xml:24:9
 	android:label
+		ADDED from AndroidManifest.xml:26:13
+	android:name
+		ADDED from AndroidManifest.xml:25:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:27:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:28:17
+	android:name
+		ADDED from AndroidManifest.xml:28:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:30:17
+	android:name
+		ADDED from AndroidManifest.xml:30:27
+activity#com.strendent.tutorsu.Activities.Activity_Main
+ADDED from AndroidManifest.xml:33:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:37:13
+	android:label
+		ADDED from AndroidManifest.xml:36:13
+	android:configChanges
 		ADDED from AndroidManifest.xml:35:13
 	android:name
 		ADDED from AndroidManifest.xml:34:13
-activity#com.strendent.tutorsu.Activities.Activity_Main
+activity#com.strendent.tutorsu.Activities.Activity_Profile
 ADDED from AndroidManifest.xml:39:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:43:13
@@ -328,7 +293,7 @@ ADDED from AndroidManifest.xml:39:9
 		ADDED from AndroidManifest.xml:41:13
 	android:name
 		ADDED from AndroidManifest.xml:40:13
-activity#com.strendent.tutorsu.Activities.Activity_Profile
+activity#com.strendent.tutorsu.Activities.Activity_SignUp
 ADDED from AndroidManifest.xml:45:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:49:13
@@ -338,7 +303,7 @@ ADDED from AndroidManifest.xml:45:9
 		ADDED from AndroidManifest.xml:47:13
 	android:name
 		ADDED from AndroidManifest.xml:46:13
-activity#com.strendent.tutorsu.Activities.Activity_SignUp
+activity#com.facebook.LoginActivity
 ADDED from AndroidManifest.xml:51:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:55:13
@@ -348,94 +313,107 @@ ADDED from AndroidManifest.xml:51:9
 		ADDED from AndroidManifest.xml:53:13
 	android:name
 		ADDED from AndroidManifest.xml:52:13
-activity#com.facebook.LoginActivity
+meta-data#com.facebook.sdk.ApplicationId
 ADDED from AndroidManifest.xml:57:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:61:13
-	android:label
-		ADDED from AndroidManifest.xml:60:13
-	android:configChanges
+	android:value
 		ADDED from AndroidManifest.xml:59:13
 	android:name
 		ADDED from AndroidManifest.xml:58:13
-meta-data#com.facebook.sdk.ApplicationId
-ADDED from AndroidManifest.xml:63:9
-	android:value
-		ADDED from AndroidManifest.xml:65:13
-	android:name
-		ADDED from AndroidManifest.xml:64:13
 activity#com.strendent.tutorsu.Activities.Activity_Splash
-ADDED from AndroidManifest.xml:67:9
+ADDED from AndroidManifest.xml:61:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:71:13
+		ADDED from AndroidManifest.xml:65:13
 	android:label
-		ADDED from AndroidManifest.xml:70:13
+		ADDED from AndroidManifest.xml:64:13
 	android:configChanges
-		ADDED from AndroidManifest.xml:69:13
+		ADDED from AndroidManifest.xml:63:13
 	android:name
-		ADDED from AndroidManifest.xml:68:13
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:72:13
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:73:17
-	android:name
-		ADDED from AndroidManifest.xml:73:25
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:75:17
-	android:name
-		ADDED from AndroidManifest.xml:75:27
+		ADDED from AndroidManifest.xml:62:13
 activity#com.strendent.tutorsu.Activities.Activity_Verified
-ADDED from AndroidManifest.xml:80:9
+ADDED from AndroidManifest.xml:68:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:84:13
+		ADDED from AndroidManifest.xml:72:13
 	android:label
-		ADDED from AndroidManifest.xml:83:13
+		ADDED from AndroidManifest.xml:71:13
 	android:configChanges
-		ADDED from AndroidManifest.xml:82:13
+		ADDED from AndroidManifest.xml:70:13
 	android:name
-		ADDED from AndroidManifest.xml:81:13
+		ADDED from AndroidManifest.xml:69:13
 activity#com.strendent.tutorsu.Activities.Activity_VerifyCode
-ADDED from AndroidManifest.xml:86:9
+ADDED from AndroidManifest.xml:74:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:90:13
+		ADDED from AndroidManifest.xml:78:13
 	android:label
-		ADDED from AndroidManifest.xml:89:13
+		ADDED from AndroidManifest.xml:77:13
 	android:configChanges
+		ADDED from AndroidManifest.xml:76:13
+	android:name
+		ADDED from AndroidManifest.xml:75:13
+meta-data#com.google.android.gms.version
+ADDED from AndroidManifest.xml:82:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+	android:value
+		ADDED from AndroidManifest.xml:84:13
+	android:name
+		ADDED from AndroidManifest.xml:83:13
+activity#com.strendent.tutorsu.Activities.Activity_PaymentOption
+ADDED from AndroidManifest.xml:86:9
+	android:label
 		ADDED from AndroidManifest.xml:88:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:89:13
 	android:name
 		ADDED from AndroidManifest.xml:87:13
-activity#com.strendent.tutorsu.Activities.Activity_PaymentOption
-ADDED from AndroidManifest.xml:95:9
-	android:label
-		ADDED from AndroidManifest.xml:97:13
-	android:parentActivityName
-		ADDED from AndroidManifest.xml:98:13
-	android:name
-		ADDED from AndroidManifest.xml:96:13
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from AndroidManifest.xml:99:13
+ADDED from AndroidManifest.xml:90:13
 	android:value
-		ADDED from AndroidManifest.xml:101:17
+		ADDED from AndroidManifest.xml:92:17
 	android:name
-		ADDED from AndroidManifest.xml:100:17
+		ADDED from AndroidManifest.xml:91:17
 activity#com.strendent.tutorsu.Activities.Activity_CardPayment
-ADDED from AndroidManifest.xml:103:9
+ADDED from AndroidManifest.xml:94:9
 	android:label
-		ADDED from AndroidManifest.xml:105:13
+		ADDED from AndroidManifest.xml:96:13
 	android:name
-		ADDED from AndroidManifest.xml:104:13
+		ADDED from AndroidManifest.xml:95:13
 activity#com.strendent.tutorsu.Activities.Activity_PaymentCardList
-ADDED from AndroidManifest.xml:107:9
+ADDED from AndroidManifest.xml:101:9
 	android:label
-		ADDED from AndroidManifest.xml:109:13
+		ADDED from AndroidManifest.xml:103:13
 	android:name
-		ADDED from AndroidManifest.xml:108:13
+		ADDED from AndroidManifest.xml:102:13
 activity#com.strendent.tutorsu.Activities.Activity_Payment_Add_Information
-ADDED from AndroidManifest.xml:111:9
+ADDED from AndroidManifest.xml:105:9
 	android:label
-		ADDED from AndroidManifest.xml:113:13
+		ADDED from AndroidManifest.xml:107:13
 	android:name
-		ADDED from AndroidManifest.xml:112:13
+		ADDED from AndroidManifest.xml:106:13
 activity#com.google.android.gms.ads.AdActivity
 ADDED from com.google.android.gms:play-services-ads:7.5.0:26:9
 	android:configChanges
@@ -455,12 +433,10 @@ ADDED from com.google.android.gms:play-services-maps:7.5.0:23:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:23:5
 	android:name
 		ADDED from com.google.android.gms:play-services-maps:7.5.0:23:22
 uses-feature#0x00020000
 ADDED from com.google.android.gms:play-services-maps:7.5.0:24:5
-MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5

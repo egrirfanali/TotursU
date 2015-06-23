@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dimension_10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewCardType"
+        android:layout_width="@dimen/dimension_0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visa"
+        android:layout_weight="0.25"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="@dimen/dimension_0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_weight="1.5"
+        android:text="@string/dotted_card_numbr"
+
+        />
+    <TextView
+        android:id="@+id/tvCardPriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_green"
+        android:layout_weight=".75"
+        android:textSize="@dimen/abc_text_size_small_material"
+        />
+    <ImageView
+        android:id="@+id/imageViewArrowProceeder"
+        android:layout_width="@dimen/dimension_0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_arrow"
+        android:layout_weight="0.2"
+        />
+
+</LinearLayout>
+<!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/layout/payment_card_list_items.xml -->

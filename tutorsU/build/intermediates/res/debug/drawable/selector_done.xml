@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_add_done" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_add_done" android:state_selected="true"/>
+        <item android:state_checked="true" android:drawable="@drawable/ic_add_done" />
+    <item android:drawable="@drawable/ic_add_done"/>
+
+</selector><!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/drawable/selector_done.xml -->

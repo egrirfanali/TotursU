@@ -1,1 +1,1 @@
-include ':tutorsU', ':stripe', ':facebookSDK', ':library'
+include ':stripe', ':facebookSDK', ':library' , ':tutorsU'
