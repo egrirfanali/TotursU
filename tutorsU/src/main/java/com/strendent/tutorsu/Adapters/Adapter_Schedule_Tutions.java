@@ -47,8 +47,8 @@ public class Adapter_Schedule_Tutions extends ArrayAdapter<Fav_Location_model> {
             v = inflater.inflate(R.layout.fragment_inner_tutions_scheduled_row_item, null);
 
             TextView tvAddress = (TextView) v.findViewById(R.id.tv_address);
-            TextView tv_tutor_id_text = (TextView) v.findViewById(R.id.tv_tutor_id_text);
-            TextView tv_tutor_id_value = (TextView) v.findViewById(R.id.tv_tutor_id_value);
+            TextView tv_tutor_id_text = (TextView) v.findViewById(R.id.tv_value);
+            TextView tv_tutor_id_value = (TextView) v.findViewById(R.id.tv_expire_date);
 
 
             holder.tvAddress = tvAddress;

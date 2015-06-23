@@ -1,5 +1,6 @@
 package com.strendent.tutorsu.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -125,8 +126,10 @@ public class Activity_Home extends ActionBarActivity implements  FragmentDrawer.
                 break;
 
             case 5:
-                fragment = new Fragment_Profile();
-                title = getString(R.string.profile_title);
+                Intent intent = new Intent(this, Activity_SignUp.class);
+                startActivity(intent);
+               /* fragment = new Fragment_Profile();
+                title = getString(R.string.profile_title);*/
                 break;
 
 

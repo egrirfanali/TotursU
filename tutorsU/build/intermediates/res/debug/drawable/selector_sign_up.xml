@@ -6,4 +6,4 @@
     <item android:state_checked="true" android:drawable="@drawable/ic_signup_enabled" />
     <item android:drawable="@drawable/ic_signup_disabled"  />
 
-</selector><!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/drawable/selector_sign_up.xml -->
+</selector><!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/drawable/selector_sign_up.xml -->

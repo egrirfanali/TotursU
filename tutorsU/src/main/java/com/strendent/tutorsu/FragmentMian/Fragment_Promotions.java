@@ -1,5 +1,7 @@
 package com.strendent.tutorsu.FragmentMian;
 
+import com.strendent.tutorsu.FragmentsInner.FragmentInner_Current_Promotions;
+import com.strendent.tutorsu.FragmentsInner.FragmentInner_Promotion_History;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.FragmentsInner.FragmentInner_Tutions_History;
 import com.strendent.tutorsu.FragmentsInner.FragmentInner_Tutions_Scheduled;
@@ -29,11 +31,11 @@ public class Fragment_Promotions extends Fragment {
 
             mTabHost = (FragmentTabHost) mView.findViewById(android.R.id.tabhost);
             mTabHost.setup(getActivity(), getChildFragmentManager(), android.R.id.tabcontent);
-            View scheduledTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.my_trusted_tab_style_layout, null);
-            View historyTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.my_recommended_tab_style_layout, null);
+            View scheduledTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.current_tab_style_layout, null);
+            View historyTabStyle = LayoutInflater.from(getActivity()).inflate(R.layout.histroy_promotion_tab_style_layout, null);
 
-            mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator(scheduledTabStyle), FragmentInner_Tutions_Scheduled.class, null);
-            mTabHost.addTab(mTabHost.newTabSpec("tab2").setIndicator(historyTabStyle), FragmentInner_Tutions_History.class, null);
+            mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator(scheduledTabStyle), FragmentInner_Current_Promotions.class, null);
+            mTabHost.addTab(mTabHost.newTabSpec("tab2").setIndicator(historyTabStyle), FragmentInner_Promotion_History.class, null);
         } else {
             ((ViewGroup) mView.getParent()).removeView(mView);
         }

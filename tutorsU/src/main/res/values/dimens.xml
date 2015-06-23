@@ -39,6 +39,7 @@
     <dimen name="dimension_95dp">95dp</dimen>
     <dimen name="dimension_100dp">100dp</dimen>
     <dimen name="dimension_105dp">105dp</dimen>
+    <dimen name="dimension_300dp">300dp</dimen>
 
     <dimen name="nav_drawer_width">260dp</dimen>
 
