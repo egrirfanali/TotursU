@@ -29,6 +29,7 @@ import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.model.GraphUser;
 import com.facebook.widget.ProfilePictureView;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.parse.ParseCloud;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseUser;
@@ -38,6 +39,9 @@ import com.strendent.tutorsu.TutorsUApplication;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -67,7 +71,7 @@ public class Activity_SignUp extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		
+
 		setContentView(R.layout.activity_profile);
 
 		mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -77,7 +81,7 @@ public class Activity_SignUp extends ActionBarActivity {
 		initViews();
 
 		Intent intent=getIntent();
-		
+
 		// check whether its Fb sign up call or simple sign up
 		if(intent.hasExtra("CLICK_FB")){
 			// Fetch Facebook user info if the session is active
@@ -86,14 +90,14 @@ public class Activity_SignUp extends ActionBarActivity {
 			if (session != null && session.isOpened()) {
 				makeMeRequest();
 			}
-			
+
 		}else if(intent.hasExtra("CLICK_SIGNUP")){
-			
+
 			if(intent!=null && intent.getStringExtra("EMAIL")!=null && intent.getStringExtra("PASSWORD")!=null){
 				edtEmail.setText(intent.getStringExtra("EMAIL"));
 				edtPassword.setText(intent.getStringExtra("PASSWORD"));
 			}
-			
+
 		}
 
 	}
@@ -118,7 +122,7 @@ public class Activity_SignUp extends ActionBarActivity {
 	}
 
 
-	
+
 	private void makeMeRequest() {
 		Request request = Request.newMeRequest(ParseFacebookUtils.getSession(),
 				new Request.GraphUserCallback() {
@@ -129,7 +133,7 @@ public class Activity_SignUp extends ActionBarActivity {
 					JSONObject userProfile = new JSONObject();
 					try {
 						// Populate the JSON object
-						
+
 						userProfile.put("facebookId", user.getId());
 						userProfile.put("name", user.getName());
 						if (user.getProperty("gender") != null) {
@@ -154,7 +158,7 @@ public class Activity_SignUp extends ActionBarActivity {
 						currentUser.put("authData", userProfile);
 //						
 
-						
+
 						/**
 						 *calling signUpInBackground method for the current user instead of saveInBackGround
 						 */
@@ -170,12 +174,12 @@ public class Activity_SignUp extends ActionBarActivity {
 					}
 
 				} else if (response.getError() != null) {
-					if ((response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_RETRY) || 
+					if ((response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_RETRY) ||
 							(response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_REOPEN_SESSION)) {
 						Log.d(TutorsUApplication.TAG, "The facebook session was invalidated." + response.getError());
 						logout();
 					} else {
-						Log.d(TutorsUApplication.TAG, 
+						Log.d(TutorsUApplication.TAG,
 								"Some other error: " + response.getError());
 					}
 				}
@@ -183,6 +187,13 @@ public class Activity_SignUp extends ActionBarActivity {
 		}
 				);
 		request.executeAsync();
+	}
+
+	public static Bitmap getFacebookProfilePicture(String userID) throws IOException {
+		URL imageURL = new URL("https://graph.facebook.com/" + userID + "/picture?type=large");
+		Bitmap bitmap = BitmapFactory.decodeStream(imageURL.openConnection().getInputStream());
+
+		return bitmap;
 	}
 
 	private void logout() {
@@ -199,7 +210,7 @@ public class Activity_SignUp extends ActionBarActivity {
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(intent);
 	}
-	
+
 	public void addAddress(View v){
 
 		edtAddress.setVisibility(View.VISIBLE);
@@ -237,7 +248,7 @@ public class Activity_SignUp extends ActionBarActivity {
 
 
 			}else{
-				Toast.makeText(Activity_SignUp.this, getResources().getString(R.string.please_reqiured_fields), 
+				Toast.makeText(Activity_SignUp.this, getResources().getString(R.string.please_reqiured_fields),
 						Toast.LENGTH_LONG).show();
 			}
 
@@ -304,6 +315,22 @@ public class Activity_SignUp extends ActionBarActivity {
 //					// Show the default, blank user profile picture
 //					userProfilePictureView.setProfileId(null);
 //				}
+
+
+				//Map<String, String> map=new HashMap<String, String>();
+
+				ImageLoader imageLoader = ImageLoader.getInstance(); // Get singleton instance
+				// Load image, decode it to Bitmap and display Bitmap in ImageView (or any other view
+				//  which implements ImageAware interface)
+				URL imageURL = null;
+				try {
+					imageURL = new URL("https://graph.facebook.com/" + currentUser.getString("facebookId")  + "/picture?type=large");
+					imageLoader.displayImage(String.valueOf(imageURL), imageViewProfile);
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
+
+
 
 				if (userProfile.has("name")) {
 					edtFirstandLastName.setText(userProfile.getString("name"));

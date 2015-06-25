@@ -318,6 +318,7 @@
     <dimen name="dimension_20dp">20dp</dimen>
     <dimen name="dimension_22dp">22dp</dimen>
     <dimen name="dimension_25dp">25dp</dimen>
+    <dimen name="dimension_300dp">300dp</dimen>
     <dimen name="dimension_30dp">30dp</dimen>
     <dimen name="dimension_35dp">35dp</dimen>
     <dimen name="dimension_38dp">38dp</dimen>
@@ -496,6 +497,7 @@
     <string name="create_calendar_title">Create calendar event</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="current_tab_promotions">Current</string>
     <string name="cvc">CVC</string>
     <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>

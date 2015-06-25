@@ -190,9 +190,9 @@ public final class R {
 		public static final int common_signin_button_text_long = 0x7f06002f;
 		public static final int create_calendar_message = 0x7f06006a;
 		public static final int create_calendar_title = 0x7f06006b;
-		public static final int decline = 0x7f06006d;
-		public static final int store_picture_message = 0x7f0600a5;
-		public static final int store_picture_title = 0x7f0600a6;
+		public static final int decline = 0x7f06006e;
+		public static final int store_picture_message = 0x7f0600a6;
+		public static final int store_picture_title = 0x7f0600a7;
 		public static final int wallet_buy_button_place_holder = 0x7f060053;
 	}
 	public static final class style {
