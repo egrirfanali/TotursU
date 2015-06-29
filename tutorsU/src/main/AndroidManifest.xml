@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.strendent.tutorsu"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,10 +21,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/MyApplicationTheme" >
+        android:theme="@style/MyApplicationTheme">
         <activity
             android:name=".Activities.Activity_Home"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,20 +35,17 @@
             android:name=".Activities.Activity_Main"
             android:configChanges="orientation"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".Activities.Activity_Profile"
             android:configChanges="orientation"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".Activities.Activity_SignUp"
             android:configChanges="orientation"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.facebook.LoginActivity"
             android:configChanges="orientation"
@@ -62,21 +60,19 @@
             android:name=".Activities.Activity_Splash"
             android:configChanges="orientation"
             android:label="@string/title_activity_activity__splash"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
             android:name=".Activities.Activity_Verified"
             android:configChanges="orientation"
             android:label="@string/title_activity_activity__verified"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".Activities.Activity_VerifyCode"
             android:configChanges="orientation"
             android:label="@string/title_activity_activity__verify_code"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
 
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
@@ -86,26 +82,23 @@
         <activity
             android:name=".Activities.Activity_PaymentOption"
             android:label="@string/add_payment_info"
-            android:parentActivityName=".Activities.Activity_Home" >
+            android:parentActivityName=".Activities.Activity_Home">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.strendent.tutorsu.Activities.Activity_Home" />
         </activity>
         <activity
             android:name=".Activities.Activity_CardPayment"
-            android:label="@string/app_name" >
-
+            android:label="@string/app_name">
 
 
         </activity>
         <activity
             android:name=".Activities.Activity_PaymentCardList"
-            android:label="@string/title_activity_activity__payment_card_list" >
-        </activity>
+            android:label="@string/title_activity_activity__payment_card_list"></activity>
         <activity
             android:name=".Activities.Activity_Payment_Add_Information"
-            android:label="@string/title_activity_activity__add__information" >
-        </activity>
+            android:label="@string/title_activity_activity__add__information"></activity>
     </application>
 
 </manifest>

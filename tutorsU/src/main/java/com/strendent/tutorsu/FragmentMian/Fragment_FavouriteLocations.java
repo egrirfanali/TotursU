@@ -56,7 +56,14 @@ public class Fragment_FavouriteLocations extends Fragment {
         if(bundle!=null) {
             String addressTitle = bundle.getString("title");
             String address = bundle.getString("address");
-            locationsList.add(new Fav_Location_model(addressTitle, address, ""));
+
+            String[] str = address.split(",");  //now str[0] is "hello" and str[1] is "goodmorning,2,1"
+
+            String primaryAddress = str[0].trim();  //hello
+
+            String secondryAddress = str[1].trim();
+
+            locationsList.add(new Fav_Location_model(addressTitle, primaryAddress, secondryAddress));
         }
         initList();
         view = inflater.inflate(R.layout.fragment_main_fav_location_main_layout, null);

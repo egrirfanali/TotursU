@@ -10,7 +10,6 @@
         TutorsUApplication:showAsAction="ifRoom|withText"  />
     <item
         android:id="@+id/done_button"
-        android:icon="@drawable/videos_gray"
         android:title="Done"
         android:visible="false"
         TutorsUApplication:showAsAction="always" />
