@@ -3,14 +3,16 @@ package com.strendent.tutorsu;
 
 
 
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
 import com.parse.Parse;
+import com.strendent.tutorsu.Utilities.Constants_MixPannel;
 
 import android.app.Application;
 
 public class TutorsUApplication extends Application {
 
 	 public static final String TAG = "TutorsU";
-	 public static final String mixpannelProjectToken ="2d2762c1c496afca016c988b0f17f5b5";
+
 
 	@Override
 	public void onCreate() {

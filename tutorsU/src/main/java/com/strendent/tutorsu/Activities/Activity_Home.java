@@ -2,6 +2,7 @@ package com.strendent.tutorsu.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,8 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.mixpanel.android.mpmetrics.MixpanelAPI;
-import com.parse.Parse;
-import com.parse.ParseAnalytics;
+
+import android.widget.Toast;
 import com.strendent.tutorsu.Fragment.FragmentDrawer;
 import com.strendent.tutorsu.FragmentMian.Fragment_About;
 import com.strendent.tutorsu.FragmentMian.Fragment_Become_A_Tutor;
@@ -27,13 +28,11 @@ import com.strendent.tutorsu.FragmentMian.Fragment_Share;
 import com.strendent.tutorsu.FragmentMian.Fragment_TrustedTutors;
 import com.strendent.tutorsu.FragmentMian.Fragment_Tutions;
 import com.strendent.tutorsu.R;
-import com.strendent.tutorsu.TutorsUApplication;
+import com.strendent.tutorsu.Utilities.Constants_MixPannel;
+import com.strendent.tutorsu.Utilities.Utility;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class Activity_Home extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
 
@@ -48,24 +47,31 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_drawer);
 
-        mixpanel = MixpanelAPI.getInstance(this, TutorsUApplication.mixpannelProjectToken);
+
         try {
+
+
+
+
+
+            // Setting User Properties on MIX PANNEL
+            mixpanel= MixpanelAPI.getInstance(this, Constants_MixPannel.mixpannelProjectToken);
+
+
             JSONObject props = new JSONObject();
             props.put("Gender", "Male");
             props.put("Logged in", true);
-            mixpanel.getPeople().set("Name", "Nouman GhaffarTesting5");
-            mixpanel.getPeople().set("Gender", "Male");
-
-            mixpanel.track("MainActivity - onCreate called", props);
+            mixpanel.track(Constants_MixPannel.MAIN_ACTIVITY, props);
         } catch (JSONException e) {
 
             Log.e("MYAPP", "Unable to add properties to JSONObject", e);
         }
+        // Setting Custom Action Bar i.e ToolBar
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
+    // Setting Fragments
    //   getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_launcher);
         drawerFragment = (FragmentDrawer)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
@@ -103,7 +109,7 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
 
     private void displayView(int position) {
         Fragment fragment = null;
-        mixpanel.track("MenuOpened");
+        mixpanel.track(Constants_MixPannel.MENU_OPEN);
 
         String title = getString(R.string.app_name);
         switch (position) {
@@ -115,33 +121,33 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
             case 1:
                 fragment = new Fragment_TrustedTutors();
                 title = getString(R.string.trested_tutors_title);
-                mixpanel.track("Trusted Tutorz opened");
+                mixpanel.track(Constants_MixPannel.TRUSTED_TUTORS);
 
                 break;
 
             case 2:
                 fragment = new Fragment_MyFamily();
                 title = getString(R.string.my_family_title);
-                mixpanel.track("My Family opened");
+                mixpanel.track(Constants_MixPannel.MY_FAMILY);
                 break;
 
             case 3:
                 fragment = new Fragment_FavouriteLocations();
                 title = getString(R.string.favorite_locations_title);
-                mixpanel.track("FavLocation opened");
+                mixpanel.track(Constants_MixPannel.FAVOURITE_LOCATIONS);
 
 
                 break;
             case 4:
                 fragment = new Fragment_Tutions();
                 title = getString(R.string.tutions_title);
-                mixpanel.track("Tutions opened");
+                mixpanel.track(Constants_MixPannel.TUTOINS_OPENED);
                 break;
 
             case 5:
                 Intent signupIntent = new Intent(this, Activity_SignUp.class);
                 startActivity(signupIntent);
-                mixpanel.track("Profile Opened");
+                mixpanel.track(Constants_MixPannel.PROFILE);
                /* fragment = new Fragment_Profile();
                 title = getString(R.string.profile_title);*/
                 break;
@@ -150,23 +156,23 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
             case 6:
                 fragment = new Fragment_Payments();
                 title = getString(R.string.payments_title);
-                mixpanel.track("Payments Opened");
+                mixpanel.track(Constants_MixPannel.PAYMENTS);
 
                 break;
             case 7:
                 fragment = new Fragment_Share();
                 title = getString(R.string.share_title);
-                mixpanel.track("Share Opened");
+                mixpanel.track(Constants_MixPannel.SHARE);
                 break;
             case 8:
                 fragment = new Fragment_Promotions();
                 title = getString(R.string.promotions_title);
-                mixpanel.track("Promotions Opened");
+                mixpanel.track(Constants_MixPannel.PROMOTIONS);
                 break;
             case 9:
                 fragment = new Fragment_About();
                 title = getString(R.string.about_title);
-                mixpanel.track("About Opened");
+                mixpanel.track(Constants_MixPannel.ABOUT);
                 break;
             case 10:
                 fragment = new Fragment_Become_A_Tutor();

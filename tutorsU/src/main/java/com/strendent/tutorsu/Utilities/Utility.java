@@ -1,9 +1,21 @@
 package com.strendent.tutorsu.Utilities;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.Window;
+
+import com.strendent.tutorsu.R;
 
 import java.io.ByteArrayOutputStream;
+import java.net.InetAddress;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -48,5 +60,51 @@ public class Utility {
         return bmp;
 
     }
+    public static boolean isNetworkConnected(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo ni = cm.getActiveNetworkInfo();
+        if (ni != null) {
+            if(isInternetWorking()==true){
+                return true;
+
+            }else
+            {
+                return false;
+            }
+        } else
+            return false;
+    }
+    public static boolean isInternetWorking() {
+        try {
+            InetAddress ipAddr = InetAddress.getByName("google.com");
+
+            if (ipAddr.equals("")) {
+                return false;
+            } else {
+                return true;
+            }
+
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+    public static void noInternetDialog(Context context){
+        final Dialog dialog=new Dialog(context,android.R.style.Theme_Black_NoTitleBar_Fullscreen);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.fragment_demo);
+
+        // set the custom dialog components - text, image and button
+        // if button is clicked, close the custom dialog
+      /*  dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+*/
+        dialog.show();
+    }
+
 
 }
