@@ -143,7 +143,7 @@ public class Activity_SignUp extends ActionBarActivity {
 						ParseUser currentUser = ParseUser.getCurrentUser();
 						currentUser.put("profile", userProfile);
 						
-						/* For currentUser set currentUser.setUsername(user.getName()) and currentUser.setPassword("ba123!@#"); 
+						/* For currentUser set currentUser.setUsername(user.getName()) and currentUser.setPassword("ba123!@#");
 						 * otherwise it will throw exception. Parse needs these two fields for creating ParseUser.*/
 						currentUser.setUsername(user.getName());
 						currentUser.setPassword(user.getId());

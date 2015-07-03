@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\libs\Parse-1.7.1.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\Parse-1.7.1-4ab590d636250fbfdd0c4abd4369ad6384f89428.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-b3109687802edcdbe5a7bd26fc006c823dd16dca.jar" />
+        revision="22.0.0"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-17c8dba96e446416a6adfa1544450d9bc9cac012.jar" />
     </item>
     <item
         jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
@@ -23,6 +16,20 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-7c2aabf3a1ac1fc9950d4323d6a7106ddab45999.jar" />
     </item>
     <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-292ea242add136abd8eda5855a91add873df4c2e.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\facebookSDK\0.4-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ed05b735c206512879f6c5743b146ce01bb4634f">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-a866b3dd69c79df4ace3af8a001761fd04b55fef.jar" />
+    </item>
+    <item
         jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\stripe\0.4-SNAPSHOT\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -30,53 +37,11 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-c00460015629279f6a6768deaa0b3b345962e062.jar" />
     </item>
     <item
-        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.stripe\stripe-java\1.15.1\a93ce4be4cca79ab3b591eb77064fbe803d696a1\stripe-java-1.15.1.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\libs\android-smart-image-view-1.0.0.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="a93ce4be4cca79ab3b591eb77064fbe803d696a1">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\stripe-java-1.15.1-76382215635d1b55677bb8cf9666dfbceed93fe8.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-b0ddf2f0e23037fafcc609cf655252d7d1ab8a36.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-5e2e6043d26099a52cb9929dba3f7be14f9626e4.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-2228ae65463f6f25a5360c19767f80aadd965a02.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-cb0d68cede67ccb35423f6e0da327e54951f7def.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-0d2c2e955e7d5daed00bfed18c4d493cba4b5898.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-e37cc95490fb3d0edf47823d34ceff0e12e7d970.jar" />
+        revision="22.0.0"
+        sha1="d76ea8c3e9a60101244d6d04aff8cc75888570f0">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\android-smart-image-view-1.0.0-75203463c98152c277c2b3629107a28d78c3f0de.jar" />
     </item>
     <item
         jar="D:\Eclipse\Android\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
@@ -86,6 +51,34 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-6d22cf14daf5a85753a349689fa5cdbd8614f1bc.jar" />
     </item>
     <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.stripe\stripe-java\1.15.1\a93ce4be4cca79ab3b591eb77064fbe803d696a1\stripe-java-1.15.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a93ce4be4cca79ab3b591eb77064fbe803d696a1">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\stripe-java-1.15.1-76382215635d1b55677bb8cf9666dfbceed93fe8.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\gson-2.2.4-638dc86c58a101b5f4182ac80140d1d0cec9f422.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-e37cc95490fb3d0edf47823d34ceff0e12e7d970.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-cb0d68cede67ccb35423f6e0da327e54951f7def.jar" />
+    </item>
+    <item
         jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -93,60 +86,25 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-f18223bd1d9a4aa40932feab40af7fd77729c513.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-ee0b99f4b0df3644904f0ac0f60741c6bf0e1599.jar" />
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-54a0a577cd7f7dfb1b7f53e514331f2a1169c030.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-295b2f7df449a005d38319f0377591cf9e1fea85.jar" />
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-b3109687802edcdbe5a7bd26fc006c823dd16dca.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\libs\android-smart-image-view-1.0.0.jar"
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.stripe\stripe-java\1.15.1\a93ce4be4cca79ab3b591eb77064fbe803d696a1\stripe-java-1.15.1.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="d76ea8c3e9a60101244d6d04aff8cc75888570f0">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\android-smart-image-view-1.0.0-75203463c98152c277c2b3629107a28d78c3f0de.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-ddca5daacf46033627062f44acfb1528f92ee9b7.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d405025c600055237c171a0bbabaa49d69696573">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-5fbdcb28bca00089d56d981b5f0e9578acc23a85.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-016df8af3ba257993d1af2787465cd7af0ef4d78.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-9d09b93c7f31487199208e3b99c4ea7c7cc24bf1.jar" />
-    </item>
-    <item
-        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\gson-2.2.4-638dc86c58a101b5f4182ac80140d1d0cec9f422.jar" />
+        revision="22.0.0"
+        sha1="a93ce4be4cca79ab3b591eb77064fbe803d696a1">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\stripe-java-1.15.1-76382215635d1b55677bb8cf9666dfbceed93fe8.jar" />
     </item>
     <item
         jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
@@ -156,53 +114,18 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-85432458cf51e95bcedcd8c1ec3e693bf04aa155.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-976c1cf014e5fffd265974c5a345889850f8f418.jar" />
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-52c51eee3eed0a7fa48b4fd9af02c120256a5179.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-292ea242add136abd8eda5855a91add873df4c2e.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-5980ae13bebcb7eb905b1cb8a6aa3b5ab8a58914.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-54a0a577cd7f7dfb1b7f53e514331f2a1169c030.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-17c8dba96e446416a6adfa1544450d9bc9cac012.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-67e16b597c93b43892d32bcce5ba96fbe0fdab02.jar" />
-    </item>
-    <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-52e312f27cbf7bbe5cecdebe091ff8497ed5ccc8.jar" />
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-5fbdcb28bca00089d56d981b5f0e9578acc23a85.jar" />
     </item>
     <item
         jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
@@ -212,11 +135,109 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-c48d2d0a0f6cac6d406a2d30be4d52513bdd15c4.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-976c1cf014e5fffd265974c5a345889850f8f418.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-52e312f27cbf7bbe5cecdebe091ff8497ed5ccc8.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-9d09b93c7f31487199208e3b99c4ea7c7cc24bf1.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-5980ae13bebcb7eb905b1cb8a6aa3b5ab8a58914.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-e37cc95490fb3d0edf47823d34ceff0e12e7d970.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.maps.android\library\0.4-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="fede568590d1c038f871855d583935815cf886a0">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-8b838ac6ee76f8d3f429bf7e6734928ac7d9b83e.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-67e16b597c93b43892d32bcce5ba96fbe0fdab02.jar" />
+    </item>
+    <item
+        jar="D:\Eclipse\Android\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-6d22cf14daf5a85753a349689fa5cdbd8614f1bc.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-2228ae65463f6f25a5360c19767f80aadd965a02.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-ddca5daacf46033627062f44acfb1528f92ee9b7.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-b0ddf2f0e23037fafcc609cf655252d7d1ab8a36.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
         sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-e526f2fd00e9940c9a7ce0c8553df683f7018b0d.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-ee0b99f4b0df3644904f0ac0f60741c6bf0e1599.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-17c8dba96e446416a6adfa1544450d9bc9cac012.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\facebookSDK\0.4-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1c998fab29d2931ba49988fb9d2d9a39ccdfb6ac">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-a866b3dd69c79df4ace3af8a001761fd04b55fef.jar" />
     </item>
     <item
         jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\facebookSDK\0.4-SNAPSHOT\jars\libs\bolts-android-1.1.2.jar"
@@ -226,18 +247,249 @@
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\bolts-android-1.1.2-22087a4aa2b170b4d0b83f353c24326684aa65f7.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-0d2c2e955e7d5daed00bfed18c4d493cba4b5898.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-cb0d68cede67ccb35423f6e0da327e54951f7def.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\bolts-android-1.2.0-ebbc6c4883b91c215ccac1e578bdb78653921571.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-0d2c2e955e7d5daed00bfed18c4d493cba4b5898.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-295b2f7df449a005d38319f0377591cf9e1fea85.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-85432458cf51e95bcedcd8c1ec3e693bf04aa155.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-7c2aabf3a1ac1fc9950d4323d6a7106ddab45999.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
         sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
         <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-52c51eee3eed0a7fa48b4fd9af02c120256a5179.jar" />
     </item>
     <item
-        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\facebookSDK\0.4-SNAPSHOT\jars\classes.jar"
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="1c998fab29d2931ba49988fb9d2d9a39ccdfb6ac">
-        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-a866b3dd69c79df4ace3af8a001761fd04b55fef.jar" />
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-5e2e6043d26099a52cb9929dba3f7be14f9626e4.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-ddca5daacf46033627062f44acfb1528f92ee9b7.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-2228ae65463f6f25a5360c19767f80aadd965a02.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-292ea242add136abd8eda5855a91add873df4c2e.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-016df8af3ba257993d1af2787465cd7af0ef4d78.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\libs\android-smart-image-view-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d76ea8c3e9a60101244d6d04aff8cc75888570f0">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\android-smart-image-view-1.0.0-75203463c98152c277c2b3629107a28d78c3f0de.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-f18223bd1d9a4aa40932feab40af7fd77729c513.jar" />
+    </item>
+    <item
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\gson-2.2.4-638dc86c58a101b5f4182ac80140d1d0cec9f422.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.mixpanel.android\mixpanel-android\4.6.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="2588770a815b53336ba093d77f6f6f225853f74d">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-0cfc9ea373f882d57fdf115a977f38542d35453d.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-295b2f7df449a005d38319f0377591cf9e1fea85.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-5e2e6043d26099a52cb9929dba3f7be14f9626e4.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-ee0b99f4b0df3644904f0ac0f60741c6bf0e1599.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-54a0a577cd7f7dfb1b7f53e514331f2a1169c030.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-b3109687802edcdbe5a7bd26fc006c823dd16dca.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\facebookSDK\0.4-SNAPSHOT\jars\libs\bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\bolts-android-1.1.2-22087a4aa2b170b4d0b83f353c24326684aa65f7.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-016df8af3ba257993d1af2787465cd7af0ef4d78.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\android\stripe\0.4-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="7c4059c7818460a6b2bf6eb29c0cbe958d5c59bb">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-c00460015629279f6a6768deaa0b3b345962e062.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-c48d2d0a0f6cac6d406a2d30be4d52513bdd15c4.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-9d09b93c7f31487199208e3b99c4ea7c7cc24bf1.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-5fbdcb28bca00089d56d981b5f0e9578acc23a85.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-5980ae13bebcb7eb905b1cb8a6aa3b5ab8a58914.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-976c1cf014e5fffd265974c5a345889850f8f418.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-67e16b597c93b43892d32bcce5ba96fbe0fdab02.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\libs\Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\Parse-1.7.1-4ab590d636250fbfdd0c4abd4369ad6384f89428.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-52e312f27cbf7bbe5cecdebe091ff8497ed5ccc8.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-b0ddf2f0e23037fafcc609cf655252d7d1ab8a36.jar" />
+    </item>
+    <item
+        jar="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="D:\Work\StrendentWork\turorSuNewFromIfran\android\tutorsU\build\intermediates\pre-dexed\debug\classes-e526f2fd00e9940c9a7ce0c8553df683f7018b0d.jar" />
     </item>
 
 </items>

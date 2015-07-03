@@ -24,7 +24,6 @@ public class Utility {
         try {
             Date date = formatter.parse(fromFormat);
             return formatter.format(date);
-
         } catch (ParseException e) {
             e.printStackTrace();
         }

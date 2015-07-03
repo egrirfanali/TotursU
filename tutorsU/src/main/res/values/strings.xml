@@ -74,6 +74,7 @@
     <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
     <string name="start_level">Level 1</string>
     <string name="next_level">Next Level</string>
+    <string name="menu_name">Student Menu</string>
 
     <string name="select_payment_method">Select the payment method \n best suited for you</string>
     <string name="card_no">Card No.</string>
@@ -106,7 +107,7 @@
         <item>Trusted Tutors</item>
         <item>My Family</item>
         <item>Favorite Locations</item>
-        <item>Tutions</item>
+        <item>Tutoring Sessions</item>
         <item>Profile</item>
         <item>Payments</item>
         <item>Share</item>
@@ -131,6 +132,9 @@
     <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
     <string name="title_activity_activity__add__information">Activity_Add_Information</string>
     <string name="ok">OK</string>
+    <string name="share_message">hey,
+    I just used tuturzu app and I think is an awesome experience. It was easy, safe and secure to get a tutor for my kid , when I couldn\'t. </string>
+
 
 
 </resources>

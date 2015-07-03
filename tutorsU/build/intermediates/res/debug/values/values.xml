@@ -12,7 +12,7 @@
         <item>Trusted Tutors</item>
         <item>My Family</item>
         <item>Favorite Locations</item>
-        <item>Tutions</item>
+        <item>Tutoring Sessions</item>
         <item>Profile</item>
         <item>Payments</item>
         <item>Share</item>
@@ -92,6 +92,9 @@
     <color name="com_facebook_usersettingsfragment_connected_shadow_color">#000000</color>
     <color name="com_facebook_usersettingsfragment_connected_text_color">#FFFFFF</color>
     <color name="com_facebook_usersettingsfragment_not_connected_text_color">#A6AED7</color>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="com_mixpanel_android_selected">#66ffffff</color>
     <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
@@ -366,6 +369,11 @@
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
+    <eat-comment/>
+    <item name="text" type="id"/>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -452,6 +460,19 @@
     <string name="com_facebook_usersettingsfragment_log_in_button">Log in…</string>
     <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
     <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="com_mixpanel_android_close">Close</string>
+    <string name="com_mixpanel_android_done">Done</string>
+    <string name="com_mixpanel_android_exit">Exit</string>
+    <string name="com_mixpanel_android_logo">By Mixpanel</string>
+    <string name="com_mixpanel_android_next">Next question</string>
+    <string name="com_mixpanel_android_no_thanks">No, Thanks</string>
+    <string name="com_mixpanel_android_notification_image">Image not displayed</string>
+    <string name="com_mixpanel_android_previous">Previous question</string>
+    <string name="com_mixpanel_android_sure">Sure</string>
+    <string name="com_mixpanel_android_survey_prompt_dialog_message">Mind taking a quick survey?</string>
+    <string name="com_mixpanel_android_survey_prompt_dialog_title">We\'d love your feedback!</string>
     <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
@@ -520,6 +541,7 @@
     <string name="login_fb">Login with with FB</string>
     <string name="login_phone_number">Login with Phote No.</string>
     <string name="login_to_meet_tutor">Log in to meet your tutor</string>
+    <string name="menu_name">Student Menu</string>
     <string name="month_year">MM/YY</string>
     <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -563,6 +585,8 @@
     <string name="security_code">Security Code</string>
     <string name="select_payment_method">Select the payment method \n best suited for you</string>
     <string name="send_code">Send Code</string>
+    <string name="share_message">hey,
+    I just used tuturzu app and I think is an awesome experience. It was easy, safe and secure to get a tutor for my kid , when I couldn\'t. </string>
     <string name="share_title">Share</string>
     <string name="sign_up">SIGN UP</string>
     <string name="skip">Skip</string>
@@ -1467,11 +1491,25 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
     <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="GalaxyZooThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
-        <item name="actionMenuTextColor">#74DF00</item>
+        <item name="actionMenuTextColor">@color/topMenuIconColor</item>
         <item name="android:textColorSecondary">@color/topMenuIconColor</item>
     </style>
     <style name="MyApplicationTheme" parent="MyMaterialTheme.Base"/>
@@ -1950,6 +1988,20 @@
         <item name="android:textColor">#4B5164</item>
         <item name="android:gravity">center</item>
     </style>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="com_mixpanel_android_SurveyActivityAnimation">
+    <item name="android:windowEnterAnimation">@anim/com_mixpanel_android_fade_in</item>
+    <item name="android:windowExitAnimation">@anim/com_mixpanel_android_fade_out</item>
+  </style>
+    <style name="com_mixpanel_android_SurveyActivityTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:windowAnimationStyle">@style/com_mixpanel_android_SurveyActivityAnimation</item>
+  </style>
     <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="common_layout">
