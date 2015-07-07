@@ -1,8 +1,11 @@
 package com.strendent.tutorsu.Activities;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,9 +17,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.androidquery.AQuery;
+import com.androidquery.callback.AjaxStatus;
+import com.joshdholtz.sentry.Sentry;
 import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
 import android.widget.Toast;
+
+import com.parse.FunctionCallback;
+import com.parse.Parse;
+import com.parse.ParseCloud;
+import com.parse.ParseException;
 import com.strendent.tutorsu.Fragment.FragmentDrawer;
 import com.strendent.tutorsu.FragmentMian.Fragment_About;
 import com.strendent.tutorsu.FragmentMian.Fragment_Become_A_Tutor;
@@ -29,10 +40,28 @@ import com.strendent.tutorsu.FragmentMian.Fragment_TrustedTutors;
 import com.strendent.tutorsu.FragmentMian.Fragment_Tutions;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.Utilities.Constants_MixPannel;
+import com.strendent.tutorsu.Utilities.Constants_Sentry;
 import com.strendent.tutorsu.Utilities.Utility;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.params.ClientPNames;
+import org.apache.http.client.params.CookiePolicy;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Activity_Home extends ActionBarActivity implements FragmentDrawer.FragmentDrawerListener {
 
@@ -46,22 +75,62 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_drawer);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+        StrictMode.setThreadPolicy(policy);
 
 
         try {
+            String params2="first_name=Mustafa&last_name=Saeed&email=mustafa.saeed@strendent.com&phone=5555555555&zipcode=90401&dob=1970-01-22&ssn=XXX-XX-2001&driver_license_number=F1112001&driver_license_state=CA";
+         /*   String params2="first_name=Your"+"&"+"last_name=Name"+"&"+"email=your.name@example.com"+"&"+
+                    "phone=5555555555"+"&"+"zipcode=90401"+"&"+"dob=1970-01-22"+"&"+"ssn=111-11-2001"+"&"+"driver_license_number=F1112001"+"&"+
+                    "driver_license_number=F1112001"+"&"+"driver_license_state=CA";*/
+          //  String chkrUrl="http://c7aea53fac8319c95d63450fbef03ce439cad1d8:@api.checkr.com/v1/candidates/";
+            try {
+        //        webInvokeGetRequest("https://api.checkr.com/c7aea53fac8319c95d63450fbef03ce439cad1d8","");
+            //   webInvokeGetRequest(chkrUrl,params2);
+             //   ParseCloud.callFunctionInBackground("checkr", null);
+                ParseCloud.callFunctionInBackground("checkr",
+                        new HashMap<String, Object>(), new FunctionCallback< Object >() {
 
+                            @Override
+                            public void done(Object arg0, ParseException arg1) {
+                                // TODO Auto-generated method stub
 
+                                String myInvoice = arg0.toString();
 
-
-
-            // Setting User Properties on MIX PANNEL
+                            }
+                        });
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            Sentry.init(this.getApplicationContext(), Constants_Sentry.sentryDns);
             mixpanel= MixpanelAPI.getInstance(this, Constants_MixPannel.mixpannelProjectToken);
 
 
             JSONObject props = new JSONObject();
             props.put("Gender", "Male");
             props.put("Logged in", true);
+
             mixpanel.track(Constants_MixPannel.MAIN_ACTIVITY, props);
+            try {
+                //TODO: It's a custom exception generated to test Sentry
+                String expectionMessage= "abcdefghijkl";
+                int a =  Integer.parseInt(expectionMessage);
+            } catch (Exception e) {
+                e.printStackTrace();
+                //Map to send data to sentry
+                HashMap<String,String> sentryMap=new HashMap<>();
+                sentryMap.put("UserName", "Nouman Ghaffar");
+                sentryMap.put("Device  ", Build.DEVICE);
+                sentryMap.put("Device Model ", android.os.Build.MODEL);
+                sentryMap.put("Device Os", android.os.Build.VERSION.RELEASE);
+                Utility.sendSentryLog(e, Constants_Sentry.HOME_SCREEN_ON_CREATE, sentryMap);
+               /* Sentry.captureEvent(new Sentry.SentryEventBuilder().setMessage(e.toString()).
+                        setCulprit(Constants_Sentry.HOME_SCREEN_ON_CREATE).setTimestamp(System.currentTimeMillis())
+                        .setException(e).setExtra(sentryMap));*/
+
+            }
         } catch (JSONException e) {
 
             Log.e("MYAPP", "Unable to add properties to JSONObject", e);
@@ -80,6 +149,21 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
 
         // display the first navigation drawer view on app launch
         displayView(0);
+        try {
+            //TODO: It's a custom exception generated to test Sentry
+            String expectionMessage= "oioioioioi";
+            int a =  Integer.parseInt(expectionMessage);
+        } catch (Exception e) {
+            e.printStackTrace();
+            HashMap<String,String> sentryMap=new HashMap<>();
+            sentryMap.put("UserName", "Nouman Ghaffar");
+            sentryMap.put("Device  ", Build.DEVICE);
+            sentryMap.put("Device Model ", android.os.Build.MODEL);
+            sentryMap.put("Device Os", android.os.Build.VERSION.RELEASE);
+            Utility.sendSentryLog(e,"Sample Expection",sentryMap);
+
+
+        }
 
     }
 
@@ -195,5 +279,41 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
             // set the toolbar title
             getSupportActionBar().setTitle(title);
         }
+    }
+
+    public JSONObject webInvokeGetRequest(String webServiceUrl, String methodName) throws Exception {
+        HttpEntity entity = null;
+        String ret;
+        HttpResponse response = null;
+        HttpGet httpGet = null;
+        JSONObject myObject = null;
+        DefaultHttpClient httpClient;
+        HttpParams params = new BasicHttpParams();
+        HttpConnectionParams.setConnectionTimeout(params, 10000);
+        HttpConnectionParams.setSoTimeout(params, 10000);
+        httpClient = new DefaultHttpClient(params);
+        try {
+            HttpClient client = new DefaultHttpClient();
+            httpGet = new HttpGet(webServiceUrl + methodName);
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            httpClient.getParams().setParameter(ClientPNames.COOKIE_POLICY,
+                    CookiePolicy.RFC_2109);
+            httpGet.setHeader(
+                    "Accept",
+                    "application/json,text/html,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5");
+            response = client.execute(httpGet);
+            entity = response.getEntity();
+
+            ret = EntityUtils.toString(entity);
+
+        //    myObject = new JSONObject(ret);
+            System.out.println(ret);
+
+        } catch (Exception e) {
+            throw e;
+        }
+        return myObject;
     }
 }

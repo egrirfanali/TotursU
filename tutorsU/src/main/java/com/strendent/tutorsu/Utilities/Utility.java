@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 
+import com.joshdholtz.sentry.Sentry;
 import com.strendent.tutorsu.R;
 
 import java.io.ByteArrayOutputStream;
@@ -19,6 +20,7 @@ import java.net.InetAddress;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * Created by Irfan Ali on 6/17/2015.
@@ -104,6 +106,11 @@ public class Utility {
         });
 */
         dialog.show();
+    }
+    public static void sendSentryLog(Exception e, String customMessage,HashMap sentryMap){
+        Sentry.captureEvent(new Sentry.SentryEventBuilder().setMessage(e.toString()).
+                setCulprit(customMessage).setTimestamp(System.currentTimeMillis())
+                .setException(e).setExtra(sentryMap));
     }
 
 
