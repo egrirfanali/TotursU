@@ -108,12 +108,12 @@ public final class R {
 		public static final int common_signin_btn_text_normal_light = 0x7f020088;
 		public static final int common_signin_btn_text_pressed_dark = 0x7f020089;
 		public static final int common_signin_btn_text_pressed_light = 0x7f02008a;
-		public static final int ic_plusone_medium_off_client = 0x7f0200c4;
-		public static final int ic_plusone_small_off_client = 0x7f0200c5;
-		public static final int ic_plusone_standard_off_client = 0x7f0200c6;
-		public static final int ic_plusone_tall_off_client = 0x7f0200c7;
-		public static final int powered_by_google_dark = 0x7f0200e4;
-		public static final int powered_by_google_light = 0x7f0200e5;
+		public static final int ic_plusone_medium_off_client = 0x7f0200c3;
+		public static final int ic_plusone_small_off_client = 0x7f0200c4;
+		public static final int ic_plusone_standard_off_client = 0x7f0200c5;
+		public static final int ic_plusone_tall_off_client = 0x7f0200c6;
+		public static final int powered_by_google_dark = 0x7f0200e3;
+		public static final int powered_by_google_light = 0x7f0200e4;
 	}
 	public static final class id {
 		public static final int adjust_height = 0x7f0d0019;
@@ -190,9 +190,9 @@ public final class R {
 		public static final int common_signin_button_text_long = 0x7f06002f;
 		public static final int create_calendar_message = 0x7f06006a;
 		public static final int create_calendar_title = 0x7f06006b;
-		public static final int decline = 0x7f06006d;
-		public static final int store_picture_message = 0x7f0600a5;
-		public static final int store_picture_title = 0x7f0600a6;
+		public static final int decline = 0x7f06006e;
+		public static final int store_picture_message = 0x7f0600a7;
+		public static final int store_picture_title = 0x7f0600a8;
 		public static final int wallet_buy_button_place_holder = 0x7f060053;
 	}
 	public static final class style {

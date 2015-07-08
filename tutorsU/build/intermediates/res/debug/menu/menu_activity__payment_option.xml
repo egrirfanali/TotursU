@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/menu/menu_activity__payment_option.xml -->
+<!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/menu/menu_activity__payment_option.xml -->

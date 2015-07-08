@@ -112,8 +112,6 @@ MERGED from com.google.maps.android:library:0.4-SNAPSHOT:5:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
 MERGED from com.android.support:support-v4:22.0.0:20:5
-MERGED from com.braintreepayments.api:braintree:1.6.3:8:5
-MERGED from com.braintreepayments:card-form:1.4.0:8:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -134,7 +132,6 @@ MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
 MERGED from com.google.android.gms:play-services-wallet:7.5.0:20:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
-MERGED from com.braintreepayments.api:braintree:1.6.3:13:5
 	android:name
 		ADDED from AndroidManifest.xml:11:22
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -148,7 +145,6 @@ MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
 MERGED from com.google.android.gms:play-services-nearby:7.5.0:19:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
-MERGED from com.braintreepayments.api:braintree:1.6.3:12:5
 	android:name
 		ADDED from AndroidManifest.xml:12:22
 uses-permission#android.permission.READ_PHONE_STATE
@@ -266,13 +262,8 @@ MERGED from com.google.maps.android:library:0.4-SNAPSHOT:7:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
 MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
 MERGED from com.android.support:support-v4:22.0.0:22:5
-MERGED from com.braintreepayments.api:braintree:1.6.3:15:5
 	android:label
 		ADDED from AndroidManifest.xml:21:9
-	android:supportsRtl
-		ADDED from com.braintreepayments.api:braintree:1.6.3:16:9
-	tools:ignore
-		ADDED from com.braintreepayments.api:braintree:1.6.3:17:9
 	android:allowBackup
 		ADDED from AndroidManifest.xml:19:9
 	android:icon
@@ -515,39 +506,3 @@ ADDED from com.android.support:recyclerview-v7:21.0.3:18:9
 		ADDED from com.android.support:recyclerview-v7:21.0.3:18:19
 	android:name
 		ADDED from com.android.support:recyclerview-v7:21.0.3:18:60
-activity#com.braintreepayments.api.dropin.BraintreePaymentActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:18:9
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:18:19
-activity#com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:19:9
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:19:19
-activity#com.paypal.android.sdk.payments.PayPalProfileSharingActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:20:9
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:20:19
-activity#com.paypal.android.sdk.payments.ProfileSharingConsentActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:21:9
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:21:19
-activity#com.paypal.android.sdk.payments.FuturePaymentInfoActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:22:9
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:22:19
-activity#com.paypal.android.sdk.payments.LoginActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:23:9
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:23:19
-activity#com.paypal.android.sdk.payments.PayPalTouchActivity
-ADDED from com.braintreepayments.api:braintree:1.6.3:24:9
-	android:theme
-		ADDED from com.braintreepayments.api:braintree:1.6.3:26:13
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:25:13
-service#com.paypal.android.sdk.payments.PayPalService
-ADDED from com.braintreepayments.api:braintree:1.6.3:28:9
-	android:exported
-		ADDED from com.braintreepayments.api:braintree:1.6.3:30:13
-	android:name
-		ADDED from com.braintreepayments.api:braintree:1.6.3:29:13

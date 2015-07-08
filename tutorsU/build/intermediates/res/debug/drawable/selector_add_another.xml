@@ -6,4 +6,4 @@
     <item android:state_checked="true" android:drawable="@drawable/ic_add_another" />
     <item android:drawable="@drawable/ic_add_another"  />
 
-</selector><!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/drawable/selector_add_another.xml -->
+</selector><!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/drawable/selector_add_another.xml -->

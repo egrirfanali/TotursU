@@ -6,4 +6,4 @@
         <item android:state_checked="true" android:drawable="@drawable/ic_add_done" />
     <item android:drawable="@drawable/ic_add_done"/>
 
-</selector><!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/drawable/selector_done.xml -->
+</selector><!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/drawable/selector_done.xml -->
