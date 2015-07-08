@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
@@ -33,12 +33,12 @@
         <item>@drawable/ic_action_share</item>
         <item>@drawable/ic_action_share</item>
     </array>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="mediaRouteButtonStyle"/>
     <attr format="reference" name="mediaRouteConnectingDrawable"/>
@@ -47,7 +47,7 @@
     <attr format="reference" name="mediaRoutePauseDrawable"/>
     <attr format="reference" name="mediaRoutePlayDrawable"/>
     <attr format="reference" name="mediaRouteSettingsDrawable"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
@@ -72,14 +72,39 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bt_base_background">#F3F4F6</color>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bt_black">#001129</color>
+    <color name="bt_blue">#009BDE</color>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bt_blue_pressed">#008BC7</color>
+    <color name="bt_border_color">#99999A</color>
+    <color name="bt_button_disabled_color">#99999A</color>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bt_light_gray">#8E8E8E</color>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bt_paypal_button_background">#009BDE</color>
+    <color name="bt_paypal_button_background_pressed">#0C8DC4</color>
+    <color name="bt_red">#DD5555</color>
+    <color name="bt_very_light_gray">#E2E2E3</color>
+    <color name="bt_white">#FFFFFF</color>
+    <color name="bt_white_pressed">#F2F2F2</color>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="colorAccent">#FF80AB</color>
     <color name="colorPrimary">#F50057</color>
     <color name="colorPrimaryDark">#61F71B</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <color name="com_facebook_blue">#3B5998</color>
     <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
@@ -92,7 +117,7 @@
     <color name="com_facebook_usersettingsfragment_connected_shadow_color">#000000</color>
     <color name="com_facebook_usersettingsfragment_connected_text_color">#FFFFFF</color>
     <color name="com_facebook_usersettingsfragment_not_connected_text_color">#A6AED7</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_signin_btn_dark_text_default">@android:color/white</color>
@@ -104,26 +129,26 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="drawerOptionColor">#272626</color>
     <color name="headerColor">#272626</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <color name="light_green">#74DF00</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
@@ -132,10 +157,10 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="navigationBarColor">#000000</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -153,11 +178,11 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="textColorPrimary">#272626</color>
     <color name="topMenuIconColor">#37AF4A</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_colors.xml -->
     <eat-comment/>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
@@ -172,7 +197,7 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/colors.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="windowBackground">#FFFFFF</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -214,7 +239,7 @@
     <declare-styleable name="com_facebook_picker_fragment"><attr format="boolean" name="show_pictures"/><attr format="string" name="extra_fields"/><attr format="boolean" name="show_title_bar"/><attr format="string" name="title_text"/><attr format="string" name="done_button_text"/><attr format="reference" name="title_bar_background"/><attr format="reference" name="done_button_background"/></declare-styleable>
     <declare-styleable name="com_facebook_place_picker_fragment"><attr format="integer" name="radius_in_meters"/><attr format="integer" name="results_limit"/><attr format="string" name="search_text"/><attr format="boolean" name="show_search_box"/></declare-styleable>
     <declare-styleable name="com_facebook_profile_picture_view"><attr name="preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="is_cropped"/></declare-styleable>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -258,11 +283,41 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_default_item_height">50dp</dimen>
+    <dimen name="bt_default_small_text_size">11sp</dimen>
+    <dimen name="bt_default_text_size">16sp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_floating_edit_text_horizontal_offset">12dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_form_appswitch_button_size">40dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_form_field_height">50dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_form_field_padding">12dp</dimen>
+    <dimen name="bt_form_padding">16dp</dimen>
+    <dimen name="bt_full_width" ns1:ignore="ReferenceType">@integer/bt_match_parent</dimen>
+    <dimen name="bt_header_container_height">66dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_landscape_max_width">500dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bt_payment_method_button_divider_height">30dp</dimen>
+    <dimen name="bt_payment_method_button_divider_width">1dp</dimen>
+    <dimen name="bt_payment_method_button_height">50dp</dimen>
+    <dimen name="bt_payment_method_button_type_padding">16dp</dimen>
+    <dimen name="bt_payment_method_item_padding">8dp</dimen>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
     <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
@@ -292,13 +347,13 @@
     <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
     <dimen name="com_facebook_usersettingsfragment_profile_picture_height">64dp</dimen>
     <dimen name="com_facebook_usersettingsfragment_profile_picture_width">64dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="dimension_01dp">01dp</dimen>
     <dimen name="dimension_02dp">02dp</dimen>
@@ -335,50 +390,53 @@
     <dimen name="dimension_85dp">85dp</dimen>
     <dimen name="dimension_90dp">90dp</dimen>
     <dimen name="dimension_95dp">95dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="header_text">30sp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="mr_media_route_controller_art_max_height">320dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/dimens.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="nav_drawer_width">260dp</dimen>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <drawable name="com_facebook_picker_default_separator_color">#33464c59</drawable>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_ids.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_ids.xml -->
     <eat-comment/>
     <item name="cast_notification_id" type="id"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <item name="text" type="id"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="up" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/version.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="bt_match_parent">-1</integer>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">7571000</integer>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -396,13 +454,13 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="about_title">About Application</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="accessibility_overflow">describtion</string>
     <string name="action_settings">Settings</string>
@@ -412,22 +470,61 @@
     <string name="address">Address</string>
     <string name="app_id">900009210070238</string>
     <string name="app_name">TutorsU</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/auth_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="become_a_tutor_title">Become A Tutor</string>
     <string name="bookmark_tab_my_trusted">BookMark</string>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <string name="bt_add_new_payment_method">Add New Payment Method</string>
+    <string name="bt_add_payment_method">Add Payment Method</string>
+    <string name="bt_card_descriptor">ends in %s</string>
+    <string name="bt_change_payment_method">Change Payment Method</string>
+    <string name="bt_choose_payment_method">Choose Payment Method</string>
+    <string name="bt_default_action_bar_text">Purchase</string>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="bt_default_action_label">Purchase</string>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <string name="bt_default_submit_button_text">Purchase</string>
+    <string name="bt_descriptor_amex">Amex</string>
+    <string name="bt_descriptor_android_pay" ns1:ignore="MissingTranslation">Google Wallet</string>
+    <string name="bt_descriptor_diners">Diners</string>
+    <string name="bt_descriptor_discover">Discover</string>
+    <string name="bt_descriptor_jcb">JCB</string>
+    <string name="bt_descriptor_maestro">Maestro</string>
+    <string name="bt_descriptor_mastercard">MasterCard</string>
+    <string name="bt_descriptor_paypal">PayPal</string>
+    <string name="bt_descriptor_unknown">Card</string>
+    <string name="bt_descriptor_visa">Visa</string>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="bt_form_hint_card_number">Card Number</string>
+    <string name="bt_form_hint_cvv">CVV</string>
+    <string name="bt_form_hint_expiration">Expiration</string>
+    <string name="bt_form_hint_postal_code">Postal Code</string>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <string name="bt_form_pay_with_card_header">PAY WITH A CARD</string>
+    <string name="bt_invalid_card">Card information is invalid</string>
+    <string name="bt_pay_with_android_pay" ns1:ignore="MissingTranslation">Pay with Google Wallet</string>
+    <string name="bt_pay_with_paypal">Pay with PayPal</string>
+    <string name="bt_pay_with_venmo">Pay with Venmo</string>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="cardNumber">Card Number</string>
     <string name="card_no">Card No.</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/res/values/cast_strings.xml -->
     <eat-comment/>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_disconnect">Disconnect</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <string name="com_facebook_choose_friends">Choose Friends</string>
     <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
@@ -457,7 +554,7 @@
     <string name="com_facebook_usersettingsfragment_log_in_button">Log in…</string>
     <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
     <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
@@ -491,18 +588,18 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="current_tab_promotions">Current</string>
     <string name="cvc">CVC</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="decline">Decline</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="do_you_want_to_make_this_your_primary_card">Do you want to make this your primary card?</string>
     <string name="done">Done</string>
@@ -527,7 +624,7 @@
     <string name="login_phone_number">Login with Phote No.</string>
     <string name="login_to_meet_tutor">Log in to meet your tutor</string>
     <string name="month_year">MM/YY</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="mr_media_route_button_content_description">Cast</string>
     <string name="mr_media_route_chooser_searching">Searching for devices\u2026</string>
@@ -539,7 +636,7 @@
     <string name="mr_media_route_controller_stop">Stop casting</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="my_family_title">My Family</string>
     <string name="nav_item_friends">Friends</string>
@@ -573,11 +670,11 @@
     <string name="sign_up">SIGN UP</string>
     <string name="skip">Skip</string>
     <string name="start_level">Level 1</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="sweet">Sweet</string>
     <string name="title_activity_activity__add__information">Activity_Add_Information</string>
@@ -587,6 +684,7 @@
     <string name="title_activity_activity__verified">Activity_Verified</string>
     <string name="title_activity_activity__verify_code">Activity_VerifyCode</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_test">TestActivity</string>
     <string name="trested_tutors_home">Home</string>
     <string name="trested_tutors_title">Tutors</string>
     <string name="trusted_tab_my_trusted">My Trusted</string>
@@ -595,18 +693,18 @@
     <string name="veiy_code">Verify Code</string>
     <string name="verif_code_has_been_sent">Verifecation code has been sent to your given number, please check your inbox</string>
     <string name="verifecation">verifecation</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/strings.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="yes">Yes</string>
     <string name="you_are_verified">You\'re verified, now finish setting up your profile</string>
     <string name="you_made_this_card_your_primary_card">You made this cad your primary card</string>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -619,7 +717,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Animation.AppCompat.DropDownUp" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
@@ -1474,7 +1572,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.maps.android/library/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
         <item name="android:textSize">14sp</item>
@@ -1488,7 +1586,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="GalaxyZooThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
@@ -1507,7 +1605,7 @@
         <item name="android:windowBackground">@color/windowBackground</item>
 
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1767,7 +1865,7 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_iap_style.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/res/values/admob_iap_style.xml -->
     <eat-comment/>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>
@@ -1777,7 +1875,7 @@
     <item name="android:windowIsFloating">true</item>
     <item name="android:backgroundDimEnabled">false</item>
   </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.MediaRouter" parent="">
         <item name="mediaRouteButtonStyle">@style/Widget.MediaRouter.MediaRouteButton</item>
@@ -1799,14 +1897,14 @@
         <item name="mediaRoutePlayDrawable">@drawable/mr_ic_play_light</item>
         <item name="mediaRoutePauseDrawable">@drawable/mr_ic_pause_light</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_styles.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_styles.xml -->
     <eat-comment/>
     <style name="WalletFragmentDefaultButtonTextAppearance">
         <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
@@ -1840,13 +1938,13 @@
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">classic</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Widget.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:contentDescription">@string/accessibility_overflow</item>
         <item name="android:icon">@drawable/ic_launcher</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -1931,7 +2029,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.MediaRouter.Light.MediaRouteButton" parent="Widget.AppCompat.Light.ActionButton">
         <item name="android:minWidth">56dp</item>
@@ -1949,7 +2047,76 @@
         <item name="android:contentDescription">@string/mr_media_route_button_content_description</item>
         <item name="externalRouteEnabledDrawable">@drawable/mr_ic_media_route_mono_dark</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="bt_app_switch_button_divider">
+        <item name="android:layout_height">@dimen/bt_payment_method_button_divider_height</item>
+        <item name="android:layout_width">@dimen/bt_payment_method_button_divider_width</item>
+        <item name="android:background">@color/bt_border_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="bt_base_textview">
+        <item name="android:textSize">@dimen/bt_default_text_size</item>
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="bt_base_textview_bold">
+        <item name="android:textSize">@dimen/bt_default_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments/card-form/1.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="bt_card_form_field" parent="bt_base_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bt_form_field_height</item>
+        <item name="android:layout_marginLeft">@dimen/bt_form_field_padding</item>
+        <item name="android:layout_marginRight">@dimen/bt_form_field_padding</item>
+        <item name="android:paddingTop">@dimen/bt_form_padding</item>
+        <item name="android:background">@drawable/bt_field_selector</item>
+        <item name="android:textColor">@color/bt_black</item>
+        <item name="android:textColorHint">@color/bt_light_gray</item>
+        <item name="android:textCursorDrawable" ns1:ignore="NewApi">@null</item>
+    </style>
+    <style name="bt_card_form_field_landscape" parent="bt_card_form_field">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/com.braintreepayments.api/braintree/1.6.3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="bt_form_appswitch_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/bt_form_appswitch_button_size</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="bt_horizontal_gray_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/bt_light_gray</item>
+    </style>
+    <style name="bt_main_view_controller_container">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/bt_full_width</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="bt_payment_method_app_switch_button">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:padding">@dimen/bt_payment_method_button_type_padding</item>
+        <item name="android:background">@drawable/bt_payment_button_background</item>
+    </style>
+    <style name="bt_submit_button" parent="bt_base_textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bt_default_item_height</item>
+        <item name="android:background">@drawable/bt_submit_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
         <item name="android:layout_width">wrap_content</item>
@@ -1970,7 +2137,7 @@
         <item name="android:textColor">#4B5164</item>
         <item name="android:gravity">center</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/values/styles.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="common_layout">
     <item name="android:gravity">center</item>
@@ -1993,7 +2160,7 @@
         <item name="android:textStyle">normal</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
-    <!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
+    <!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/build/intermediates/exploded-aar/android/facebookSDK/0.4-SNAPSHOT/res/values/values.xml -->
     <eat-comment/>
     <style name="tooltip_bubble_text">
 	    <item name="android:textColor">@android:color/white</item>

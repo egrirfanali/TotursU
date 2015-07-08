@@ -6,4 +6,4 @@
     <!-- When not selected, use white-->
     <item android:drawable="@drawable/menu_mytrusted_n" />
 </selector>
-<!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/drawable/selector_my_trusted_tab_icon.xml -->
+<!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/drawable/selector_my_trusted_tab_icon.xml -->
