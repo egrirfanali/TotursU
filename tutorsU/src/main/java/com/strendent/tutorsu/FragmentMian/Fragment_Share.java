@@ -1,8 +1,14 @@
 package com.strendent.tutorsu.FragmentMian;
 
+import com.facebook.android.Facebook;
+import com.strendent.tutorsu.Activities.Activity_Share_Contacts_display;
 import com.strendent.tutorsu.R;
 
+import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.ContentUris;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Contacts;
@@ -18,7 +24,8 @@ public class Fragment_Share extends Fragment {
 
     private View mView;
     Button btnPhoneContacts, btnGmailContacts, btnFacebookContacts, btnTwitterContacts, btnShareViaEmail;
-
+    int PICK_CONTACT=1;
+    Facebook mfacebook;
     public Fragment_Share() {
         setRetainInstance(true);
     }
@@ -30,7 +37,11 @@ public class Fragment_Share extends Fragment {
         if (mView == null) {
             mView = inflater.inflate(R.layout.fragement_main_share_layout, container, false);
             initViews();
+
+          //  FacebookSdk.sdkInitialize(getApplicationContext());
             btnShareViaEmail.setOnClickListener(btnEmailClickListiner);
+            btnFacebookContacts.setOnClickListener(btnFacebookContactsClickListiner);
+
             btnPhoneContacts.setOnClickListener(btnPhoneContactsClickListiner);
         }
         return mView;
@@ -63,12 +74,50 @@ public class Fragment_Share extends Fragment {
 
         }
     };
+    View.OnClickListener btnFacebookContactsClickListiner = new View.OnClickListener() {
+        public void onClick(View v) {
+            String appLinkUrl, previewImageUrl;
+
+            appLinkUrl = "https://fb.me/493857950766025";
+            previewImageUrl = "http://2.bp.blogspot.com/-99shOruuadw/VQsG2T233sI/AAAAAAAAEi0/noFTxUBh_rg/s1600/appscripts.png";
+
+           /* AppInviteContent content = new AppInviteContent.Builder()
+                    .setApplinkUrl(appLinkUrl)
+                    .setPreviewImageUrl(previewImageUrl)
+                    .build();
+            AppInviteDialog.show(facebook.this, content);*/
+
+
+
+                  }
+    };
+
+
+
     View.OnClickListener btnPhoneContactsClickListiner=new View.OnClickListener() {
         public void onClick(View v)
         {
-            Intent intent = new Intent(Intent.ACTION_PICK, Contacts.CONTENT_URI);
-            intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
-            startActivityForResult(intent, 1);
+
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setType("vnd.android-dir/mms-sms");
+            sendIntent.putExtra("sms_body", getResources().getString(R.string.share_message));
+            startActivity(sendIntent);
+
+
         }
     };
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // Check which request we're responding to
+        if (requestCode == PICK_CONTACT) {
+            // Make sure the request was successful
+            if (resultCode == Activity.RESULT_OK) {
+                // The user picked a contact.
+                // The Intent's data Uri identifies which contact was selected.
+
+                // Do something with the contact here (bigger example below)
+            }
+        }
+    }
 }

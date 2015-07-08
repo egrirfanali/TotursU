@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal"
+android:layout_gravity="right"
+    >
+
+    <EditText
+        android:id="@+id/edtCardLastPart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimension_05dp"
+        android:layout_weight="1"
+        android:inputType="numberSigned"
+        android:maxLength="4"
+        android:layout_gravity="left"
+        android:background="@null"
+        android:editable="false"
+        android:text="1234"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtExpiry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimension_05dp"
+        android:layout_weight="1"
+        android:inputType="numberSigned"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@null"
+        android:editable="false"
+        android:hint="@string/month_year"
+        android:textStyle="bold"
+        android:focusable="true"/>
+
+    <EditText
+        android:id="@+id/edtCvc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimension_05dp"
+        android:layout_weight="1"
+        android:inputType="numberSigned"
+        android:maxLength="3"
+        android:background="@null"
+        android:hint="@string/cvc"
+        android:layout_gravity="right"
+        android:editable="false"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/layout/payment_placeholder.xml -->

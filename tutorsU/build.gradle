@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    buildToolsVersion '22.0.0'
 
     final def config = defaultConfig {
         applicationId "com.strendent.tutorsu"
@@ -29,7 +29,12 @@ dependencies {
     compile 'com.google.android.gms:play-services:+'
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile "com.mixpanel.android:mixpanel-android:4.6.0"
+    compile 'com.google.android.gms:play-services-base:7.0.0+'
+    compile 'com.google.android.gms:play-services-gcm:7.0.0+'
     compile files('libs/android-smart-image-view-1.0.0.jar')
+    compile files('libs/sentry-1.1.4.jar')
+    compile files('libs/android-query-full.0.26.7.jar')
     compile files('libs/Parse-1.7.1.jar')
     compile project(':library')
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'

@@ -392,4 +392,14 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
+    <!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.6.0/res/values-v11/values.xml -->
+    <eat-comment/>
+    <style name="com_mixpanel_android_SurveyActivityTheme" parent="android:Theme.Holo">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@style/com_mixpanel_android_SurveyActivityAnimation</item>
+    </style>
 </resources>

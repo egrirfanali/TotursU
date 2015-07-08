@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="@dimen/dimension_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension_05dp"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imageView_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_profile"
+                android:padding="@dimen/dimension_05dp"
+                android:src="@drawable/videos_gray"
+
+                />
+
+        </RelativeLayout>
+
+        <!--android:layout_weight="6"-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="@dimen/dimension_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_address_title"
+            android:layout_width="@dimen/dimension_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:layout_marginLeft="@dimen/dimension_10dp"
+            android:layout_marginTop="@dimen/dimension_15dp"
+            android:text="Catherin Smith" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimension_10dp"
+                android:layout_weight="0.02"
+                android:text="36" />
+
+            <TextView
+                android:id="@+id/tv_comma_age"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.008"
+                android:text="," />
+
+            <TextView
+                android:id="@+id/tv_promotion_code"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="Female" />
+
+            <TextView
+                android:id="@+id/tv_dot"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:text="."
+                android:textColor="@color/light_green"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="Tutorzu ID:" />
+
+            <TextView
+                android:id="@+id/tv_expire_date"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:text="561245" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.002"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_trusted_icon"
+            android:layout_width="@dimen/dimension_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:src="@drawable/ic_setting_light"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView_likes_icon"
+            android:layout_width="@dimen/dimension_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/videos_gray"
+
+            />
+            <TextView
+                android:id="@+id/tv_likes_count"
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:text="1"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageButton
+                android:layout_width="@dimen/dimension_0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/videos_gray"
+                android:id="@+id/imageButton_schedule"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/D:/Work/StrendentWork/turorSuNewFromIfran/android/tutorsU/src/main/res/layout/fragment_inner_my_trusted_row_item.xml -->

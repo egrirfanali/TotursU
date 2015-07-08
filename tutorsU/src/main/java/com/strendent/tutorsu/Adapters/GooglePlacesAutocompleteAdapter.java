@@ -37,9 +37,11 @@ public class GooglePlacesAutocompleteAdapter extends ArrayAdapter<String> implem
                 FilterResults filterResults = new FilterResults();
                 if (constraint != null) {
                     // Retrieve the autocomplete results.
+/*
                     resultList = FragmentInner_Add_Location.autocomplete(constraint.toString());
                     filterResults.values = resultList;
                     filterResults.count = resultList.size();
+*/
                 }
                 return filterResults;
             }

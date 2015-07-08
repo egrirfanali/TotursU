@@ -1,3 +1,4 @@
+/*
 package com.strendent.tutorsu.Activities;
 
 import org.json.JSONException;
@@ -122,8 +123,10 @@ public class Activity_Profile extends Activity {
 						ParseUser currentUser = ParseUser.getCurrentUser();
 						currentUser.put("profile", userProfile);
 						
-						/* For currentUser set currentUser.setUsername(user.getName()) and currentUser.setPassword("ba123!@#"); 
-						 * otherwise it will throw exception. Parse needs these two fields for creating ParseUser.*/
+						*/
+/* For currentUser set currentUser.setUsername(user.getName()) and currentUser.setPassword("ba123!@#");
+						 * otherwise it will throw exception. Parse needs these two fields for creating ParseUser.*//*
+
 						currentUser.setUsername(user.getName());
 						currentUser.setPassword(user.getId());
 						currentUser.put("facebookId", user.getId());
@@ -134,9 +137,11 @@ public class Activity_Profile extends Activity {
 //						
 
 						
-						/**
+						*/
+/**
 						 *calling signUpInBackground method for the current user instead of saveInBackGround
-						 */
+						 *//*
+
 						if(currentUser!=null){
 							currentUser.signUpInBackground();
 						}
@@ -220,3 +225,4 @@ public class Activity_Profile extends Activity {
 		startActivity(intent);
 	}
 }
+*/
