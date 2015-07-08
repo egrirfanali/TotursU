@@ -31,7 +31,7 @@ public class Utility {
      * Converting date from a given format to a specific format
      * @return String formatted date
      */
-
+    public static HashMap<String,String> sentryMap=new HashMap<>();
     public static String dateFormatter(String toFomat,String dateInString, String fromFormat){
 
         SimpleDateFormat formatter = new SimpleDateFormat(toFomat);
@@ -107,8 +107,8 @@ public class Utility {
 */
         dialog.show();
     }
-    public static void sendSentryLog(Exception e, String customMessage,HashMap sentryMap){
-        Sentry.captureEvent(new Sentry.SentryEventBuilder().setMessage(e.toString()).
+    public static void sendSentryLog(Exception e,String expcetionMessage, String customMessage,HashMap sentryMap){
+        Sentry.captureEvent(new Sentry.SentryEventBuilder().setMessage(expcetionMessage).
                 setCulprit(customMessage).setTimestamp(System.currentTimeMillis())
                 .setException(e).setExtra(sentryMap));
     }

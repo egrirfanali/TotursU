@@ -41,6 +41,7 @@ import com.strendent.tutorsu.FragmentMian.Fragment_Tutions;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.Utilities.Constants_MixPannel;
 import com.strendent.tutorsu.Utilities.Constants_Sentry;
+import com.strendent.tutorsu.Utilities.ExceptionHandler;
 import com.strendent.tutorsu.Utilities.Utility;
 
 import org.apache.http.HttpEntity;
@@ -74,23 +75,19 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Thread.setDefaultUncaughtExceptionHandler(new ExceptionHandler(this, Constants_Sentry.HOME_SCREEN));
         setContentView(R.layout.activity_main_drawer);
+
+/*
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
+*/
 
-
-        try {
-            String params2="first_name=Mustafa&last_name=Saeed&email=mustafa.saeed@strendent.com&phone=5555555555&zipcode=90401&dob=1970-01-22&ssn=XXX-XX-2001&driver_license_number=F1112001&driver_license_state=CA";
-         /*   String params2="first_name=Your"+"&"+"last_name=Name"+"&"+"email=your.name@example.com"+"&"+
-                    "phone=5555555555"+"&"+"zipcode=90401"+"&"+"dob=1970-01-22"+"&"+"ssn=111-11-2001"+"&"+"driver_license_number=F1112001"+"&"+
-                    "driver_license_number=F1112001"+"&"+"driver_license_state=CA";*/
-          //  String chkrUrl="http://c7aea53fac8319c95d63450fbef03ce439cad1d8:@api.checkr.com/v1/candidates/";
-            try {
-        //        webInvokeGetRequest("https://api.checkr.com/c7aea53fac8319c95d63450fbef03ce439cad1d8","");
+   //        webInvokeGetRequest("https://api.checkr.com/c7aea53fac8319c95d63450fbef03ce439cad1d8","");
             //   webInvokeGetRequest(chkrUrl,params2);
              //   ParseCloud.callFunctionInBackground("checkr", null);
-                ParseCloud.callFunctionInBackground("checkr",
+        /*        ParseCloud.callFunctionInBackground("checkr",
                         new HashMap<String, Object>(), new FunctionCallback< Object >() {
 
                             @Override
@@ -101,69 +98,34 @@ public class Activity_Home extends ActionBarActivity implements FragmentDrawer.F
 
                             }
                         });
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            Sentry.init(this.getApplicationContext(), Constants_Sentry.sentryDns);
+        */
+
             mixpanel= MixpanelAPI.getInstance(this, Constants_MixPannel.mixpannelProjectToken);
+        //TODO: Do not remove this it's a sample on mixpannel logs
 
-
-            JSONObject props = new JSONObject();
+           /* JSONObject props = new JSONObject();
             props.put("Gender", "Male");
             props.put("Logged in", true);
-
             mixpanel.track(Constants_MixPannel.MAIN_ACTIVITY, props);
-            try {
-                //TODO: It's a custom exception generated to test Sentry
-                String expectionMessage= "abcdefghijkl";
-                int a =  Integer.parseInt(expectionMessage);
-            } catch (Exception e) {
-                e.printStackTrace();
-                //Map to send data to sentry
-                HashMap<String,String> sentryMap=new HashMap<>();
-                sentryMap.put("UserName", "Nouman Ghaffar");
-                sentryMap.put("Device  ", Build.DEVICE);
-                sentryMap.put("Device Model ", android.os.Build.MODEL);
-                sentryMap.put("Device Os", android.os.Build.VERSION.RELEASE);
-                Utility.sendSentryLog(e, Constants_Sentry.HOME_SCREEN_ON_CREATE, sentryMap);
-               /* Sentry.captureEvent(new Sentry.SentryEventBuilder().setMessage(e.toString()).
-                        setCulprit(Constants_Sentry.HOME_SCREEN_ON_CREATE).setTimestamp(System.currentTimeMillis())
-                        .setException(e).setExtra(sentryMap));*/
+           */     //TODO: It's a custom exception generated to test Sentry
+               /* String expectionMessage= "abcdefghijkl";
+                int a =  Integer.parseInt(expectionMessage);*/
 
-            }
-        } catch (JSONException e) {
 
-            Log.e("MYAPP", "Unable to add properties to JSONObject", e);
-        }
         // Setting Custom Action Bar i.e ToolBar
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-    // Setting Fragments
-   //   getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_launcher);
+        // Setting Fragments
+        //   getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_launcher);
         drawerFragment = (FragmentDrawer)
-                getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
+        getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         drawerFragment.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         drawerFragment.setDrawerListener(this);
 
         // display the first navigation drawer view on app launch
         displayView(0);
-        try {
-            //TODO: It's a custom exception generated to test Sentry
-            String expectionMessage= "oioioioioi";
-            int a =  Integer.parseInt(expectionMessage);
-        } catch (Exception e) {
-            e.printStackTrace();
-            HashMap<String,String> sentryMap=new HashMap<>();
-            sentryMap.put("UserName", "Nouman Ghaffar");
-            sentryMap.put("Device  ", Build.DEVICE);
-            sentryMap.put("Device Model ", android.os.Build.MODEL);
-            sentryMap.put("Device Os", android.os.Build.VERSION.RELEASE);
-            Utility.sendSentryLog(e,"Sample Expection",sentryMap);
-
-
-        }
 
     }
 

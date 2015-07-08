@@ -104,6 +104,10 @@
         <activity
             android:name=".Activities.Activity_Payment_Add_Information"
             android:label="@string/title_activity_activity__add__information"></activity>
+        <activity
+            android:name=".Activities.Activity_DefaultExpectionViewerActivity"
+            android:label="@string/title_activity_activity__add__information"></activity>
+
     </application>
 
 </manifest>

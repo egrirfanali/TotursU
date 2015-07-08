@@ -107,6 +107,10 @@
         <activity
             android:name="com.strendent.tutorsu.Activities.Activity_Payment_Add_Information"
             android:label="@string/title_activity_activity__add__information" />
+        <activity
+            android:name="com.strendent.tutorsu.Activities.Activity_DefaultExpectionViewerActivity"
+            android:label="@string/title_activity_activity__add__information" />
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
