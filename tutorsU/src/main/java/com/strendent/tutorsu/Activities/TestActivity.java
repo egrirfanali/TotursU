@@ -1,14 +1,10 @@
 package com.strendent.tutorsu.Activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.braintreepayments.api.dropin.BraintreePaymentActivity;
 import com.parse.FunctionCallback;
 import com.parse.ParseCloud;
 import com.parse.ParseException;
@@ -27,7 +23,7 @@ public class TestActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        Map<String, String> map=new HashMap<String, String>();
+        Map<String, String> map = new HashMap<String, String>();
         map.put("firstName", "irfan");
         map.put("lastName", "ali");
         map.put("email", "irfan.ali@strendent.com");
@@ -43,16 +39,16 @@ public class TestActivity extends ActionBarActivity {
             @Override
             public void done(Object object, ParseException e) {
 
-                JSONObject jsonObj=null;
+                JSONObject jsonObj = null;
                 String candidateId = null;
-                String package1="driver";
+                String package1 = "driver";
 
-                if(e==null) {
-                    String string= (String) object;
+                if (e == null) {
+                    String string = (String) object;
                     try {
                         jsonObj = new JSONObject(string);
-                        candidateId=jsonObj.getString("id");
-                        Map<String, String> reportMap=new HashMap<String, String>();
+                        candidateId = jsonObj.getString("id");
+                        Map<String, String> reportMap = new HashMap<String, String>();
                         reportMap.put("candidateId", candidateId);
                         reportMap.put("package", "driver_pro");
 
@@ -136,63 +132,9 @@ public class TestActivity extends ActionBarActivity {
         });*/
     }
 
-    public void onBraintreeSubmit(String clienToken) {
-        Intent intent = new Intent(this, BraintreePaymentActivity.class);
-        intent.putExtra(BraintreePaymentActivity.EXTRA_CLIENT_TOKEN, clienToken);
-        // REQUEST_CODE is arbitrary and is only used within this activity.
-        startActivityForResult(intent, 0);
-    }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 0) {
-            switch (resultCode) {
-                case BraintreePaymentActivity.RESULT_OK:
-                    String paymentMethodNonce = data
-                            .getStringExtra(BraintreePaymentActivity.EXTRA_PAYMENT_METHOD_NONCE);
-                    Log.d("Nonce", paymentMethodNonce);
-
-                    Map<String, String> map=new HashMap<String, String>();
-                    map.put("nonce", paymentMethodNonce);
-                    map.put("amount", "200");
-                    ParseCloud.callFunctionInBackground("purchase", map, new FunctionCallback<Object>() {
-
-                        @Override
-                        public void done(Object object, ParseException e) {
-
-                            if (e == null) {
-
-                                JSONObject jsonObject=(JSONObject)object;
-                                try {
-                                    Toast.makeText(TestActivity.this,jsonObject.getString("msg").toString(),Toast.LENGTH_LONG);
-                                } catch (JSONException e1) {
-                                    e1.printStackTrace();
-                                }
-
-                            } else {
-
-                            }
-                        }
-                    });
-
-
-
-
-                    break;
-                case BraintreePaymentActivity.BRAINTREE_RESULT_DEVELOPER_ERROR:
-                case BraintreePaymentActivity.BRAINTREE_RESULT_SERVER_ERROR:
-                case BraintreePaymentActivity.BRAINTREE_RESULT_SERVER_UNAVAILABLE:
-                    // handle errors here, a throwable may be available in
-                    // data.getSerializableExtra(BraintreePaymentActivity.EXTRA_ERROR_MESSAGE)
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
 
     // ParseCloud.callFunctionInBackground("testFunction", map);
-
 
 
     @Override

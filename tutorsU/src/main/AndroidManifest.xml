@@ -64,9 +64,6 @@
             android:configChanges="orientation"
             android:label="@string/title_activity_activity__splash"
             android:screenOrientation="portrait" >
-
-
-
         </activity>
         <activity
             android:name=".Activities.Activity_Verified"
@@ -103,13 +100,15 @@
         <activity
             android:name=".Activities.TestActivity"
             android:label="@string/title_activity_test" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name=".Activities.Activity_TutorsMap"
+            android:label="@string/title_activity_activity__tutors_map" >
         </activity>
     </application>
 

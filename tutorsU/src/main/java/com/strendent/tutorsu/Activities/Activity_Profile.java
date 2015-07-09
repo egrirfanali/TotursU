@@ -1,8 +1,4 @@
-/*
 package com.strendent.tutorsu.Activities;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -25,14 +21,17 @@ import com.parse.ParseUser;
 import com.strendent.tutorsu.R;
 import com.strendent.tutorsu.TutorsUApplication;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Activity_Profile extends Activity {
 
 	private ProfilePictureView userProfilePictureView;
 	private TextView userNameView;
 	private TextView userGenderView;
 	private TextView userEmailView;
-	
-	
+
+
 	private ImageView imageViewProfile;
 	private EditText edtFirstandLastName;
 	private EditText edtEmail;
@@ -46,7 +45,7 @@ public class Activity_Profile extends Activity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_profile);
-		
+
 		initViews();
 
 		// Fetch Facebook user info if the session is active
@@ -56,13 +55,13 @@ public class Activity_Profile extends Activity {
 			makeMeRequest();
 		}
 	}
-	
+
 	private void initViews(){
 //		userProfilePictureView = (ProfilePictureView) findViewById(R.id.userProfilePicture);
 //		userNameView = (TextView) findViewById(R.id.userName);
 //		userGenderView = (TextView) findViewById(R.id.userGender);
 //		userEmailView = (TextView) findViewById(R.id.userEmail);
-		
+
 
 //		private ImageView imageViewProfile;
 //		private EditText edtFirstandLastName;
@@ -70,7 +69,7 @@ public class Activity_Profile extends Activity {
 //		private EditText edtPassword;
 //		private EditText edtPhoneNo;
 //		private ImageButton imageButtonAddress;
-		
+
 		imageViewProfile = (ImageView) findViewById(R.id.imageViewProfile);
 		edtFirstandLastName = (EditText) findViewById(R.id.edtFirstandLastName);
 		edtEmail = (EditText) findViewById(R.id.edtEmail);
@@ -78,9 +77,9 @@ public class Activity_Profile extends Activity {
 		edtPhoneNo = (EditText) findViewById(R.id.edtPhoneNo);
 		imageButtonAddress = (ImageButton) findViewById(R.id.imageButtonAddress);
 		edtAddress = (EditText) findViewById(R.id.edtAddress);
-		
-		
-		
+
+
+
 	}
 
 	@Override
@@ -102,70 +101,66 @@ public class Activity_Profile extends Activity {
 	private void makeMeRequest() {
 		Request request = Request.newMeRequest(ParseFacebookUtils.getSession(),
 				new Request.GraphUserCallback() {
-			@Override
-			public void onCompleted(GraphUser user, Response response) {
-				if (user != null) {
-					// Create a JSON object to hold the profile info
-					JSONObject userProfile = new JSONObject();
-					try {
-						// Populate the JSON object
-						
-						userProfile.put("facebookId", user.getId());
-						userProfile.put("name", user.getName());
-						if (user.getProperty("gender") != null) {
-							userProfile.put("gender", user.getProperty("gender"));
-						}
-						if (user.getProperty("email") != null) {
-							userProfile.put("email", user.getProperty("email"));
-						}
+					@Override
+					public void onCompleted(GraphUser user, Response response) {
+						if (user != null) {
+							// Create a JSON object to hold the profile info
+							JSONObject userProfile = new JSONObject();
+							try {
+								// Populate the JSON object
 
-						// Save the user profile info in a user property
-						ParseUser currentUser = ParseUser.getCurrentUser();
-						currentUser.put("profile", userProfile);
-						
-						*/
-/* For currentUser set currentUser.setUsername(user.getName()) and currentUser.setPassword("ba123!@#");
-						 * otherwise it will throw exception. Parse needs these two fields for creating ParseUser.*//*
+								userProfile.put("facebookId", user.getId());
+								userProfile.put("name", user.getName());
+								if (user.getProperty("gender") != null) {
+									userProfile.put("gender", user.getProperty("gender"));
+								}
+								if (user.getProperty("email") != null) {
+									userProfile.put("email", user.getProperty("email"));
+								}
 
-						currentUser.setUsername(user.getName());
-						currentUser.setPassword(user.getId());
-						currentUser.put("facebookId", user.getId());
-						currentUser.put("name", user.getName());
-						currentUser.put("gender", user.getProperty("gender"));
-						currentUser.put("email", user.getProperty("email"));
-						currentUser.put("authData", userProfile);
+								// Save the user profile info in a user property
+								ParseUser currentUser = ParseUser.getCurrentUser();
+								currentUser.put("profile", userProfile);
+						
+						/* For currentUser set currentUser.setUsername(user.getName()) and currentUser.setPassword("ba123!@#"); 
+						 * otherwise it will throw exception. Parse needs these two fields for creating ParseUser.*/
+								currentUser.setUsername(user.getName());
+								currentUser.setPassword(user.getId());
+								currentUser.put("facebookId", user.getId());
+								currentUser.put("name", user.getName());
+								currentUser.put("gender", user.getProperty("gender"));
+								currentUser.put("email", user.getProperty("email"));
+								currentUser.put("authData", userProfile);
 //						
 
-						
-						*/
-/**
-						 *calling signUpInBackground method for the current user instead of saveInBackGround
-						 *//*
 
-						if(currentUser!=null){
-							currentUser.signUpInBackground();
+								/**
+								 *calling signUpInBackground method for the current user instead of saveInBackGround
+								 */
+								if(currentUser!=null){
+									currentUser.signUpInBackground();
+								}
+								//              currentUser.saveInBackground();
+
+								// Show the user info
+								updateViewsWithProfileInfo();
+							} catch (Exception e) {
+								Log.d(TutorsUApplication.TAG, "Error parsing returned user data. " + e);
+							}
+
+						} else if (response.getError() != null) {
+							if ((response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_RETRY) ||
+									(response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_REOPEN_SESSION)) {
+								Log.d(TutorsUApplication.TAG, "The facebook session was invalidated." + response.getError());
+								logout();
+							} else {
+								Log.d(TutorsUApplication.TAG,
+										"Some other error: " + response.getError());
+							}
 						}
-						//              currentUser.saveInBackground();
-
-						// Show the user info
-						updateViewsWithProfileInfo();
-					} catch (Exception e) {
-						Log.d(TutorsUApplication.TAG, "Error parsing returned user data. " + e);
-					}
-
-				} else if (response.getError() != null) {
-					if ((response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_RETRY) || 
-							(response.getError().getCategory() == FacebookRequestError.Category.AUTHENTICATION_REOPEN_SESSION)) {
-						Log.d(TutorsUApplication.TAG, "The facebook session was invalidated." + response.getError());
-						logout();
-					} else {
-						Log.d(TutorsUApplication.TAG, 
-								"Some other error: " + response.getError());
 					}
 				}
-			}
-		}
-				);
+		);
 		request.executeAsync();
 	}
 
@@ -225,4 +220,3 @@ public class Activity_Profile extends Activity {
 		startActivity(intent);
 	}
 }
-*/
