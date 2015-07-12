@@ -1,1 +1,0 @@
-include ':tutorsU', ':facebookSDK', ':library', ':stripe'

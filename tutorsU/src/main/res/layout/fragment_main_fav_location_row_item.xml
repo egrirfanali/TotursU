@@ -55,7 +55,7 @@
 
 
             <TextView
-                android:id="@+id/tv_secondry_address"
+                android:id="@+id/tv_likes_count"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dimension_20dp"
@@ -93,8 +93,8 @@
                 app:shadow="true"
                 android:scaleType="matrix"
                  android:id="@+id/image_view_map_image"
-                android:layout_width="@dimen/dimension_40dp"
-                android:layout_height="@dimen/dimension_40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dimension_10dp"
                 android:src="@drawable/ic_launcher" />
 

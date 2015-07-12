@@ -1,5 +1,11 @@
 package com.strendent.tutorsu.Activities;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.Fragment;
@@ -14,26 +20,26 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.facebook.Settings;
+import com.loopj.android.image.SmartImageView;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseFacebookUtils;
 import com.parse.ParseUser;
+import com.strendent.tutorsu.R;
+import com.strendent.tutorsu.TutorsUApplication;
 import com.strendent.tutorsu.Adapters.Adpater_DrawerAdapter;
 import com.strendent.tutorsu.Fragment.Fragment_Login;
 import com.strendent.tutorsu.Fragment.Fragment_SignUp;
 import com.strendent.tutorsu.Models.Model_Drawer_Items;
-import com.strendent.tutorsu.R;
-import com.strendent.tutorsu.TutorsUApplication;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Activity_Main extends Activity {
 
@@ -64,15 +70,15 @@ public class Activity_Main extends Activity {
 		setContentView(R.layout.activity__main);
 
 
-		/*String userID = "TheNameOrIDOfTheUserYouWant";
+		String userID = "TheNameOrIDOfTheUserYouWant";
 		String urlConstruct = "https://www.graph.facebook.com/" + "engr.irfan.ali.khan" + "/picture";
-		URL url = null;*/
-		/*try {
+		URL url = null; 
+		try {
 			url = new URL(urlConstruct);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
+		}
 
 
 		//		setupDrawer();

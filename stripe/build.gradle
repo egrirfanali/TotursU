@@ -3,7 +3,6 @@ apply plugin: 'com.android.library'
 dependencies {
     compile 'com.stripe:stripe-java:1.15.1'
     compile 'com.google.code.gson:gson:2.2.4'
-    compile project(':facebookSDK')
 }
 
 android {
@@ -11,7 +10,7 @@ android {
     buildToolsVersion '19.1.0'
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 7
         targetSdkVersion 19
     }
 

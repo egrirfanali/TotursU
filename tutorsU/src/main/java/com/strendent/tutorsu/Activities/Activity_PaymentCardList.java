@@ -1,13 +1,13 @@
 package com.strendent.tutorsu.Activities;
 
-import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.parse.ParseObject;
@@ -32,33 +32,16 @@ public class Activity_PaymentCardList extends ActionBarActivity {
 
         listViewPaymentCard=(ListView)findViewById(R.id.listViewPaymentCard);
 
-
-        // Getting images from sender activity
-        /*Bundle bundle=getIntent().getExtras();
+        Bundle bundle=getIntent().getExtras();
         Bitmap bitmap=bundle.getParcelable("BITMAP");
         Drawable drawable = new BitmapDrawable(getResources(), bitmap);
 
         PaymentItem paymentItem = new PaymentItem(drawable, bundle.getString("CARD_NUMNER"),bundle.getBoolean("IS_PRIMARY"));
 
-        Constants.paymentItemsList.add(paymentItem);*/
+        Constants.paymentItemsList.add(paymentItem);
 
-        if(Constants.paymentItemsList!=null && Constants.paymentItemsList.size()>0) {
-            listViewPaymentCard.setAdapter(new AdaptorPaymentList(Activity_PaymentCardList.this, R.layout.payment_card_list_items, Constants.paymentItemsList));
-        }
+        listViewPaymentCard.setAdapter(new AdaptorPaymentList(Activity_PaymentCardList.this,R.layout.payment_card_list_items,Constants.paymentItemsList));
 
-        listViewPaymentCard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                                                       @Override
-                                                       public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                                                           PaymentItem paymentItem= (PaymentItem) listViewPaymentCard.getItemAtPosition(position);
-                                                           Intent intent=new Intent(getApplicationContext(), Activity_Payment_Add_Information.class);
-                                                           intent.putExtra("PAYMENT_ITEM",paymentItem);
-                                                           startActivity(intent);
-                                                       }
-                                                   }
-        );
-
-        //The below code will be use later on when we store ou data on Parse server
 //        ParseQuery<ParseObject> query= ParseQuery.getQuery("PaymentCards");
 //        query.findInBackground(new FindCallback<ParseObject>() {
 //            public void done(List<ParseObject> payments, ParseException e) {

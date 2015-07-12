@@ -4,42 +4,21 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="dimension_0dp">0dp</dimen>
-    <dimen name="dimension_01dp">01dp</dimen>
-    <dimen name="dimension_02dp">02dp</dimen>
-    <dimen name="dimension_03dp">03dp</dimen>
-    <dimen name="dimension_04dp">04dp</dimen>
+
     <dimen name="dimension_05dp">05dp</dimen>
-    <dimen name="dimension_06dp">06dp</dimen>
-    <dimen name="dimension_07dp">07dp</dimen>
-    <dimen name="dimension_08dp">08dp</dimen>
-    <dimen name="dimension_09dp">09dp</dimen>
+
     <dimen name="header_text">30sp</dimen>
     <!--     <dimen name="normal_text"></dimen> -->
     <dimen name="dimension_10dp">10dp</dimen>
     <dimen name="dimension_12dp">12dp</dimen>
     <dimen name="dimension_15dp">15dp</dimen>
     <dimen name="dimension_20dp">20dp</dimen>
-    <dimen name="dimension_22dp">22dp</dimen>
     <dimen name="dimension_25dp">25dp</dimen>
     <dimen name="dimension_30dp">30dp</dimen>
-    <dimen name="dimension_38dp">38dp</dimen>
     <dimen name="dimension_35dp">35dp</dimen>
     <dimen name="dimension_40dp">40dp</dimen>
     <dimen name="dimension_45dp">45dp</dimen>
     <dimen name="dimension_48dp">48dp</dimen>
-    <dimen name="dimension_50dp">50dp</dimen>
-    <dimen name="dimension_55dp">55dp</dimen>
-    <dimen name="dimension_60dp">60dp</dimen>
-    <dimen name="dimension_65dp">65dp</dimen>
-    <dimen name="dimension_70dp">70dp</dimen>
-    <dimen name="dimension_75dp">75dp</dimen>
-    <dimen name="dimension_80dp">80dp</dimen>
-    <dimen name="dimension_85dp">85dp</dimen>
-    <dimen name="dimension_90dp">90dp</dimen>
-    <dimen name="dimension_95dp">95dp</dimen>
-    <dimen name="dimension_100dp">100dp</dimen>
-    <dimen name="dimension_105dp">105dp</dimen>
-    <dimen name="dimension_300dp">300dp</dimen>
 
     <dimen name="nav_drawer_width">260dp</dimen>
 

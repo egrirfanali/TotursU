@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-
-        <item android:state_checked="true" android:drawable="@drawable/ic_log_confirm" />
-    <item android:drawable="@android:drawable/radiobutton_off_background"/>
-
-
-</selector><!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/drawable/selector_is_primary.xml -->

@@ -1,10 +1,9 @@
 package com.stripe.android.model;
 
-import java.io.Serializable;
 import java.util.Date;
 
 // This is different from Token in com.stripe.model because it does not
-public class Token extends com.stripe.model.StripeObject implements Serializable {
+public class Token extends com.stripe.model.StripeObject {
     private final String id;
     private final Date created;
     private final boolean livemode;

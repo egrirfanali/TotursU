@@ -13,7 +13,7 @@
         android:layout_width="@dimen/dimension_0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_visa"
-        android:layout_weight="0.25"
+        android:layout_weight="0.50"
         android:gravity="left" />
 
     <TextView
@@ -21,25 +21,27 @@
         android:layout_width="@dimen/dimension_0dp"
         android:layout_height="wrap_content"
         android:textSize="@dimen/abc_text_size_small_material"
-        android:layout_weight="1.5"
+        android:layout_weight="1"
         android:text="@string/dotted_card_numbr"
 
         />
     <TextView
         android:id="@+id/tvCardPriority"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/light_green"
-        android:layout_weight=".75"
         android:textSize="@dimen/abc_text_size_small_material"
+        android:text="@string/primary_card"
+
+
         />
     <ImageView
         android:id="@+id/imageViewArrowProceeder"
         android:layout_width="@dimen/dimension_0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_menu_arrow"
-        android:layout_weight="0.2"
+        android:layout_weight="0.25"
         />
 
 </LinearLayout>
-<!-- From: file:/F:/Projects/TutorsU/2015-jul-03/android/tutorsU/src/main/res/layout/payment_card_list_items.xml -->
+<!-- From: file:/F:/Projects/TutorsU/AndroidStudio/android/tutorsU/src/main/res/layout/payment_card_list_items.xml -->

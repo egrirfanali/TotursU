@@ -35,7 +35,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
         <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:windowBackground">@color/windowBackground</item>
@@ -63,7 +62,7 @@
 
     <style name="GalaxyZooThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
-        <item name="actionMenuTextColor">@color/topMenuIconColor</item>
+        <item name="actionMenuTextColor">@color/headerColor</item>
         <item name="android:textColorSecondary">@color/topMenuIconColor</item>
     </style>
 

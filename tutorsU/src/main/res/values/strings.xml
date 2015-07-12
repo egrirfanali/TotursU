@@ -9,7 +9,7 @@
     <string name="invalid_username_pwd">Invalid user name and password</string>
     <string name="login_phone_number">Login with Phote No.</string>
     <string name="login_fb">Login with with FB</string>
-    <string name="app_id">900009210070238</string>
+    <string name="app_id">890661184338374</string>
     <string name="title_activity_activity__splash">Activity_Splash</string>
     <string name="instant_connect">INSTANT CONNECT</string>
     <string name="insert_cell_no">INSERT CELL NO</string>
@@ -38,36 +38,19 @@
     <string name="address">Address</string>
     <string name="forgot_your_pwd">Forgot your password</string>
     <string name="done">Done</string>
-    <string name="add_another">ADD ANOTHER</string>
     <string name="trusted_tab_my_trusted">My Trusted</string>
-    <string name="schedule_tab_my_tutions">Scheduled</string>
-    <string name="history_tab_my_tutions">History</string>
-
     <string name="recommended_tab_my_trusted">Recommended</string>
     <string name="bookmark_tab_my_trusted">BookMark</string>
-    <string name="current_tab_promotions">Current</string>
-
-
     <string name="add_payment_info">Add Payment Info</string>
     <string name="month_year">MM/YY</string>
     <string name="cvc">CVC</string>
 
     <string name="progressMessage">Creating Token&#8230;</string>
     <string name="validationErrors">Validation Errors</string>
-    <string name="required">Required</string>
 
     <string name="cardNumber">Card Number</string>
     <string name="save">Save</string>
 
-    <string name="expiry_date">Expiration Date</string>
-    <string name="security_code">Security Code</string>
-    <string name="nick_name">Nick Name</string>
-    <string name="you_made_this_card_your_primary_card">You made this cad your primary card</string>
-    <string name="do_you_want_to_make_this_your_primary_card">Do you want to make this your primary card?</string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-
-    <!--&#160;&#160;-->
     <string name="title_activity_activity__verified">Activity_Verified</string>
     <string name="title_activity_main">MainActivity</string>
 
@@ -92,7 +75,6 @@
     <string name="nav_item_friends">Friends</string>
     <string name="nav_item_notifications">Messages</string>
     <string name="trested_tutors_title">Tutors</string>
-    <string name="trested_tutors_home">Home</string>
     <string name="my_family_title">My Family</string>
     <string name="favorite_locations_title">Favorite Locations</string>
     <string name="tutions_title">Tutions</string>
@@ -130,15 +112,6 @@
         <item>@drawable/ic_action_share</item>
     </array>
     <string name="title_activity_activity__payment_card_list">Activity_PaymentCardList</string>
-    <string name="title_activity_activity__add__information">Activity_Add_Information</string>
-    <string name="ok">OK</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_test">TestActivity</string>
-    <string name="menu_name">Menu Name</string>
-    <string name="title_activity_activity__tutors_map">Activity_TutorsMap</string>
-
 
 
 </resources>

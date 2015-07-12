@@ -35,7 +35,7 @@ public class ErrorDialogFragment extends DialogFragment {
         return new AlertDialog.Builder(getActivity())
             .setTitle(titleId)
             .setMessage(message)
-            .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            .setPositiveButton(R.string.app_id, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     dialogInterface.dismiss();

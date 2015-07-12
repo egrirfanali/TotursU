@@ -1,4 +1,3 @@
-
 package com.strendent.tutorsu.Activities;
 
 import android.app.Activity;
@@ -68,4 +67,3 @@ public class Activity_Splash extends Activity {
 	}
 
 }
-
